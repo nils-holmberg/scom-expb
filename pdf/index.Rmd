@@ -221,7 +221,7 @@ knitr::include_graphics("../fig/model.png")
 
 ### Planering av hypoteser {#sub06.3.1}
 
-Inom flera samhällsvetenskapliga ämnen använder man sig av ett ramverk som kallas \"Null Hypothesis Significance Testing\" (förkortat NHST) i samband med att man formulerar hypoteser inom ett experiment (REF). Detta ramverk säger i princip att varje hypotes ska uttrycka endast _ett_ förväntat samband mellan studiens variabler. Hypoteserna ska vara formulerade så att _riktningen_ på förväntade samband framgår. I vårt experiment förväntar vi oss till exempel att när bildinnehållet varieras från \"neutral person\" till \"auktoritetsperson\" så kommer visuell uppmärksamhet och upplevd trovärdighet att öka. Vidare ska hypoteserna formuleras så att de går att falsifiera. Noll-hypotesen (H0) är att det inte finns någon statistiskt mätbar (signifikant) skillnad mellan villkoren. Om vi uppmäter en signifikant skillnad i våra beroende variabler mellan villkoren så förkastar vi noll-hypotesen. Det är mycket svårare att bevisa att ingen skillnad finns mellan två villkor, än att bevisa att en skillnad uppmätts (det förra alternativet kräver andra statistiska metoder som ibland kallas för Bayesianska).
+Inom flera samhällsvetenskapliga ämnen använder man sig av ett ramverk som kallas \"Null Hypothesis Significance Testing\" (förkortat NHST) i samband med att man formulerar hypoteser inom ett experiment [@pernet2015null]. Detta ramverk säger i princip att varje hypotes ska uttrycka endast _ett_ förväntat samband mellan studiens variabler. Hypoteserna ska vara formulerade så att _riktningen_ på förväntade samband framgår. I vårt experiment förväntar vi oss till exempel att när bildinnehållet varieras från \"neutral person\" till \"auktoritetsperson\" så kommer visuell uppmärksamhet och upplevd trovärdighet att öka. Vidare ska hypoteserna formuleras så att de går att falsifiera. Noll-hypotesen (H0) är att det inte finns någon statistiskt mätbar (signifikant) skillnad mellan villkoren. Om vi uppmäter en signifikant skillnad i våra beroende variabler mellan villkoren så förkastar vi noll-hypotesen. Det är mycket svårare att bevisa att ingen skillnad finns mellan två villkor, än att bevisa att en skillnad uppmätts (det förra alternativet kräver andra statistiska metoder som ibland kallas för Bayesianska).
 
 ### Rapportering av hypoteser {#sub06.3.2}
 
@@ -535,7 +535,7 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript. U
 
 
 ## Experimentell design {#sec07.5}
-[07-5-wc-file]: <> (118.28 %)
+[07-5-wc-file]: <> (118.32 %)
 [07-5-comment]: <> (10 sidor)
 
 Design är ett ganska svårdefinierat begrepp, vars innebörd handlar om att på ett överskådligt sätt sammanfatta strukturen och planen hos en vetenskaplig undersökning (på svenska används ibland "upplägg" eller "planering" som synonymer till experimentdesign). Man kan säga att begreppet experimentell design har två centrala aspekter: den första är kopplad till att beskriva och specificera de beroende och oberoende variablerna som ingår en undersökning, medan den andra centrala aspekten är kopplad till att beskriva hur deltagarna i en undersökning exponeras för de experimentella villkor som omfattas av de oberoende variablerna, dvs hur behandlingar eller "trials" är distribuerade inom en experimentell studie. I det följande ska vi börja med att diskutera experimentell design i relation till oberoende variabler, vilka vi även refererar till som behandlingsvariabler i denna bok.
@@ -657,6 +657,8 @@ T.ex. undersökning av effekterna av medborgarlön? Kontrastera med naturliga ex
 ### Kvasi-experiment {#sub07.5.8}
 
 T.ex. undersökning av effekterna av medborgarlön? Kontrastera med naturliga experiment? Ett sätt att tänka kring oberoende variabler är att de representerar experimentets utfallsvariabler. En annan faktor som har stor betydelse i samband med urvalet av.. lacks random assignment, naturliga exp del 1. Kan komma att bli en vanligare design pga etiska utmaningar med att framkalla långsiktig påverkan på försöksdeltagare. Panel research.
+
+![expdesign](../fig/design.png)
 
 ### Planering av experimentdesign {#sub07.5.9}
 
