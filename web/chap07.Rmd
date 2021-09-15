@@ -428,10 +428,10 @@ Håll designen så enkel som möjligt för att underlätta tolkningen av resulta
 
 
 ## Procedur {#sec07.6}
-[07-6-wc-file]: <> (57.46 %)
+[07-6-wc-file]: <> (57.57 %)
 [07-6-comment]: <> (10 sidor)
 
-Handlar i grunden om reliabilitet, standardisering, alla deltagare genomgår samma procedur, externa faktorer hålls så konstanta som möjligt. Laboratoriemiljö ger mer standardisering. Fokus på experimentledare, vikten av pilottestning. Använd exempel-experimentet. Replikerbarhet.
+Procedur (eller protokoll) handlar i grunden om reliabilitet, standardisering, alla deltagare genomgår samma procedur, externa faktorer hålls så konstanta som möjligt. Laboratoriemiljö ger mer standardisering. Fokus på experimentledare, vikten av pilottestning. Använd exempel-experimentet. Replikerbarhet.
 
 Kronologisk genomgång av experimentets samtliga delar så som de möter försöksdeltagaren. Dvs hälsning, informerat samtycke, förtest, instruktioner, applicering av mätutrustning, kalibrering, 
 
