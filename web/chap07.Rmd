@@ -516,21 +516,3 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript
 
 
 
-## Dataanalys {#sec07.7}
-[07-7-wc-file]: <> (1.50 %)
-[07-7-comment]: <> (5 sidor)
-
-Beräkning av beroende och oberoende variabler - aggregering, summativt index
-
-
-
-
-
-
-
-
-
-
-
-
-
