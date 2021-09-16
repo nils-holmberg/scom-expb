@@ -66,6 +66,9 @@ sub07.6.7
 sub07.6.8
 sub07.6.9
 sec07.7
+sub07.7.1
+sub07.7.2
+sub07.7.3
 chap08
 sec08.1
 sub08.1.1
