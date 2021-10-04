@@ -765,7 +765,7 @@ Hur lång tid kan man låta ett experiment ta.
 
 ### Rapportering av procedur {#sub07.6.9}
 
-Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript
+Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript...
 
 
 
@@ -773,16 +773,18 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript
 
 
 ## Dataanalys {#sec07.7}
-[07-7-wc-file]: <> (25.50 %)
+[07-7-wc-file]: <> (27.71 %)
 [07-7-comment]: <> (5 sidor)
 
 Genomförandet av ett experiment involverar även handhavandet av insamlade data. Det vill säga, på det sätt forskare behöver ge en detaljerad och strukturerad beskrivning av hur ett experiment designats och genomförts, på samma sätt behöver de även ge en sådan redovisning av hur insamlade observationer har bearbetats för att generera variabler som kan användas i statistisk analys. Anledningen till detta är som alltid reproducerbarhet. Andra forskare behöver inte bara kunna upprepa hur experimentets design och genomförande, utan de behöver också kunna upprepa den databehandling som ligger till grund för skapandet av undersökningens beroende och oberoende variabler. 
 
 Detta avsnitt av boken pekar i mångt och mycket tillbaka på det förarbete som gjordes i kapitel 6 när vi förklarade hur studiens forskningsfrågor operationaliserades till testbara hypoteser. Som vi förklarade där, består en forskningsfråga ofta av relativt abstrakta och odefinierade begrepp, som till exempel: Hur påverkas medieanvändares visuella uppmärksamhet av att en artikeltext presenteras tillsammans med en bild på en auktoritetsperson jämfört med en bild på en mer anonym eller okänd person? Ytligt sett är denna forskningsfråga ganska enkel till sin natur, men en myriad frågor öppnar sig så fort vi börjar fundera på hur begreppet "visuell uppmärksamhet" definierats och registrerats. Ett sätt att operationalisera detta begrepp är att använda en ögonrörelsemätare som kontinuerligt registrerar var deltagarens pupill är riktad på en datorskärm. När deltagarens ögon står relativ stilla och inhämtar visuell information kallas detta för en fixering. Den sammanlagda tiden av dessa fixeringar har i tidigare forskning använts som ett mått på visuell uppmärksamhet.
 
-Nyss nämnda forskningsfråga är ju som bekant en viktig del av det exempelexperiment som vi diskuterar i denna bok, och i detta avsnitt om dataanalys kommer vi att fokusera på den sista delen av genomförandet av experimentet, vilket handlar om processen från abstrakt begrepp (visuell uppmärksamhet) till variabel (fixeringstid).
+Nyss nämnda forskningsfråga är ju som bekant en viktig del av det exempelexperiment som vi diskuterar i denna bok, och i detta avsnitt om dataanalys kommer vi att fokusera på den sista delen av genomförandet av experimentet, vilket handlar om processen från abstrakt begrepp (visuell uppmärksamhet) till variabel (fixeringstid). I experimentets hypoteser används dessa variabler som närmevärden eller "proxys" till annars latenta variabler och begrepp som inte kan observeras direkt.
 
 ### Fysiologiska mätdata {#sub07.7.1}
+
+reshape, wide to long etc, koppling mellan dataanalys och experimentdesign
 
 Beräkning av beroende och oberoende variabler - aggregering, summativt index
 
