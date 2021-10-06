@@ -11,14 +11,22 @@ Inom flera samhällsvetenskapliga discipliner har den konstruktivistiska kunskap
 När vi rapporterar förarbetet till ett experiment, görs detta ofta inom artikelns introduktion (jfr. akronymen IMRD i kapitel 8). När man introducerar en experimentell studie brukar man inleda med en kort bakgrund av det aktuella forskningsläget och en motivering till den genomförda undersökningen. Det är viktigt att det i ett tidigt skede står klart för läsaren vilket forskningsproblem (eller \"kunskapsgap\") studien vill bidra till att undersöka och helst råda bot på. Genomgången av tidigare forskning ska leda fram till och motivera den aktuella studiens forskningsfrågor och hypoteser. Det blir därmed viktigt att introduktionen och forskningsfrågorna refererar till empiriska resultat från tidigare forskning.
 
 ## Forskningsfrågor {#sec06.1}
-[06-1-wc-file]: <> (83.92 %)
+[06-1-wc-file]: <> (84.40 %)
 [06-1-comment]: <> (3 sidor)
 
 En viktig del av introduktionen till alla typer av vetenskapliga studier är att presentera studiens forskningsfrågor. Forskningsfrågor brukar i allmänhet vara nära kopplade till studiens syfte och mål, och bör därför vara möjliga att besvara inom ramen för studiens genomförande. 
 
 En forskningsfråga ska på ett någorlunda enkelt och kortfattat sätt sammanfatta vilka frågeställningar som ett specifikt experiment adresserar. Därför är det förhållandevis accepterat att forskningsfrågor är något abstrakt formulerade, så länge de ändå är enkla, lättfattliga och kortfattade. Introduktionens vidare uppgift är nämligen att konkretisera studiens forskningsfrågor genom en process som kallas _operationalisering_, i vilken dessa forskningsfrågor omsätts till mätbara variabler som sedan kan ingå i falsifierbara _hypoteser_. Man kan därför uttrycka det som att hypoteserna i en experimentell studie operationaliserar studiens forskningsfrågor. Operationalisering är ett mycket viktigt begrepp inom experimentell forskning, och vi återkommer mer utförligt till detta begrepp lite längre fram i detta kapitel, där vi också diskuterar hur detta begrepp hänger ihop med hypotesformulering.
 
-{csv/02-06-1-1.csv}
+Table {02-06-1-1}
+
+|col_a | col_b| col_c|
+|:-----|-----:|-----:|
+|a     |     1|    45|
+|b     |     2|    46|
+|c     |     3|    47|
+
+Table {02-06-1-1}
 
 ```{r test-tab, tidy=F, echo=FALSE}
 knitr::kable(
