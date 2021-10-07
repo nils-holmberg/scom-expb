@@ -1,6 +1,5 @@
 fig:fig01-01
 fig:fig01-02
-tab:test-tab
 fig:img-model
 tab:tab02-07-3
 chap01

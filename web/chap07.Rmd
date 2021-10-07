@@ -509,7 +509,7 @@ Hur lång tid kan man låta ett experiment ta.
 
 ### Rapportering av procedur {#sub07.6.9}
 
-Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript...
+Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript.
 
 
 
