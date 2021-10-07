@@ -328,9 +328,24 @@ Enligt NHST-modellen föregås dessa hypoteser egentligen av en så kallad noll-
 The hypothetico-deductive model or method (step 1-4) this method can never absolutely verify (prove the truth of) 2. It can only falsify 2. This is what Einstein meant when he said, ``No amount of experimentation can ever prove me right; a single experiment can prove me wrong.'' \citep{einstein2002induction}
 
 \hypertarget{sec06.4}{%
-\section{Pre-registration}\label{sec06.4}}
+\section{Projektarbete}\label{sec06.4}}
+
+Vi kan med fördel tänka kring ett experiment i termer av ett projekt. Behöver planeras, implementeras, utvärderas. Flera roller. Ofta bra med flera personer som är specialiserade på vissa arbetsuppgifter. Projektledning är också intressant aspekt. I praktiken får ofta samma personer inneha flera (eller alla) roller inom projektet.
+
+\hypertarget{sub06.4.1}{%
+\subsection{Power-analys}\label{sub06.4.1}}
+
+Länka till Åses intro till detta på experiment kursen simm49. Finns även en interaktiv webbapp för detta ändamål. Kan ge upplysningar om hur antal deltagare, trials, etc som bör krävas för att se en kontrasteffekt mellan villkor, compare means (REF).
+
+\hypertarget{sub06.4.2}{%
+\subsection{Pre-registrering}\label{sub06.4.2}}
 
 TODO: Vad heter pre-registration på svenska? Kanske förregistrering. Koppling till open science framework: making research data and methods FAIR (findable, accessible, interoperable and reusable) and results reproducible. Här kommer en referens \citep{van2016pre} till denna relativt nya företeelse.
+
+\hypertarget{sub06.4.3}{%
+\subsection{Implementering}\label{sub06.4.3}}
+
+Programvaror för att skapa ett experiment, google forms, qualtrics, psychopy, pavlovia, python flask, R shiny.
 
 \hypertarget{chap07}{%
 \chapter{Genomförande}\label{chap07}}
@@ -917,26 +932,33 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript.
 \hypertarget{sec07.7}{%
 \section{Dataanalys}\label{sec07.7}}
 
-Genomförandet av ett experiment involverar även handhavandet av insamlade data. Det vill säga, på det sätt forskare behöver ge en detaljerad och strukturerad beskrivning av hur ett experiment designats och genomförts, på samma sätt behöver de även ge en sådan redovisning av hur insamlade observationer har bearbetats för att generera variabler som kan användas i statistisk analys. Anledningen till detta är som alltid reproducerbarhet. Andra forskare behöver inte bara kunna upprepa hur experimentets design och genomförande, utan de behöver också kunna upprepa den databehandling som ligger till grund för skapandet av undersökningens beroende och oberoende variabler.
+Genomförandet av ett experiment involverar även handhavandet av insamlade data. Det vill säga, på samma sätt som forskare behöver ge en detaljerad och strukturerad beskrivning av hur ett experiment designats och genomförts, behöver de även ge en sådan redovisning av hur insamlade observationer har bearbetats för att generera variabler som kan användas i statistisk analys. Den främsta anledningen till detta är som alltid reproducerbarhet. Andra forskare behöver inte bara kunna upprepa hur experimentets design och genomförande, utan de behöver också kunna upprepa den databehandling som ligger till grund för skapandet av undersökningens beroende och oberoende variabler.
 
-Detta avsnitt av boken pekar i mångt och mycket tillbaka på det förarbete som gjordes i kapitel 6 när vi förklarade hur studiens forskningsfrågor operationaliserades till testbara hypoteser. Som vi förklarade där, består en forskningsfråga ofta av relativt abstrakta och odefinierade begrepp, som till exempel: Hur påverkas medieanvändares visuella uppmärksamhet av att en artikeltext presenteras tillsammans med en bild på en auktoritetsperson jämfört med en bild på en mer anonym eller okänd person? Ytligt sett är denna forskningsfråga ganska enkel till sin natur, men en myriad frågor öppnar sig så fort vi börjar fundera på hur begreppet ``visuell uppmärksamhet'' definierats och registrerats. Ett sätt att operationalisera detta begrepp är att använda en ögonrörelsemätare som kontinuerligt registrerar var deltagarens pupill är riktad på en datorskärm. När deltagarens ögon står relativ stilla och inhämtar visuell information kallas detta för en fixering. Den sammanlagda tiden av dessa fixeringar har i tidigare forskning använts som ett mått på visuell uppmärksamhet.
+En viktig kontrast kan här hämtas från den kvalitativa forskningens användning av begreppet ``analys'' (REF). Inom denna typ av forskning talas det ofta om att analysen kan innehålla inslag av induktiv metod, dvs att forskaren går igenom det empiriska materialet (ofta texter) för att observera mönster och teman som på detta vis framträder ur materialet. En kvalitativ analys kan ofta även innehålla inslag av deduktiv metod, vilket innebär att forskaren använder ett teoretiskt och begreppsligt ramverk för att förstå det insamlade materialet från ett visst teoretiskt perspektiv. Kombinationen av dessa tillvägagångssätt kallas ibland abduktiv metod. Gemensamt för dessa kvalitativa metoder är att forskaren själv intar en viktig roll i analysarbetet, genom att tolka det insamlade datamaterialet enligt olika principer. I kontrast till detta försöker den kvantitativa analysen omvandla observationer till numeriska och kategoriska variabler som behandlas på ett mer objektivt och standardiserat sätt för att därigenom öka reproducerbarheten i bearbetningen av data (dvs alla forskare som tittar på datamaterialet bör komma fram till liknande slutsatser).
 
-Nyss nämnda forskningsfråga är ju som bekant en viktig del av det exempelexperiment som vi diskuterar i denna bok, och i detta avsnitt om dataanalys kommer vi att fokusera på den sista delen av genomförandet av experimentet, vilket handlar om processen från abstrakt begrepp (visuell uppmärksamhet) till variabel (fixeringstid). I experimentets hypoteser används dessa variabler som närmevärden eller ``proxys'' till annars latenta variabler och begrepp som inte kan observeras direkt.
+Detta avsnitt av boken pekar i mångt och mycket tillbaka på det förarbete som gjordes i kapitel 6, när vi förklarade hur studiens forskningsfrågor operationaliserades till testbara hypoteser. Som vi förklarade där, består en forskningsfråga ofta av relativt abstrakta och odefinierade begrepp, som till exempel: Hur påverkas medieanvändares visuella uppmärksamhet av att en artikeltext presenteras tillsammans med en bild på en auktoritetsperson, jämfört med en bild på en mer anonym eller okänd person? Ytligt sett är denna forskningsfråga ganska enkel till sin natur, men en myriad frågor öppnar sig så fort vi börjar fundera på hur begreppet ``visuell uppmärksamhet'' definierats och registrerats. Ett sätt att operationalisera detta begrepp är, som vi argumenterar i denna bok, att använda en ögonrörelsemätare som kontinuerligt registrerar var försöksdeltagarens pupill är riktad på en datorskärm. När deltagarens ögon står relativ stilla och inhämtar visuell information kallas detta för en fixering. Den sammanlagda tiden av dessa fixeringar har i tidigare forskning använts som ett mått på visuell uppmärksamhet (REF).
 
 \hypertarget{sub07.7.1}{%
 \subsection{Fysiologiska mätdata}\label{sub07.7.1}}
 
-reshape, wide to long etc, koppling mellan dataanalys och experimentdesign
+Nyss nämnda forskningsfråga är ju som bekant en viktig del av det exempelexperiment som vi diskuterar i denna bok, och i detta avsnitt om dataanalys kommer vi att fokusera på den sista delen av genomförandet av experimentet, vilket handlar om processen från abstrakt begrepp (visuell uppmärksamhet) till variabel (fixeringstid). I experimentets hypoteser används dessa variabler som närmevärden eller ``proxys'' till annars latenta variabler och begrepp som inte direkt kan observeras eller uppmätas.
+
+reshape, wide to long etc, sök-ersätt värden, koppling mellan dataanalys och experimentdesign
 
 Beräkning av beroende och oberoende variabler - aggregering, summativt index
 
 \hypertarget{sub07.7.2}{%
-\subsection{Planering av dataanalys}\label{sub07.7.2}}
+\subsection{Självrapporterade mätdata}\label{sub07.7.2}}
+
+Den andra viktiga beroende variabeln i experimentet var förtroende, tillit..
+
+\hypertarget{sub07.7.3}{%
+\subsection{Planering av dataanalys}\label{sub07.7.3}}
 
 Hur lång tid kan man låta ett experiment ta.
 
-\hypertarget{sub07.7.3}{%
-\subsection{Rapportering av dataanalys}\label{sub07.7.3}}
+\hypertarget{sub07.7.4}{%
+\subsection{Rapportering av dataanalys}\label{sub07.7.4}}
 
 Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript
 
