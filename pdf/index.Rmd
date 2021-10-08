@@ -255,14 +255,14 @@ The hypothetico-deductive model or method (step 1-4) this method can never absol
 
 
 ## Projektarbete {#sec06.4}
-[06-4-wc-file]: <> (57.14 %)
+[06-4-wc-file]: <> (71.07 %)
 [06-4-comment]: <> (1 sidor)
 
 Vi kan med fördel tänka kring ett experiment i termer av ett projekt. Behöver planeras, implementeras, utvärderas. Flera roller. Ofta bra med flera personer som är specialiserade på vissa arbetsuppgifter. Projektledning är också intressant aspekt. I praktiken får ofta samma personer inneha flera (eller alla) roller inom projektet.
 
 ### Power-analys {#sub06.4.1}
 
-Länka till Åses intro till detta på experiment kursen simm49. Finns även en interaktiv webbapp för detta ändamål. Kan ge upplysningar om hur antal deltagare, trials, etc som bör krävas för att se en kontrasteffekt mellan villkor, compare means (REF).
+Länka till Åses intro till detta på experiment kursen simm49. Finns även en interaktiv webbapp för detta ändamål. Kan ge upplysningar om hur antal deltagare, trials, etc som bör krävas för att se en kontrasteffekt mellan villkor, compare means (REF). Detta avsnitt är också relevant för avsnitt 7.2 om försöksdeltagare, eftersom det handlar om att uppskatta antalet deltagare vi behöver för att ha en rimlig chans att hitta en statistisk säkerställd effekt. Kanske närmare bestämt 7.2.4 Planering av deltagare.
 
 ### Pre-registrering {#sub06.4.2}
 
@@ -335,7 +335,7 @@ Slutligen är det väl värt att samla in lite faktisk testdata, när vi väl ha
 
 
 ## Försöksdeltagare {#sec07.2}
-[07-2-wc-file]: <> (54.03 %)
+[07-2-wc-file]: <> (56.96 %)
 [07-2-comment]: <> (10 sidor)
 
 De individer som deltar i en studie kallades tidigare kort och gott \"subjekt\" (på engelska \"subjects\"). På senare tid har man vänt sig emot detta något avhumaniserande språkbruk och istället antagit den generella termen \"deltagare\". Här använder vi ibland beteckningen "försökspersoner" eller \"försöksdeltagare\" för att ytterligare betona den experimentella forskningens användning av kontrasterande behandlingar, villkor eller \"försök\" för att studera dess effekter på deltagarna (på engelska kallas sådana upprepade försök oftast för \"trials\", vilket är ett viktigt begrepp inom området experimentdesign som diskuteras längre fram i detta kapitel).
@@ -358,7 +358,11 @@ En annan faktor som har stor betydelse i samband med urvalet av försöksdeltaga
 
 En internationell trend inom samhällsvetenskaplig forskning som gjort sig gällande under senare år är att stor vikt läggs vid forskarens etiska hänsyn gentemot dess försöksdeltagare. Exempelvis kan en journal kräva att ett experiment genomgått en etisk prövning innan det genomförs, i annat fall vill tidskriften inte publicera resultaten. Detta är naturligtvis i grunden en positiv utveckling, men det adderar ofta ett administrativt moment som behöver klaras av innan en studie kan sättas i verket. När en etisk kommitté utvärderar ett experiment är det framför allt två aspekter man tar hänsyn till: 1) att deltagaren inte ska lida några men i samband med genomförandet av undersökningen, och 2) att forskaren har en genomtänkt plan för hantering av forskningsdata som samlas in. Ett exempel på den första aspekten är analysera vilka villkor och manipulationer som förekommer, samt om mätutrustningen är invasiv eller inte. Exempel på det andra hänsynstagandet är att försöksdeltagares personliga integritet inte ska bli lidande (t.ex. känsliga personuppgifter), samt att forskningsdata ska hanteras på ett säkert sätt som även tillåter deltagaren att begära ut sina uppgifter i efterhand. Som regel är dessa hänsyn viktigare för anställda forskare; för studentprojekt brukar inte etisk prövning av studier vara nödvändigt.
 
-### Planering av deltagare {#sub07.2.4}
+### Power-analys {#sub07.2.4}
+
+Länka till Åses intro till detta på experiment kursen simm49. Finns även en interaktiv webbapp för detta ändamål. Kan ge upplysningar om hur antal deltagare, trials, etc som bör krävas för att se en kontrasteffekt mellan villkor, compare means (REF). Detta avsnitt är också relevant för avsnitt 7.2 om försöksdeltagare, eftersom det handlar om att uppskatta antalet deltagare vi behöver för att ha en rimlig chans att hitta en statistisk säkerställd effekt. Kanske närmare bestämt 7.2.4 Planering av deltagare.
+
+### Planering av deltagare {#sub07.2.5}
 
 Här kommer några praktiska råd i samband med att man rekryterar försöksdeltagare till en experimentell studie. För det första, underskatta inte betydelsen av att få tillgång till motiverade personer som dels är omedvetna om syftet med experimentet, och dels är någorlunda representativa för den grupp av människor resultaten ska kunna generaliseras till. För det andra, underskatta inte den tid och möda som krävs för att lösa de logistiska aspekterna av att låta ett hundratal(?) individer genomgå de behandlingar som ett experiment består av under kontrollerade och likartade förutsättningar. Både bland forskare och studenter finns en föreställning om att planering av försöksdeltagare löser sig självt; så är dock inte fallet.
 
@@ -378,7 +382,7 @@ Deltagaren har rätt att: få sina data utlämnade (raderade om ingen anonymiser
 
 Deltagaren är skyldig att: Signera att ersättning tagits emot
 
-### Rapportering av deltagare {#sub07.2.5}
+### Rapportering av deltagare {#sub07.2.6}
 
 När man väl genomfört studien och är i färd med att rapportera vilka personer som deltagit så krävs det vanligtvis betydligt mindre arbete än i planerings- och genomförandefasen. I artikeltexten läggs information om experimentets försöksdeltagare ofta som den första underrubriken till metodstycket, och det är också därför vi tar upp försöksdeltagare på just detta ställe i läroboken. Anledningen till att vi använder denna så kallade IMRD-disposition är det skapar en kronologisk struktur för både planering och rapportering av vetenskapliga studier, och för de som vill genomföra ett experiment kan det vara värdefullt att bekanta sig med denna konvention.
 
@@ -844,11 +848,11 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript
 
 Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion. Därmed frångår boken den tidigare indelningen enligt IMRD.
 
-Resultat
+**Resultat**
 
-Diskussion
+**Diskussion**
 
-Publicering
+**Publicering**
 
 
 

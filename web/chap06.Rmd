@@ -113,14 +113,14 @@ The hypothetico-deductive model or method (step 1-4) this method can never absol
 
 
 ## Projektarbete {#sec06.4}
-[06-4-wc-file]: <> (57.14 %)
+[06-4-wc-file]: <> (71.07 %)
 [06-4-comment]: <> (1 sidor)
 
 Vi kan med fördel tänka kring ett experiment i termer av ett projekt. Behöver planeras, implementeras, utvärderas. Flera roller. Ofta bra med flera personer som är specialiserade på vissa arbetsuppgifter. Projektledning är också intressant aspekt. I praktiken får ofta samma personer inneha flera (eller alla) roller inom projektet.
 
 ### Power-analys {#sub06.4.1}
 
-Länka till Åses intro till detta på experiment kursen simm49. Finns även en interaktiv webbapp för detta ändamål. Kan ge upplysningar om hur antal deltagare, trials, etc som bör krävas för att se en kontrasteffekt mellan villkor, compare means (REF).
+Länka till Åses intro till detta på experiment kursen simm49. Finns även en interaktiv webbapp för detta ändamål. Kan ge upplysningar om hur antal deltagare, trials, etc som bör krävas för att se en kontrasteffekt mellan villkor, compare means (REF). Detta avsnitt är också relevant för avsnitt 7.2 om försöksdeltagare, eftersom det handlar om att uppskatta antalet deltagare vi behöver för att ha en rimlig chans att hitta en statistisk säkerställd effekt. Kanske närmare bestämt 7.2.4 Planering av deltagare.
 
 ### Pre-registrering {#sub06.4.2}
 

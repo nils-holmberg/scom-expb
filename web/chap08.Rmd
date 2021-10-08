@@ -4,11 +4,11 @@
 
 Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion. Därmed frångår boken den tidigare indelningen enligt IMRD.
 
-Resultat
+**Resultat**
 
-Diskussion
+**Diskussion**
 
-Publicering
+**Publicering**
 
 
 
