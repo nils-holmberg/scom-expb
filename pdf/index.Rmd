@@ -335,7 +335,7 @@ Slutligen är det väl värt att samla in lite faktisk testdata, när vi väl ha
 
 
 ## Försöksdeltagare {#sec07.2}
-[07-2-wc-file]: <> (56.96 %)
+[07-2-wc-file]: <> (60.07 %)
 [07-2-comment]: <> (10 sidor)
 
 De individer som deltar i en studie kallades tidigare kort och gott \"subjekt\" (på engelska \"subjects\"). På senare tid har man vänt sig emot detta något avhumaniserande språkbruk och istället antagit den generella termen \"deltagare\". Här använder vi ibland beteckningen "försökspersoner" eller \"försöksdeltagare\" för att ytterligare betona den experimentella forskningens användning av kontrasterande behandlingar, villkor eller \"försök\" för att studera dess effekter på deltagarna (på engelska kallas sådana upprepade försök oftast för \"trials\", vilket är ett viktigt begrepp inom området experimentdesign som diskuteras längre fram i detta kapitel).
@@ -360,7 +360,15 @@ En internationell trend inom samhällsvetenskaplig forskning som gjort sig gäll
 
 ### Power-analys {#sub07.2.4}
 
-Länka till Åses intro till detta på experiment kursen simm49. Finns även en interaktiv webbapp för detta ändamål. Kan ge upplysningar om hur antal deltagare, trials, etc som bör krävas för att se en kontrasteffekt mellan villkor, compare means (REF). Detta avsnitt är också relevant för avsnitt 7.2 om försöksdeltagare, eftersom det handlar om att uppskatta antalet deltagare vi behöver för att ha en rimlig chans att hitta en statistisk säkerställd effekt. Kanske närmare bestämt 7.2.4 Planering av deltagare.
+Länka till Åses intro till detta på experiment kursen simm49. Finns även en interaktiv webbapp för detta ändamål. Kan ge upplysningar om hur antal deltagare, trials, etc som bör krävas för att se en kontrasteffekt mellan villkor, compare means (REF). Detta avsnitt är också relevant för avsnitt 7.2 om försöksdeltagare, eftersom det handlar om att uppskatta urvalsstorleken vi behöver för att ha en rimlig chans att hitta en statistisk säkerställd effekt. Kanske närmare bestämt 7.2.4 Planering av deltagare [@ellis2010essential; @sullivan2012using; @cumming2013understanding].
+
+När vi börjar omsätta vårt experiment till verklighet blir det naturligvis intressant att fråga oss själva hur många deltagare och/eller försök (trials) vi behöver ha med i experimentet för att ha en rimlig chans att få ett tillförlitligt resultat. Dessa funderingar har att göra med vad som på engelska kallas "power analysis", och vad vi på svenska ibland översätter till power-analys eller statistisk kraft.
+
+Den statistiska "kraften" (på engelska "power") i ett hypotestest är sannolikheten att urskilja en effect 
+
+- http://shinyapps.org/apps/PPV/
+- https://gallery.shinyapps.io/CLT_mean/
+- http://www.gpower.hhu.de/
 
 ### Planering av deltagare {#sub07.2.5}
 
