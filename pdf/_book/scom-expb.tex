@@ -811,7 +811,7 @@ Faktor B (nivå 1) & Behandling A0/B1 & Behandling A1/B1 & Behandling A2/B1 &\ta
 \hypertarget{sub07.5.7}{%
 \subsection{Naturliga experiment}\label{sub07.5.7}}
 
-T.ex. undersökning av effekterna av medborgarlön? Kontrastera med naturliga experiment? Ett sätt att tänka kring oberoende variabler är att de representerar experimentets utfallsvariabler. En annan faktor som har stor betydelse i samband med urvalet av.. lacks random assignment, naturliga exp del 1. Kan komma att bli en vanligare design pga etiska utmaningar med att framkalla långsiktig påverkan på försöksdeltagare. Non-repeated single trial between-subjects without control.
+T.ex. undersökning av effekterna av medborgarlön? Kontrastera med naturliga experiment? Ett sätt att tänka kring oberoende variabler är att de representerar experimentets utfallsvariabler. En annan faktor som har stor betydelse i samband med urvalet av.. lacks random assignment, naturliga exp del 1. Kan komma att bli en vanligare design pga etiska utmaningar med att framkalla långsiktig påverkan på försöksdeltagare. Non-repeated single trial between-subjects without control. Här kan vi prata om nobelpriset 2021 i ekonomi, där man jämförde effekten av att hölja minimilönen i en amerikansk delstat, jämfört en annan delstat där detta inte genomfördes, och som därmed kom att utgöra kontrollvillkor (\url{https://www.reuters.com/world/card-angrist-imbens-win-2021-nobel-economics-prize-2021-10-11/}).
 
 \hypertarget{sub07.5.8}{%
 \subsection{Kvasi-experiment}\label{sub07.5.8}}
@@ -984,13 +984,21 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript
 \hypertarget{chap08}{%
 \chapter{Efterarbete}\label{chap08}}
 
+Vi närmar oss nu slutet av bokens andra del, dvs Del 2 som handlar om planering och genomförande av samhällsvetenskapliga experiment. Eftersom denna del också i viss utsträckning försöker följa den typiska kronologin i ett experiment, innebär det att vi nu får tänka oss att vi planerat och genomfört experimentet i alla dess delar, och slutligen samlat in all den data som kommer användas när vi rapporterar experimentets resultat. Vi skulle kunna kalla detta skede för experimentets efterarbete, eftersom vi nu inte räknar med att kunna gå tillbaka och ändra något i de tidigare stegen, och att vi inte heller egentligen kommer kunna tillföra mer data till resultatrapporteringen. Eftersom denna sista fas i experimentet ingalunda kan anses trivial att genomföra, har vi tyckt att det kan vara berättigat att inkludera dessa avslutande kapitel.
+
+Ett annat sätt att förstå denna Del 2 av boken är att relatera till dispositionen i en vetenskaplig artikel. Sådana artiklar använder ofta en struktur, som börjar med en introduktion av tidigare forskning och motivering av hypoteser (förarbete), och som därefter avhandlar studiens konkreta implementation och datainsamling (genomförande), och som avslutningvis rapporterar och diskuterar studiens resultat (efterarbete). Mer om denna s.k. IMRD-disposition kommer faktiskt redan i nästa kapitel.
+
 Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion. Därmed frångår boken den tidigare indelningen enligt IMRD.
+
+Gränsen mellan dataanalys (genomförande) och resultat (efterarbete) är otydlig.
 
 \textbf{Resultat}
 
 \textbf{Diskussion}
 
 \textbf{Publicering}
+
+Se upp för ``rovdjurstidskrifter'' (\url{https://www.lu.se/artikel/se-upp-rovdjuren}). Bealls lista. Begreppet rovdjurstidskrift, (på engelska ``predatory journal''), myntades 2010 av ­Jeffrey ­Beall, bibliotekarie vid University of Colorado i USA.
 
 \hypertarget{sec08.1}{%
 \section{Resultat}\label{sec08.1}}
@@ -1016,6 +1024,8 @@ Här kommer nåt om causal inference. In statistical hypothesis testing a type I
 Eventuellt ta upp moderator (counteracts, motverkar en effekt), mediator (förstärker en effekt), visa plot på interaktion, interaction plot
 
 \[1\]). Much of statistical theory revolves around the minimization of one or both of these errors, though the complete elimination of either is a statistical impossibility for non-deterministic algorithms.
+
+Använd gärna detta mönster ``Effects of sentiment measures on user engagement'' vid presentation av resultat från regressionsanalys, dvs. ``effekten av prediktor XYZ på utfallsvariabel ABC'' (\url{https://github.com/nils-holmberg/scom-org/blob/main/src/emo-readme.md})
 
 \hypertarget{sub08.1.3}{%
 \subsection{Presentation av statistik}\label{sub08.1.3}}
@@ -1046,6 +1056,52 @@ Hkommer lite Brödtext igen. Här kommer lite Brödtext igen. Här kommer lite B
 
 \hypertarget{sec08.3}{%
 \section{Publicering}\label{sec08.3}}
+
+Se upp för ``rovdjurstidskrifter'' (\url{https://www.lu.se/artikel/se-upp-rovdjuren}). Bealls lista. Begreppet rovdjurstidskrift, (på engelska ``predatory journal''), myntades 2010 av ­Jeffrey ­Beall, bibliotekarie vid University of Colorado i USA.
+
+Table \{02-08-3-1\}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+\begin{minipage}[b]{0.05\columnwidth}\raggedright
+Förkortning.\strut
+\end{minipage} & \begin{minipage}[b]{0.80\columnwidth}\raggedright
+Innehåll.\strut
+\end{minipage} & \begin{minipage}[b]{0.07\columnwidth}\raggedright
+Bokkapitel\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+I\strut
+\end{minipage} & \begin{minipage}[t]{0.80\columnwidth}\raggedright
+Introduktion. I denna del av en artikel behandlas tidigare forskning och hur hypoteserna för vår egen studie har härletts från tidigare resultat inom samma ämne.\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
+Kapitel 6 (s NN)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+M\strut
+\end{minipage} & \begin{minipage}[t]{0.80\columnwidth}\raggedright
+Metod. I denna del behandlas experimentets utformning. Denna del måste vara tillräckligt detaljerad för att andra forskare inom samma ämne ska kunna upprepa (replikera) vår egen studie.\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
+Kapitel 7 (s NN)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+R\strut
+\end{minipage} & \begin{minipage}[t]{0.80\columnwidth}\raggedright
+Resultat. Denna del rapporterar kortfattat de faktiska resultaten av vårt experiment, och relaterar dessa till de förväntade resultat som uttrycktes i studiens hypoteser.\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
+Kapitel 8 (s NN)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.05\columnwidth}\raggedright
+D\strut
+\end{minipage} & \begin{minipage}[t]{0.80\columnwidth}\raggedright
+Diskussion. Denna del diskuterar relevansen av experimentets resultat i ett större samhälleligt perspektiv, samt eventuella alternativa förklaringar till studiens resultat. Undersökningens begränsningar.\strut
+\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
+Kapitel 9 (s NN)\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
 I denna del av boken följer vi, i illustrativt syfte, utvecklingen och genomförandet av ett experiment som undersöker hur olika delar av en Facebook-post (bild, text, källa, likes, kommentarer) påverkar läsares bedömning av postens trovärdighet. Vi tänker oss att vi före experimentets genomförande har gjort en ordentlig genomgång av tidigare forskning på detta område, vilken gett vid handen att bildinnehållets effekt på upplevd trovärdighet hos Facebook-poster inte verkar ha studerats i någon högre utsträckning. Detta kommer därför att utgöra det så kallade "kunskapsgap" vårt experiment vill bidra till att fylla, och det kommer att utgöra en viktig avgränsning av vår centrala forskningsfråga. Vår forskningsgenomgång har också visat oss att det förekommer en del studier av hur bildinnehåll generellt påverkar människors blickbeteende och visuella uppmärksamhet, så detta kommer utgöra en sekundär forskningsfråga.
 
