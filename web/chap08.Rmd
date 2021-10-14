@@ -81,19 +81,10 @@ Hkommer lite Brödtext igen. Här kommer lite Brödtext igen. Här kommer lite B
 
 
 ## Publicering {#sec08.3}
-[08-3-wc-file]: <> (136.42 %)
+[08-3-wc-file]: <> (114.10 %)
 [08-3-comment]: <> (2 sidor)
 
 Se upp för "rovdjurstidskrifter" (https://www.lu.se/artikel/se-upp-rovdjuren). Bealls lista. Begreppet rovdjurstidskrift, (på engelska "predatory journal"), myntades 2010 av ­Jeffrey ­Beall, bibliotekarie vid University of Colorado i USA.
-
-Table {02-08-3-1}
-
-|Förkortning. |Innehåll.                                                                                                                                                                                                   |Bokkapitel       |
-|:------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------|
-|I            |Introduktion. I denna del av en artikel behandlas tidigare forskning och hur hypoteserna för vår egen studie har härletts från tidigare resultat inom samma ämne.                                           |Kapitel 6 (s NN) |
-|M            |Metod. I denna del behandlas experimentets utformning. Denna del måste vara tillräckligt detaljerad för att andra forskare inom samma ämne ska kunna upprepa (replikera) vår egen studie.                   |Kapitel 7 (s NN) |
-|R            |Resultat. Denna del rapporterar kortfattat de faktiska resultaten av vårt experiment, och relaterar dessa till de förväntade resultat som uttrycktes i studiens hypoteser.                                  |Kapitel 8 (s NN) |
-|D            |Diskussion. Denna del diskuterar relevansen av experimentets resultat i ett större samhälleligt perspektiv, samt eventuella alternativa förklaringar till studiens resultat. Undersökningens begränsningar. |Kapitel 9 (s NN) |
 
 I denna del av boken följer vi, i illustrativt syfte, utvecklingen och genomförandet av ett experiment som undersöker hur olika delar av en Facebook-post (bild, text, källa, likes, kommentarer) påverkar läsares bedömning av postens trovärdighet. Vi tänker oss att vi före experimentets genomförande har gjort en ordentlig genomgång av tidigare forskning på detta område, vilken gett vid handen att bildinnehållets effekt på upplevd trovärdighet hos Facebook-poster inte verkar ha studerats i någon högre utsträckning. Detta kommer därför att utgöra det så kallade \"kunskapsgap\" vårt experiment vill bidra till att fylla, och det kommer att utgöra en viktig avgränsning av vår centrala forskningsfråga. Vår forskningsgenomgång har också visat oss att det förekommer en del studier av hur bildinnehåll generellt påverkar människors blickbeteende och visuella uppmärksamhet, så detta kommer utgöra en sekundär forskningsfråga.
 
@@ -103,14 +94,14 @@ Eftersom detta tänkta experimentet innehåller olika metoder för datainsamling
 
 En experimentell studie består vanligtvis av två integrerade delar: 1) genomförande av ett experiment, och 2) rapportering av resultat. I denna bok fokuserar vi främst på genomförandet, men dispositionen kommer att följa den struktur som används när man rapporterar resultatet av ett experiment i form av en sakkunniggranskad journalpublikation (s.k. peer-review). Av både konvention och praktiska skäl består denna rapportering oftast av fyra delar, som inleds med **Introduktion**, och sedan följs av **Metod**, **Resultat**, och **Diskussion**. På grund av delarnas initialer kallas denna disposition ibland **IMRD** (på ett ungefär uttalat \"imrad\").
 
-Tabell 2.1 Resultatrapportering av en experimentell studie
+Tabell {02-08-3-1}. Resultatrapportering av en experimentell studie.
 
-  Förkortning   Innehåll                                                                                                                                                                                                      Bokkapitel
-  ------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------
-  I             Introduktion. I denna del av en artikel behandlas tidigare forskning och hur hypoteserna för vår egen studie har härletts från tidigare resultat inom samma ämne.                                             Kapitel 6 (s NN)
-  M             Metod. I denna del behandlas experimentets utformning. Denna del måste vara tillräckligt detaljerad för att andra forskare inom samma ämne ska kunna upprepa (replikera) vår egen studie.                     Kapitel 7 (s NN)
-  R             Resultat. Denna del rapporterar kortfattat de faktiska resultaten av vårt experiment, och relaterar dessa till de förväntade resultat som uttrycktes i studiens hypoteser.                                    Kapitel 8 (s NN)
-  D             Diskussion. Denna del diskuterar relevansen av experimentets resultat i ett större samhälleligt perspektiv, samt eventuella alternativa förklaringar till studiens resultat. Undersökningens begränsningar.   Kapitel 9 (s NN)
+|Förkortning. |Innehåll.                                                                                                                                                                                                   |Bokkapitel           |
+|:------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------|
+|I            |**Introduktion**. I denna del av en artikel behandlas tidigare forskning och hur hypoteserna för vår egen studie har härletts från tidigare resultat inom samma ämne.                                       |[Kapitel 6](#chap06) |
+|M            |Metod. I denna del behandlas experimentets utformning. Denna del måste vara tillräckligt detaljerad för att andra forskare inom samma ämne ska kunna upprepa (replikera) vår egen studie.                   |Kapitel 7 (s NN)     |
+|R            |Resultat. Denna del rapporterar kortfattat de faktiska resultaten av vårt experiment, och relaterar dessa till de förväntade resultat som uttrycktes i studiens hypoteser.                                  |Kapitel 8 (s NN)     |
+|D            |Diskussion. Denna del diskuterar relevansen av experimentets resultat i ett större samhälleligt perspektiv, samt eventuella alternativa förklaringar till studiens resultat. Undersökningens begränsningar. |Kapitel 8 (s NN)     |
 
 I denna lärobok har vi försökt täcka in dessa två olika men näraliggande betydelser av begreppet experimentell metod: dels som en uppsättning praktiska tillvägagångssätt som bör användas för att i **planera** och genomföra en experimentell studie; och dels som ett systematiskt och standardiserat sätt att i efterhand **rapportera** genomförandet av en studie på ett sätt som är begripligt för andra forskare. Således är detta kapitel av läroboken disponerat på ett sätt som ger oss möjlighet att i typisk turordning behandla de olika aspekter av experimentell metod som man som forskare förväntas kunna redovisa när man rapporterar sina resultat till en vetenskaplig tidskrift. Men inom varje metodaspekt kommer vi också att utförligt diskutera de olika experimentella tillvägagångssätt som är relevanta i samband med planering och genomförande av en forskningsstudie.
 
