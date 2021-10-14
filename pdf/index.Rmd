@@ -851,26 +851,27 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript
 
 
 # Efterarbete {#chap08}
-[08-0-wc-file]: <> (60.71 %)
+[08-0-wc-file]: <> (103.21 %)
 [08-0-comment]: <> (2 sidor)
 
 Vi närmar oss nu slutet av bokens andra del, som handlar om planering och genomförande av samhällsvetenskapliga experiment. Eftersom dispositionen av Del 2 också i viss utsträckning försöker följa den typiska kronologin i ett experiment, innebär det att vi nu får tänka oss att vi planerat och genomfört experimentet i alla dess delar, och slutligen samlat in all den data som kommer användas när vi rapporterar experimentets resultat. Vi skulle kunna kalla detta skede för experimentets _efterarbete_, eftersom vi nu inte räknar med att kunna gå tillbaka och ändra något i de tidigare stegen, och att vi inte heller egentligen kommer kunna tillföra mer data till slutgiltiga resultatrapporteringen. Eftersom denna sista fas i experimentet ingalunda kan anses trivial att genomföra, har vi tyckt att det kan vara berättigat att inkludera dessa avslutande kapitel. (Nyss lästa mening överenstämmer inte riktigt med verklighten, för i realiteten kommer de flesta som använder experimentell metod att behöva gå tillbaka och ändra saker, men genom att upprepade gånger träna på att genomföra experiment kan vi småningom närma oss idealet att göra rätt från början.) 
 
-Ett annat sätt att förstå denna Del 2 av boken är att relatera till dispositionen i en vetenskaplig artikel. Sådana artiklar använder ofta en struktur, som börjar med en introduktion av tidigare forskning och motivering av hypoteser _(förarbete)_, och som därefter avhandlar studiens konkreta implementation och datainsamling _(genomförande)_, och som avslutningvis rapporterar och diskuterar studiens resultat (efterarbete). Just denna s.k. IMRD-disposition kommer vi titta närmare på i kommande kapitel om publicering. 
+Ett annat sätt att förstå denna Del 2 av boken är att relatera till dispositionen i en vetenskaplig artikel. Sådana artiklar använder ofta en struktur, som börjar med en introduktion av tidigare forskning och motivering av hypoteser (förarbete), och som därefter avhandlar studiens konkreta implementation och datainsamling (genomförande), och som avslutningvis rapporterar och diskuterar studiens resultat (efterarbete). Just denna s.k. IMRD-disposition kommer vi för övrigt titta närmare på lite längre fram i ett kapitel om publicering, men i nästa kapitel kommer vi fokusera på hur vi som forskare brukar rapportera _resultat_ från ett experiment. Denna resultatrapportering är ett av de viktigaste momenten i efterarbetet, och kräver ett nära samspel med de hypoteser som utvecklades i förarbetet. Minst lika viktigt som själva resultaten, är att sedan göra en avslutande _diskussion_ av dessa resultat, där forskaren väger in andra orsaker till de resultat som faktiskt observerats. När dessa avslutande delar är på plats, kan det slutligen vara aktuellt med _publicering_, vilket innebär processen att gå från ett textmanuskript till en färdig och sakkunniggranskad artikel i en vetenskaplig tidskrift.
 
-Sammanfatta alla tidigare kapitel. Skapa experiment genom att tänka baklänges (DRMI). Hitta ett modell experiment som hjälper att bygga eget experiment.
+Resultat och diskussion handlar i mångt och mycket om att sammanfatta och summera allt det arbete som legat till grund för experimentet, samt att sammanställa den empiriska data som det genererat. På samma vis kommer de nästkommande kapitlen i någon mån sammanfattas alla tidigare kapitel i Del 2, samt gå tillbaka till början. En viktig princip i det praktiska arbetet med ett experiment är dock att inte enbart jobba framåt kronologiskt, utan att också i någon mening arbeta sig bakåt från diskussion och resultat, tillbaka till metoder, planering, och introduktion. Vad menas med detta? Jo, att det faktiskt kan hjälpa att visualisera slutprodukten, dvs. en publicerad artikel, och därifrån resonera om hur vi bäst borde presentera våra resultat och diskussion. Utifrån denna modell av planerade resultat kan vi resonera oss vidare till hur våra data kan analyseras, vilka mätinstrument som kan bli aktuella, samt vilka villkor våra deltagare kan komma att ingå i. Därifrån kommer vi slutligen till introduktionen med dess hypoteser och tidigare forskning. Uttryckt något annorlunda, vill detta resonemang understryka vikten av att hitta ett modell-experiment som kan hjälpa oss att planera och utforma vårt eget experiment.
 
-    Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion. Därmed frångår boken den tidigare indelningen enligt IMRD.
+Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion. Därmed frångår boken den tidigare indelningen enligt IMRD. Domstolsmetafor, slutplädering.
 
-Gränsen mellan dataanalys (genomförande) och resultat (efterarbete) är otydlig.
 
-**Resultat**
 
-**Diskussion**
 
-**Publicering**
 
-Se upp för "rovdjurstidskrifter" (https://www.lu.se/artikel/se-upp-rovdjuren). Bealls lista. Begreppet rovdjurstidskrift, (på engelska "predatory journal"), myntades 2010 av ­Jeffrey ­Beall, bibliotekarie vid University of Colorado i USA.
+
+
+
+
+
+
 
 
 
@@ -879,10 +880,12 @@ Se upp för "rovdjurstidskrifter" (https://www.lu.se/artikel/se-upp-rovdjuren). 
 
 
 ## Resultat {#sec08.1}
-[08-1-wc-file]: <> (19.91 %)
+[08-1-wc-file]: <> (24.82 %)
 [08-1-comment]: <> (4 sidor)
 
-Här hänvisar vi främst läsaren till befintlig litteratur inom statistiska metoder
+Gränsen mellan dataanalys (genomförande) och resultat (efterarbete) är otydlig.
+
+Här hänvisar vi främst läsaren till befintlig litteratur inom statistiska metoder. Det brukar inte betraktas som god forskningssed (på engelska "good research practice") att göra det omvända och anpassa hypoteserna till resultaten (jfr. "scientific misconduct"). Noll-resultat är också viktiga om förarbete och genomförande är korrekt genomförda. Viktigt. Resultat som sammanställning (engelska "summarization"), måste vara korta, koncisa, lättfattliga.
 
 Liksom i det föregående metodkapitlet, kommer vi detta kapitel
 
@@ -934,10 +937,12 @@ Hkommer lite Brödtext igen. Här kommer lite Brödtext igen. Här kommer lite B
 
 
 ## Publicering {#sec08.3}
-[08-3-wc-file]: <> (135.00 %)
+[08-3-wc-file]: <> (135.53 %)
 [08-3-comment]: <> (2 sidor)
 
 Se upp för "rovdjurstidskrifter" (https://www.lu.se/artikel/se-upp-rovdjuren). Bealls lista. Begreppet rovdjurstidskrift, (på engelska "predatory journal"), myntades 2010 av ­Jeffrey ­Beall, bibliotekarie vid University of Colorado i USA.
+
+### Sakkunniggranskning {#sub08.3.1}
 
 I denna del av boken följer vi, i illustrativt syfte, utvecklingen och genomförandet av ett experiment som undersöker hur olika delar av en Facebook-post (bild, text, källa, likes, kommentarer) påverkar läsares bedömning av postens trovärdighet. Vi tänker oss att vi före experimentets genomförande har gjort en ordentlig genomgång av tidigare forskning på detta område, vilken gett vid handen att bildinnehållets effekt på upplevd trovärdighet hos Facebook-poster inte verkar ha studerats i någon högre utsträckning. Detta kommer därför att utgöra det så kallade \"kunskapsgap\" vårt experiment vill bidra till att fylla, och det kommer att utgöra en viktig avgränsning av vår centrala forskningsfråga. Vår forskningsgenomgång har också visat oss att det förekommer en del studier av hur bildinnehåll generellt påverkar människors blickbeteende och visuella uppmärksamhet, så detta kommer utgöra en sekundär forskningsfråga.
 
