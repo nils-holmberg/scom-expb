@@ -1,13 +1,14 @@
 # Efterarbete {#chap08}
-[08-0-wc-file]: <> (48.21 %)
+[08-0-wc-file]: <> (60.71 %)
 [08-0-comment]: <> (2 sidor)
 
-Vi närmar oss nu slutet av bokens andra del, dvs Del 2 som handlar om planering och genomförande av samhällsvetenskapliga experiment. Eftersom denna del också i viss utsträckning försöker följa den typiska kronologin i ett experiment, innebär det att vi nu får tänka oss att vi planerat och genomfört experimentet i alla dess delar, och slutligen samlat in all den data som kommer användas när vi rapporterar experimentets resultat. Vi skulle kunna kalla detta skede för experimentets efterarbete, eftersom vi nu inte räknar med att kunna gå tillbaka och ändra något i de tidigare stegen, och att vi inte heller egentligen kommer kunna tillföra mer data till resultatrapporteringen. Eftersom denna sista fas i experimentet ingalunda kan anses trivial att genomföra, har vi tyckt att det kan vara berättigat att inkludera dessa avslutande kapitel.
+Vi närmar oss nu slutet av bokens andra del, som handlar om planering och genomförande av samhällsvetenskapliga experiment. Eftersom dispositionen av Del 2 också i viss utsträckning försöker följa den typiska kronologin i ett experiment, innebär det att vi nu får tänka oss att vi planerat och genomfört experimentet i alla dess delar, och slutligen samlat in all den data som kommer användas när vi rapporterar experimentets resultat. Vi skulle kunna kalla detta skede för experimentets _efterarbete_, eftersom vi nu inte räknar med att kunna gå tillbaka och ändra något i de tidigare stegen, och att vi inte heller egentligen kommer kunna tillföra mer data till slutgiltiga resultatrapporteringen. Eftersom denna sista fas i experimentet ingalunda kan anses trivial att genomföra, har vi tyckt att det kan vara berättigat att inkludera dessa avslutande kapitel. (Nyss lästa mening överenstämmer inte riktigt med verklighten, för i realiteten kommer de flesta som använder experimentell metod att behöva gå tillbaka och ändra saker, men genom att upprepade gånger träna på att genomföra experiment kan vi småningom närma oss idealet att göra rätt från början.) 
 
-Ett annat sätt att förstå denna Del 2 av boken är att relatera till dispositionen i en vetenskaplig artikel. Sådana artiklar använder ofta en struktur, som börjar med en introduktion av tidigare forskning och motivering av hypoteser (förarbete), och som därefter avhandlar studiens konkreta implementation och datainsamling (genomförande), och som avslutningvis rapporterar och diskuterar studiens resultat (efterarbete). Mer om denna s.k. IMRD-disposition kommer faktiskt redan i nästa kapitel. 
+Ett annat sätt att förstå denna Del 2 av boken är att relatera till dispositionen i en vetenskaplig artikel. Sådana artiklar använder ofta en struktur, som börjar med en introduktion av tidigare forskning och motivering av hypoteser _(förarbete)_, och som därefter avhandlar studiens konkreta implementation och datainsamling _(genomförande)_, och som avslutningvis rapporterar och diskuterar studiens resultat (efterarbete). Just denna s.k. IMRD-disposition kommer vi titta närmare på i kommande kapitel om publicering. 
 
+Sammanfatta alla tidigare kapitel. Skapa experiment genom att tänka baklänges (DRMI). Hitta ett modell experiment som hjälper att bygga eget experiment.
 
-Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion. Därmed frångår boken den tidigare indelningen enligt IMRD.
+    Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion. Därmed frångår boken den tidigare indelningen enligt IMRD.
 
 Gränsen mellan dataanalys (genomförande) och resultat (efterarbete) är otydlig.
 
@@ -81,7 +82,7 @@ Hkommer lite Brödtext igen. Här kommer lite Brödtext igen. Här kommer lite B
 
 
 ## Publicering {#sec08.3}
-[08-3-wc-file]: <> (114.10 %)
+[08-3-wc-file]: <> (135.00 %)
 [08-3-comment]: <> (2 sidor)
 
 Se upp för "rovdjurstidskrifter" (https://www.lu.se/artikel/se-upp-rovdjuren). Bealls lista. Begreppet rovdjurstidskrift, (på engelska "predatory journal"), myntades 2010 av ­Jeffrey ­Beall, bibliotekarie vid University of Colorado i USA.
