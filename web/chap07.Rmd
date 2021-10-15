@@ -529,7 +529,7 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript.
 
 
 ## Dataanalys {#sec07.7}
-[07-7-wc-file]: <> (41.28 %)
+[07-7-wc-file]: <> (41.92 %)
 [07-7-comment]: <> (5 sidor)
 
 Genomförandet av ett experiment involverar även handhavandet av insamlade data. Det vill säga, på samma sätt som forskare behöver ge en detaljerad och strukturerad beskrivning av hur ett experiment designats och genomförts, behöver de även ge en sådan redovisning av hur insamlade observationer har bearbetats för att generera variabler som kan användas i statistisk analys. Den främsta anledningen till detta är som alltid reproducerbarhet. Andra forskare behöver inte bara kunna upprepa hur experimentets design och genomförande, utan de behöver också kunna upprepa den databehandling som ligger till grund för skapandet av undersökningens beroende och oberoende variabler. 
@@ -558,6 +558,7 @@ Hur lång tid kan man låta ett experiment ta.
 
 Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript
 
+Gränsen mellan dataanalys (genomförande) och resultat (efterarbete) är otydlig.
 
 
 
