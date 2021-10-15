@@ -851,16 +851,16 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript
 
 
 # Efterarbete {#chap08}
-[08-0-wc-file]: <> (103.21 %)
+[08-0-wc-file]: <> (104.10 %)
 [08-0-comment]: <> (2 sidor)
 
 Vi närmar oss nu slutet av bokens andra del, som handlar om planering och genomförande av samhällsvetenskapliga experiment. Eftersom dispositionen av Del 2 också i viss utsträckning försöker följa den typiska kronologin i ett experiment, innebär det att vi nu får tänka oss att vi planerat och genomfört experimentet i alla dess delar, och slutligen samlat in all den data som kommer användas när vi rapporterar experimentets resultat. Vi skulle kunna kalla detta skede för experimentets _efterarbete_, eftersom vi nu inte räknar med att kunna gå tillbaka och ändra något i de tidigare stegen, och att vi inte heller egentligen kommer kunna tillföra mer data till slutgiltiga resultatrapporteringen. Eftersom denna sista fas i experimentet ingalunda kan anses trivial att genomföra, har vi tyckt att det kan vara berättigat att inkludera dessa avslutande kapitel. (Nyss lästa mening överenstämmer inte riktigt med verklighten, för i realiteten kommer de flesta som använder experimentell metod att behöva gå tillbaka och ändra saker, men genom att upprepade gånger träna på att genomföra experiment kan vi småningom närma oss idealet att göra rätt från början.) 
 
-Ett annat sätt att förstå denna Del 2 av boken är att relatera till dispositionen i en vetenskaplig artikel. Sådana artiklar använder ofta en struktur, som börjar med en introduktion av tidigare forskning och motivering av hypoteser (förarbete), och som därefter avhandlar studiens konkreta implementation och datainsamling (genomförande), och som avslutningvis rapporterar och diskuterar studiens resultat (efterarbete). Just denna s.k. IMRD-disposition kommer vi för övrigt titta närmare på lite längre fram i ett kapitel om publicering, men i nästa kapitel kommer vi fokusera på hur vi som forskare brukar rapportera _resultat_ från ett experiment. Denna resultatrapportering är ett av de viktigaste momenten i efterarbetet, och kräver ett nära samspel med de hypoteser som utvecklades i förarbetet. Minst lika viktigt som själva resultaten, är att sedan göra en avslutande _diskussion_ av dessa resultat, där forskaren väger in andra orsaker till de resultat som faktiskt observerats. När dessa avslutande delar är på plats, kan det slutligen vara aktuellt med _publicering_, vilket innebär processen att gå från ett textmanuskript till en färdig och sakkunniggranskad artikel i en vetenskaplig tidskrift.
+Ett annat sätt att förstå denna Del 2 av boken är att relatera till dispositionen i en vetenskaplig artikel. Sådana artiklar använder ofta en struktur, som börjar med en introduktion av tidigare forskning och motivering av hypoteser (förarbete), och som därefter avhandlar studiens konkreta implementation och datainsamling (genomförande), och som avslutningvis rapporterar och diskuterar studiens resultat (efterarbete). Just denna s.k. IMRD-disposition kommer vi för övrigt titta närmare på lite längre fram i ett kapitel om publicering, men i nästa kapitel kommer vi fokusera på hur vi som forskare brukar rapportera _resultat_ från ett experiment. Denna resultatrapportering är ett av de viktigaste momenten i efterarbetet, och kräver att varje delresultat härleds från de hypoteser som utvecklades i förarbetet. Minst lika viktigt som själva resultaten, är att sedan göra en avslutande _diskussion_ av dessa resultat, där forskaren väger in andra orsaker till de resultat som faktiskt observerats. När dessa avslutande delar är på plats, kan det slutligen vara aktuellt med _publicering_, vilket innebär processen att gå från ett textmanuskript till en färdig och sakkunniggranskad artikel i en vetenskaplig tidskrift.
 
 Resultat och diskussion handlar i mångt och mycket om att sammanfatta och summera allt det arbete som legat till grund för experimentet, samt att sammanställa den empiriska data som det genererat. På samma vis kommer de nästkommande kapitlen i någon mån sammanfattas alla tidigare kapitel i Del 2, samt gå tillbaka till början. En viktig princip i det praktiska arbetet med ett experiment är dock att inte enbart jobba framåt kronologiskt, utan att också i någon mening arbeta sig bakåt från diskussion och resultat, tillbaka till metoder, planering, och introduktion. Vad menas med detta? Jo, att det faktiskt kan hjälpa att visualisera slutprodukten, dvs. en publicerad artikel, och därifrån resonera om hur vi bäst borde presentera våra resultat och diskussion. Utifrån denna modell av planerade resultat kan vi resonera oss vidare till hur våra data kan analyseras, vilka mätinstrument som kan bli aktuella, samt vilka villkor våra deltagare kan komma att ingå i. Därifrån kommer vi slutligen till introduktionen med dess hypoteser och tidigare forskning. Uttryckt något annorlunda, vill detta resonemang understryka vikten av att hitta ett modell-experiment som kan hjälpa oss att planera och utforma vårt eget experiment.
 
-Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion. Därmed frångår boken den tidigare indelningen enligt IMRD. Domstolsmetafor, slutplädering.
+Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion. Därmed frångår boken den tidigare indelningen enligt IMRD. Domstolsmetafor, slutplädering. Titta i backspegeln metafor.
 
 
 
@@ -880,24 +880,26 @@ Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion.
 
 
 ## Resultat {#sec08.1}
-[08-1-wc-file]: <> (24.82 %)
+[08-1-wc-file]: <> (38.03 %)
 [08-1-comment]: <> (4 sidor)
+
+När vi inleder experimentets efterarbete räknar vi inte med att kunna gå tillbaka och ändra något i de tidigare stegen, och vi räknar egentligen inte heller med att kunna tillföra mer data till våra beräkningar. Resultatrapporteringen som nu tar vid är ett av de viktigaste momenten i efterarbetet, och kräver att varje delresultat härleds från de hypoteser som utvecklades i förarbetet. Det brukar inte betraktas som god forskningssed (på engelska "good research practice") att göra det omvända och anpassa hypoteserna till resultaten (jfr. "scientific misconduct"), även om detta ibland förekommer i praktiken (REF VR). Anledningen till att vilja ändra hypoteserna i efterhand kan vara att experimentet inte påvisat de resulat som förväntades, vilket ibland uppfattas som att studien blir mindre intressant att publicera. Här vill vi dock hävda att noll-resultat (t.ex. icke-signifikanta effekter) eller oförväntade resultat (t.ex. signifikant effekt i motsatt rikning) också kan vara viktiga förutsatt att experimentents förarbete och genomförande är korrekt. 
+
+Viktigt. Confirmatory, exploratory. Resultat som sammanställning (engelska "summarization"), måste vara korta, koncisa, lättfattliga.
 
 Gränsen mellan dataanalys (genomförande) och resultat (efterarbete) är otydlig.
 
-Här hänvisar vi främst läsaren till befintlig litteratur inom statistiska metoder. Det brukar inte betraktas som god forskningssed (på engelska "good research practice") att göra det omvända och anpassa hypoteserna till resultaten (jfr. "scientific misconduct"). Noll-resultat är också viktiga om förarbete och genomförande är korrekt genomförda. Viktigt. Resultat som sammanställning (engelska "summarization"), måste vara korta, koncisa, lättfattliga.
+Här hänvisar vi främst läsaren till befintlig litteratur inom statistiska metoder. 
 
-Liksom i det föregående metodkapitlet, kommer vi detta kapitel
+### Beskrivande resultat {#sub08.1.1}
+
+Beskrivande resultat (aka Deskriptiv statistik). Beskriv översiktligt hur variablerna ser ut. Bivariat analys i form av **stapeldiagram** (gärna med standardavvikelse) funkar bra. Detta är kanske lite specifikt för samhällsvetenskapliga experiment, inom andra ämnen kanske detta anses som onödigt, eftersom det inte direkt relaterar till hypotserna. Exempel experiment med Leif GW. 
+
+### Statistiska resultat {#sub08.1.2}
+
+Statistiska resultat, eller modellering, eller Inferentiell statistik, multivariat analys.. handlar om att redovisa resultat relativt något mått på tillförlitlighet
 
 \- prediction vs. fitting (meningsfulla modeller kan vara viktigare än prediktion, retro-fitting hypotheses).
-
-### Deskriptiv statistik {#sub08.1.1}
-
-Här kommer lite Brödtext igen. Här ko
-
-Lägg noga märke till var skiljetecken satts ut, var det ska vara kursiv stil etc. Vid engelska titlar ändras *and* till *och* eller *&, in* til
-
-### Inferentiell statistik {#sub08.1.2}
 
 Här kommer nåt om causal inference. In statistical hypothesis testing a type I error is the rejection of a true null hypothesis (also known as a \"false positive\" finding or conclusion), while a type II error is the non-rejection of a false null hypothesis (also known as a \"false negative\" finding or conclusion
 
