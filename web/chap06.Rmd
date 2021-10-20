@@ -11,31 +11,19 @@ Inom flera samhällsvetenskapliga discipliner har den konstruktivistiska kunskap
 När vi rapporterar förarbetet till ett experiment, görs detta ofta inom artikelns introduktion (jfr. akronymen IMRD i kapitel 8). När man introducerar en experimentell studie brukar man inleda med en kort bakgrund av det aktuella forskningsläget och en motivering till den genomförda undersökningen. Det är viktigt att det i ett tidigt skede står klart för läsaren vilket forskningsproblem (eller \"kunskapsgap\") studien vill bidra till att undersöka och helst råda bot på. Genomgången av tidigare forskning ska leda fram till och motivera den aktuella studiens forskningsfrågor och hypoteser. Det blir därmed viktigt att introduktionen och forskningsfrågorna refererar till empiriska resultat från tidigare forskning.
 
 ## Forskningsfrågor {#sec06.1}
-[06-1-wc-file]: <> (88.45 %)
+[06-1-wc-file]: <> (85.35 %)
 [06-1-comment]: <> (3 sidor)
 
 En viktig del av introduktionen till alla typer av vetenskapliga studier är att presentera studiens forskningsfrågor. Forskningsfrågor brukar i allmänhet vara nära kopplade till studiens syfte och mål, och bör därför vara möjliga att besvara inom ramen för studiens genomförande. 
 
 En forskningsfråga ska på ett någorlunda enkelt och kortfattat sätt sammanfatta vilka frågeställningar som ett specifikt experiment adresserar. Därför är det förhållandevis accepterat att forskningsfrågor är något abstrakt formulerade, så länge de ändå är enkla, lättfattliga och kortfattade. Introduktionens vidare uppgift är nämligen att konkretisera studiens forskningsfrågor genom en process som kallas _operationalisering_, i vilken dessa forskningsfrågor omsätts till mätbara variabler som sedan kan ingå i falsifierbara _hypoteser_. Man kan därför uttrycka det som att hypoteserna i en experimentell studie operationaliserar studiens forskningsfrågor. Operationalisering är ett mycket viktigt begrepp inom experimentell forskning, och vi återkommer mer utförligt till detta begrepp lite längre fram i detta kapitel, där vi också diskuterar hur detta begrepp hänger ihop med hypotesformulering.
 
-Table {02-06-1-1}
-
-|col_a | col_b| col_c|
-|:-----|-----:|-----:|
-|a     |     1|    45|
-|b     |     2|    46|
-|c     |     3|    47|
-
-compare render html of these:
-
-```{r test-tab, tidy=F, echo=FALSE}
-#print("Table {02-06-1-1}")
-#knitr::kable(
-#  data.frame(col_a=c("a","b","c"), col_b=c(1,2,3), col_c=c(45:47)),
-#  caption = 'This is a test table.',
-#  booktabs=TRUE
-#)
-knitr::kable(read.table("../csv/02-06-1-1.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='some', booktabs=TRUE)
+```{r tab-02-06-1-1, tidy=F, echo=FALSE}
+#other table method, outside r block:
+#Table {02-06-1-1}
+#{02-06-1-1}
+#above pattern will trigger ~/dev/bash/src/text-table.sh
+knitr::kable(read.table("../csv/02-06-1-1.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Some test table.', booktabs=TRUE)
 ```
 
 Återgår vi till att diskutera begreppet forskningsfrågor mer generellt så finns det vissa tumregler som är viktiga att beakta. Den första tumregeln är att en forskningsfråga i någon del bör bygga på tidigare forskningsresultat, samt i någon del bör innehålla något nytt och outforskat. Med en sådan forskningsfråga kan man både upprepa (replikera) aspekter av tidigare forskning, men också utöka (extendera) tidigare forskning i syfte att skapa ny kunskap. En annan regel är att en forskningsfråga naturligtvis inte ska innehålla flera olika frågor, samt att två forskningsfrågor inte bör vara beroende av varandra (se övrig metodlitteratur, ref). Inom ramen för denna lärobok antar vi att en intressant forskningsfråga handlar om hur bildinnehållet i Facebook-poster påverkar läsarnas beteende och attityder. Närmare bestämt vill vi undersöka en upptäckt inom psykologisk forskning som visar att ett budskap upplevs som mer övertygande om det görs av en person som uppfattas som en auktoritet inom ett område (REF: Cialdini, 2001). Exempelvis kan vi föreslå att personen Leif GW Persson uppfattas som en auktoritet inom området kriminologi bland stora delar av den svenska mediepubliken. Vidare tänker vi oss att budskapet i en Facebook-post kan associeras med en auktoritetsperson genom att denna person visas i en bild som tillhör posten.
