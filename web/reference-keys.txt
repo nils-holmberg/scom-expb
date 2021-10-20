@@ -3,6 +3,8 @@ fig:fig01-02
 tab:tab-02-06-1-1
 fig:img-model
 tab:tab02-07-3
+tab:tab-02-08-1-1
+fig:fig-02-08-1-1
 chap01
 chap02
 chap03

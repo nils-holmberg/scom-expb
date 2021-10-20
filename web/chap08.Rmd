@@ -28,7 +28,7 @@ Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion.
 
 
 ## Resultat {#sec08.1}
-[08-1-wc-file]: <> (103.12 %)
+[08-1-wc-file]: <> (111.60 %)
 [08-1-comment]: <> (4 sidor)
 
 När vi inleder experimentets efterarbete räknar vi inte med att kunna gå tillbaka och ändra något i de tidigare stegen, och vi räknar egentligen inte heller med att kunna tillföra mer data till våra beräkningar. Resultatrapporteringen som nu tar vid är ett av de viktigaste momenten i efterarbetet, och kräver att varje delresultat härleds från de hypoteser som utvecklades i förarbetet. Det brukar inte betraktas som god forskningssed (på engelska "good research practice") att göra det omvända och anpassa hypoteserna till resultaten (jfr. "scientific misconduct"), även om detta ibland förekommer i praktiken (REF VR). 
@@ -45,9 +45,26 @@ För att få en översiktlig uppfattning om de viktigaste variablerna i ett expe
 
 För att rapportera detta skulle vi kunna sammanställa medelvärdet av fixeringstiden (vårt mått på visuell uppmärksamhet) på alla Facebook-poster som ingått i studien (låt oss säga 10.5 sekunder), dessutom skulle vi kunna beräkna standardavvikelsen för denna variabel (t.ex. 2.3 sekunder). Därefter skulle vi kunna göra samma sak för eventuella andra beroende variabler i undersökning, i vårt fall använde vi oss också av en 7-gradig skala som mätte deltagarnas självrapporterade upplevelse av trovärdighet för varje Facebook-post. Vi skulle kunna upprepa denna procedur med alla kvantitativa variabler vi använt i studien, och därefter presentera dessa beskrivande resultat i en tabell, och kanske även med hjälp av diagram. 
 
-Denna typ av deskriptiv inledning till resultaten kan dock vara mer förekommande inom samhällsvetenskapliga experiment; andra ämnen kanske detta anses som onödigt, eftersom det inte direkt relaterar till hypotserna. 
+```{r tab-02-08-1-1, echo=F}
+knitr::kable(read.table("../csv/tab-02-08-1-1.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Beskrivande resultat eller deskriptiv statistik.', booktabs=TRUE)
+```
 
-### Statistiska resultat {#sub08.1.2}
+```{r fig-02-08-1-1, echo=F, fig.cap='Beskrivande resultat eller deskriptiv statistik.', out.width='80%', fig.asp=.75, fig.align='center'}
+#par(mar = c(4, 4, .1, .1))
+#plot(pressure, type = 'b', pch = 19)
+library(ggplot2)
+bp2 = read.table("../csv/fig-02-08-1-1.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char="")
+gp <- ggplot(bp2, aes(x="visuell", y=medelvärde, fill=kön)) + 
+geom_bar(stat="identity", color="black", position=position_dodge()) +
+geom_errorbar(aes(ymin=medelvärde-standardavvikelse, ymax=medelvärde+standardavvikelse), width=.2,
+position=position_dodge(.9))
+#
+print(gp)
+```
+
+I figuren kan vi som synes aggregera våra observationer genom att dela upp dem enligt någon demografisk variabel, i detta fall försöksdeltagarnas uppgivna könstillhärighet. Denna typ av deskriptiv inledning till resultaten kan dock vara mer förekommande inom samhällsvetenskapliga experiment; inom andra ämnen kanske detta anses som lite onödigt, eftersom redovisningen inte direkt relaterar till hypotserna. 
+
+### Inferentiella resultat {#sub08.1.2}
 
 Statistiska resultat, eller modellering, eller Inferentiell statistik, multivariat analys.. handlar om att redovisa resultat relativt något mått på tillförlitlighet. Detta kan också kallas "statistiskt säkerställda" resultat.
 
