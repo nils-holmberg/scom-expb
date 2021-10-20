@@ -112,7 +112,7 @@
 
 \title{Experiment}
 \author{Nils Gustafsson \& Nils Holmberg}
-\date{2021-10-19}
+\date{2021-10-20}
 
 \begin{document}
 \maketitle
@@ -239,6 +239,25 @@ Table \{02-06-1-1\}
 col\_a & col\_b & col\_c\tabularnewline
 \midrule
 \endhead
+a & 1 & 45\tabularnewline
+b & 2 & 46\tabularnewline
+c & 3 & 47\tabularnewline
+\bottomrule
+\end{longtable}
+
+compare render html of these:
+
+\begin{longtable}[]{@{}lll@{}}
+\caption{\label{tab:test-tab}some}\tabularnewline
+\toprule
+V1 & V2 & V3\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+V1 & V2 & V3\tabularnewline
+\midrule
+\endhead
+col\_a & col\_b & col\_c\tabularnewline
 a & 1 & 45\tabularnewline
 b & 2 & 46\tabularnewline
 c & 3 & 47\tabularnewline
@@ -1088,10 +1107,20 @@ Hkommer lite Brödtext igen. Här kommer lite Brödtext igen. Här kommer lite B
 
 Ibland pratar man även om konfirmatoriska eller replikerande resultat (engelska ``confirmatory'') i motsats till explorativa (engelska ``exploratory''), där den senare typen av resultat ibland anses som mer publicerbara på grund av de har ett högre nyhetsvärde. Som vi har försökt argumentera i denna bok, kan det vara bra att designa ett experiment så att det innehåller lite av varje. Fortsätt här
 
+\hypertarget{sub08.3.1}{%
+\subsection{Öppen vetenskap}\label{sub08.3.1}}
+
+Publicering av dataset och metoder. Självpublicering. Open Science Framework. Prata om osf.io osv. Jämföra med open source, öppen källkod, information vill vara fri.
+
+\hypertarget{sub08.3.2}{%
+\subsection{Vetenskapliga tidskrifter}\label{sub08.3.2}}
+
+Nämna nåt om rättigheter, licenser, open access osv?
+
 Se upp för ``rovdjurstidskrifter'' (\url{https://www.lu.se/artikel/se-upp-rovdjuren}). Bealls lista. Begreppet rovdjurstidskrift, (på engelska ``predatory journal''), myntades 2010 av ­Jeffrey ­Beall, bibliotekarie vid University of Colorado i USA.
 
-\hypertarget{sub08.3.1}{%
-\subsection{Sakkunniggranskning}\label{sub08.3.1}}
+\hypertarget{sub08.3.3}{%
+\subsection{Sakkunniggranskning}\label{sub08.3.3}}
 
 I denna del av boken följer vi, i illustrativt syfte, utvecklingen och genomförandet av ett experiment som undersöker hur olika delar av en Facebook-post (bild, text, källa, likes, kommentarer) påverkar läsares bedömning av postens trovärdighet. Vi tänker oss att vi före experimentets genomförande har gjort en ordentlig genomgång av tidigare forskning på detta område, vilken gett vid handen att bildinnehållets effekt på upplevd trovärdighet hos Facebook-poster inte verkar ha studerats i någon högre utsträckning. Detta kommer därför att utgöra det så kallade "kunskapsgap" vårt experiment vill bidra till att fylla, och det kommer att utgöra en viktig avgränsning av vår centrala forskningsfråga. Vår forskningsgenomgång har också visat oss att det förekommer en del studier av hur bildinnehåll generellt påverkar människors blickbeteende och visuella uppmärksamhet, så detta kommer utgöra en sekundär forskningsfråga.
 
@@ -1146,6 +1175,11 @@ D\strut
 \end{longtable}
 
 I denna lärobok har vi försökt täcka in dessa två olika men näraliggande betydelser av begreppet experimentell metod: dels som en uppsättning praktiska tillvägagångssätt som bör användas för att i \textbf{planera} och genomföra en experimentell studie; och dels som ett systematiskt och standardiserat sätt att i efterhand \textbf{rapportera} genomförandet av en studie på ett sätt som är begripligt för andra forskare. Således är detta kapitel av läroboken disponerat på ett sätt som ger oss möjlighet att i typisk turordning behandla de olika aspekter av experimentell metod som man som forskare förväntas kunna redovisa när man rapporterar sina resultat till en vetenskaplig tidskrift. Men inom varje metodaspekt kommer vi också att utförligt diskutera de olika experimentella tillvägagångssätt som är relevanta i samband med planering och genomförande av en forskningsstudie.
+
+\hypertarget{sub08.3.4}{%
+\subsection{Planering av publicering}\label{sub08.3.4}}
+
+Eventuellt peka framåt mot något av innehållet i Del 3. Framtiden för experiment. Online survey experiments, big data, naturliga experiment. Salaganic. Netographic observation, web scraping.
 
 \newpage
 
