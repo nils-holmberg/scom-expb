@@ -28,7 +28,7 @@ Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion.
 
 
 ## Resultat {#sec08.1}
-[08-1-wc-file]: <> (111.60 %)
+[08-1-wc-file]: <> (121.33 %)
 [08-1-comment]: <> (4 sidor)
 
 När vi inleder experimentets efterarbete räknar vi inte med att kunna gå tillbaka och ändra något i de tidigare stegen, och vi räknar egentligen inte heller med att kunna tillföra mer data till våra beräkningar. Resultatrapporteringen som nu tar vid är ett av de viktigaste momenten i efterarbetet, och kräver att varje delresultat härleds från de hypoteser som utvecklades i förarbetet. Det brukar inte betraktas som god forskningssed (på engelska "good research practice") att göra det omvända och anpassa hypoteserna till resultaten (jfr. "scientific misconduct"), även om detta ibland förekommer i praktiken (REF VR). 
@@ -48,6 +48,8 @@ För att rapportera detta skulle vi kunna sammanställa medelvärdet av fixering
 ```{r tab-02-08-1-1, echo=F}
 knitr::kable(read.table("../csv/tab-02-08-1-1.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Beskrivande resultat eller deskriptiv statistik.', booktabs=TRUE)
 ```
+
+Vi kan ta denna beskrivande statistik och representera resultaten grafiskt i ett stapeldiagram. På den lodräta y-axeln är det i så fall brukligt att placera den beroende variabeln (eller mätvariabeln eller utfallsvariabeln). I diagrammet nedan tittar vi närmare på utfallsvariabeln visuell uppmärksamhet, vilket mäts som samlad fixeringstid i sekunder som deltagare ägnat åt att titta på varje Facebook-post. Stapeldiagrammet visar att manliga deltagare i genomsnitt tenderar att ägna något mindre visuell uppmärksamhet åt posterna jämfört med kvinnliga. Å andra sidan är variationen mellan observationer något större bland män, vilket indikeras av strecken längst upp på varje stapel som i detta fall representerar standardavvikelsen (på engelska "error bars" eller "whiskers").
 
 ```{r fig-02-08-1-1, echo=F, fig.cap='Beskrivande resultat eller deskriptiv statistik.', out.width='80%', fig.asp=.75, fig.align='center'}
 #par(mar = c(4, 4, .1, .1))
