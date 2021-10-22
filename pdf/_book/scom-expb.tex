@@ -1032,7 +1032,7 @@ upplevd trovärdighet & 1000 & 2.1 & 4.1\tabularnewline
 \bottomrule
 \end{longtable}
 
-Vi kan ta denna beskrivande statistik och representera resultaten grafiskt i ett stapeldiagram. På den lodräta y-axeln är det i så fall brukligt att placera den beroende variabeln (eller mätvariabeln eller utfallsvariabeln). I diagrammet nedan tittar vi närmare på utfallsvariabeln visuell uppmärksamhet, vilket mäts som samlad fixeringstid i sekunder som deltagare ägnat åt att titta på varje Facebook-post. Stapeldiagrammet visar att manliga deltagare i genomsnitt tenderar att ägna något mindre visuell uppmärksamhet åt posterna jämfört med kvinnliga. Å andra sidan är variationen mellan observationer något större bland män, vilket indikeras av strecken längst upp på varje stapel som i detta fall representerar standardavvikelsen (på engelska ``error bars'' eller ``whiskers'').
+Vi kan ta denna beskrivande statistik och representera resultaten grafiskt i ett stapeldiagram. På den lodräta y-axeln är det i så fall brukligt att placera den beroende variabeln (eller mätvariabeln, eller utfallsvariabeln). I diagrammet nedan tittar vi närmare på utfallsvariabeln visuell uppmärksamhet, vilket mäts som samlad fixeringstid i sekunder som deltagare ägnat åt att titta på texten inom varje Facebook-post. Stapeldiagrammet (som är baserat på fingerade data) visar att manliga deltagare i genomsnitt tenderar att ägna något mindre visuell uppmärksamhet åt texterna jämfört med kvinnliga. Å andra sidan är variationen mellan observationer något större bland män, vilket indikeras av strecken längst upp på varje stapel som i detta fall representerar standardavvikelsen (på engelska ``error bars'' eller ``whiskers'').
 
 \begin{figure}
 
@@ -1047,6 +1047,21 @@ I figuren kan vi som synes aggregera våra observationer genom att dela upp dem 
 
 \hypertarget{sub08.1.2}{%
 \subsection{Inferentiella resultat}\label{sub08.1.2}}
+
+Efter den översiktliga presentationen av generella deskriptiva resultat, kommer vi så till själva kärnfrågan i vår tänkta studie: Vilken effekt hade det experimentella villkoret ``bild på auktoritetsperson'' på deltagarnas visuella uppmärksamhet på texten i Facebook posterna, jämfört med när samma text presenterades i kontrollvillkoret ``bild på okänd person''? Och vad hade samma experimentella manipulation för effekt på den andra beroende variabeln upplevd trovärdighet för samma texter? Som synes bygger dessa frågor vidare på de deskriptiva resultaten, men företer ett annat sätt att dela upp empiriska observationer i olika grupper, i detta fall i kontroll- och behandlingsvillkor. När vi försöker besvara den kritiska frågan om det finns några skillnader mellan dessa två grupper med avseende på utfallsvariablerna, använder vi oss av s.k. statistisk inferens för att dra slutsatser om resultaten med en fastställd nivå av sannolikhet.
+
+För att kunna rapportera de inferentiella resultaten av vårt experiment måste vi här gå tillbaka till hypoteserna som uppställdes i förarbetet till studien. Det kan vara en stor fördel att upprepa dessa hypoteser i resultaten, när vi rapporterar vilket stöd insamlade empiriska data ger till dem. I vårt fall hade vi följande två hypotser, för enkelhetens skull kommer vi i det följande bara att fokusera på den första.
+
+\begin{itemize}
+\item
+  H1: Facebook-poster med bild på en auktoritetsperson kommer att orsaka mer visuell uppmärksamhet på posten jämfört med bilder som innehåller en neutral person.
+\item
+  H2: Facebook-poster med bild på en auktoritetsperson kommer att orsaka högre upplevd trovärdighet hos posten jämfört med bilder som innehåller en neutral person.
+\end{itemize}
+
+Ett enkelt men samtidigt robust sätt att testa dessa hypoteser är att göra ett s.k. t-test för varje hypotes. T-testet lämpar sig för situationer när vi har en kvantitativ beroende variabel och exakt två villkor som ska jämföras. Detta test jämför i princip medelvärdena i respektive grupp, med hänsyn tagen till bl.a. antal observationer (deltagare, försök, etc) och variationen mellan observationer (t.ex. standardavvikelse). För att kunna genomföra detta test behövs en noll-hypotes, där vi antar att det inte finns någon skillnad mellan villkoren. Baserat på detta formulerar vi sedan hypotesen H1 om en skillnad mellan villkoren i en förväntad riktning (auktoritetsperson kommer att orsaka \emph{mer} visuell uppmärksamhet). Det sista steget som behövs är att vi antar en sannolikhetsnivå att vi skulle observera de faktiska resultaten om noll-hypotesen stämde bäst. En vanlig nivå är 0.05, vilket innebär att vi anser att uppmätta skillnader mellan villkoren är tillförlitliga om det är 5\% chans att resultatet beror på slumpen, och 95\% chans att de beror på de experimentella villkoren.
+
+Beyond p-value statistics (REF)
 
 Statistiska resultat, eller modellering, eller Inferentiell statistik, multivariat analys.. handlar om att redovisa resultat relativt något mått på tillförlitlighet. Detta kan också kallas ``statistiskt säkerställda'' resultat.
 
@@ -1107,7 +1122,7 @@ Som underfrågor till denna forskningsfråga skulle man kunna tänka sig "RQ1a: 
 \hypertarget{sub08.2.2}{%
 \subsection{Alternativa förklaringar till resultat}\label{sub08.2.2}}
 
-Lägg noga märke till var skiljetecken satts ut, var det ska vara kursiv stil etc. Vid engelska titlar ändras \emph{and} till \emph{och} eller \emph{\&, in} til
+Har vi kontrollerat för alla viktiga variabler? Hur påverkar t.ex. deltagarnas individuella läshastighet resultaten för visuell uppmärksamhet? Kan vi anta att denna egenskap är jämnt fördelad mellan de experimentella villkoren, eller kan vi misstänka någon snedfördelning (bias)? Kan det vara så att vi lyckats hantera denna individuella skillnad genom att använda oss av en inomgruppsdesign (within-subjects)? Kan vi dra slutsatser om kausala samband?
 
 \hypertarget{sub08.2.3}{%
 \subsection{Framtida forskning}\label{sub08.2.3}}
