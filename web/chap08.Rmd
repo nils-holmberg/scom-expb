@@ -64,7 +64,7 @@ position=position_dodge(.9))
 print(gp)
 ```
 
-I figuren kan vi som synes aggregera våra observationer genom att dela upp dem enligt någon demografisk variabel, i detta fall försöksdeltagarnas uppgivna könstillhärighet. Denna typ av deskriptiv inledning till resultaten kan dock vara mer förekommande inom samhällsvetenskapliga experiment; inom andra ämnen kanske detta anses som lite onödigt, eftersom redovisningen inte direkt relaterar till hypotserna. 
+I figuren kan vi som synes aggregera våra observationer genom att dela upp dem enligt någon demografisk variabel, i detta fall försöksdeltagarnas självrapporterade könstillhörighet. Denna typ av deskriptiv inledning till resultaten kan dock vara mer förekommande inom samhällsvetenskapliga experiment; inom andra ämnen kanske detta anses som lite onödigt, eftersom redovisningen inte direkt relaterar till hypotserna. 
 
 ### Inferentiella resultat {#sub08.1.2}
 
