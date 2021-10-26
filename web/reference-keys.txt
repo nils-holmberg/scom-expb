@@ -7,6 +7,7 @@ tab:tab-02-08-1-1
 fig:fig-02-08-1-1
 fig:fig-02-08-1-2
 tab:tab-02-08-1-2
+fig:fig-02-08-2-1
 chap01
 chap02
 chap03

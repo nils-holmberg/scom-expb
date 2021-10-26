@@ -957,7 +957,7 @@ Använd gärna detta mönster "Effects of sentiment measures on user engagement"
 
 
 ## Diskussion {#sec08.2}
-[08-2-wc-file]: <> (67.97 %)
+[08-2-wc-file]: <> (69.64 %)
 [08-2-comment]: <> (3 sidor)
 
 Experimentets efterarbete är ingalunda klart i och med resultatrapporteringen som vi presenterade i föregående avsnitt. Även om vi med statistiska metoder kan visa att våra empiriska data ger mycket starkt stöd till de hypoteser som uppställts, så måste vi också visa att vi kan förhålla oss kritiska till dessa resultat, dvs. att vi förstår och redovisar svagheter i det genomförda experimentet, att vi undersökt möjliga felkällor, samt att vi kan föreslå förbättringar till experimentets design. Ärlighet, transparens och objektivitet är trots allt några av vetenskapens viktigaste värden. Det finns ingen granskande forskare som förväntar sig att vi ska ha kunnat åstadkomma ett perfekt experiment med begränsade resurser, och därför handlar det ofta om att vi som experimentledare kan redovisa och motivera de avgränsningar och val som gjorts i studien.
@@ -971,6 +971,10 @@ Här skulle man kunna använda sig av en domstolsmetafor. Den experimentella stu
 ### Förväntade och faktiska resultat {#sub08.2.1}
 
 Hypoteser och empiriska resultat. Vi säger inte att hypoteser bekräftats eller besannats, utan vi säger om resultaten ger stöd eller inte till hypoteserna. Relatera faktiska observationer till ursprungliga förväntade hypoteser. **Kan resultaten generaliseras? Validitet och reliabilitet**
+
+```{r fig-02-08-2-1, echo=F, fig.cap="Typ I och typ II fel.", out.width='80%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("../fig/type-error.png")
+```
 
 In statistical hypothesis testing a type I error is the rejection of a true null hypothesis (also known as a \"false positive\" finding or conclusion), while a type II error is the non-rejection of a false null hypothesis (also known as a \"false negative\" finding or conclusion. Eventuellt ta upp moderator (counteracts, motverkar en effekt), mediator (förstärker en effekt), visa plot på interaktion, interaction plot. Much of statistical theory revolves around the minimization of one or both of these errors, though the complete elimination of either is a statistical impossibility for non-deterministic algorithms.
 
