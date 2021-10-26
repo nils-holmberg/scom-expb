@@ -112,7 +112,7 @@
 
 \title{Experiment}
 \author{Nils Gustafsson \& Nils Holmberg}
-\date{2021-10-25}
+\date{2021-10-26}
 
 \begin{document}
 \maketitle
@@ -1068,29 +1068,30 @@ Ur detta diagram kan vi utläsa att deltagarna i genomsnitt ägnat mindre visuel
   H2: Facebook-poster med bild på en auktoritetsperson kommer att orsaka högre upplevd trovärdighet hos posten jämfört med bilder som innehåller en neutral person.
 \end{itemize}
 
-Ett enkelt men samtidigt robust sätt att testa dessa hypoteser är att göra ett s.k. t-test för varje hypotes. T-testet lämpar sig för situationer när vi har en kvantitativ beroende variabel och exakt två villkor som ska jämföras. Detta test jämför i princip medelvärdena i respektive grupp, med hänsyn tagen till bl.a. antal observationer (deltagare, försök, etc), samt observationernas fördelning och spridning (t.ex. standardavvikelse). För att kunna genomföra statistiska test behövs en noll-hypotes, där vi antar att det inte finns någon skillnad mellan villkoren. Baserat på detta formulerar vi sedan hypotesen H1 om en skillnad mellan villkoren i en förväntad riktning (auktoritetsperson kommer att orsaka \emph{mer} visuell uppmärksamhet). Det sista steget som behövs är att vi antar en sannolikhetsnivå att vi skulle observera de faktiska resultaten om noll-hypotesen stämde bäst. En vanlig nivå är 0.05, vilket innebär att vi anser att uppmätta skillnader mellan villkoren är tillräckligt tillförlitliga om det är 5\% chans eller mindre att resultatet beror på slumpen, och 95\% chans eller mer att de beror på de experimentella villkoren. Resultatet rapporteras i så fall som ``statistiskt signifikant''.
+Ett enkelt men samtidigt robust sätt att testa dessa hypoteser är att göra ett s.k. t-test för varje hypotes. T-testet lämpar sig för situationer när vi har en kvantitativ beroende variabel och exakt två villkor som ska jämföras. Detta test jämför i princip medelvärdena i respektive grupp, med hänsyn tagen till bl.a. antal observationer (deltagare, försök, etc), samt observationernas fördelning och spridning (t.ex. standardavvikelse). För att kunna genomföra statistiska test behövs en noll-hypotes, där vi antar att det inte finns någon skillnad mellan villkoren. Baserat på detta formulerar vi sedan hypotesen H1 om en skillnad mellan villkoren i en förväntad riktning (auktoritetsperson kommer att orsaka \emph{mer} visuell uppmärksamhet). Det sista steget som behövs är att vi antar en sannolikhetsnivå (s.k. alpha-nivå) att vi skulle observera de faktiska resultaten om noll-hypotesen stämde bäst. En vanlig nivå är 0.05, vilket innebär att vi anser att uppmätta skillnader mellan villkoren är tillräckligt tillförlitliga om det är 5\% chans eller mindre att resultatet beror på slumpen, och 95\% chans eller mer att de beror på de experimentella villkoren. Resultatet rapporteras i så fall som ``statistiskt signifikant''.
 
 \begin{longtable}[]{@{}rrrrr@{}}
 \caption{\label{tab:tab-02-08-1-2}Inferentiella resultat.}\tabularnewline
 \toprule
-estimate & statistic & p.value & conf.low & conf.high\tabularnewline
+estimate1 & estimate2 & statistic & p.value & parameter\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-estimate & statistic & p.value & conf.low & conf.high\tabularnewline
+estimate1 & estimate2 & statistic & p.value & parameter\tabularnewline
 \midrule
 \endhead
--1 & -2.702 & 0.007 & -1.73 & -0.27\tabularnewline
+11 & 10 & 2.702 & 0.007 & 198\tabularnewline
 \bottomrule
 \end{longtable}
 
-I detta exempel visade testet ett t-värde på ca 2.7 och p-värdet visade sig vara under gänsen 0.05 som vi tidigare antog. Beyond p-value statistics (REF). Statistiska resultat, eller modellering, eller Inferentiell statistik, multivariat analys.. handlar om att redovisa resultat relativt något mått på tillförlitlighet. Detta kan också kallas ``statistiskt säkerställda'' resultat. The smaller the p-value, the stronger the evidence that you should reject the null hypothesis. In null hypothesis significance testing, the p-value is the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct. - prediction vs.~fitting (meningsfulla modeller kan vara viktigare än prediktion, retro-fitting hypotheses). Här kommer nåt om causal inference. In statistical hypothesis testing a type I error is the rejection of a true null hypothesis (also known as a "false positive" finding or conclusion), while a type II error is the non-rejection of a false null hypothesis (also known as a "false negative" finding or conclusion. Eventuellt ta upp moderator (counteracts, motverkar en effekt), mediator (förstärker en effekt), visa plot på interaktion, interaction plot. Much of statistical theory revolves around the minimization of one or both of these errors, though the complete elimination of either is a statistical impossibility for non-deterministic algorithms.
+I detta exempel visade testet ett t-värde på ca 2.7 och p-värdet visade sig vara under gänsen 0.05 som vi tidigare antog. Det positiva t-värde indikerar att riktningen i sambandet överensstämmer med det förväntade, dvs. att auktoritetsperson kommer att orsaka \emph{mer} visuell uppmärksamhet. Förutom detta t-test skulle man kunna tänka sig andra statistiska test för att undersöka de inferentiella resultaten av experimentet, bl.a. variansanalys (s.k. ANOVA) eller regressionsanalys (ifall vi hade velat kontrollera för särskilda variabler såsom kön eller ålder). Gemensamt för många av dessa test är att de följer NHST-modellen, och därmed ger oss ett probabilistiskt värde för hur sannolikt det vore att slumpmässigt observera de faktiska resultaten, vilket i sin tur ger oss möjligheter att dra slutsatser om huruvida experimentets behandlingsvillkor på ett kausalt vis orsakat en viss effekt på deltagarna. Beyond p-value statistics (REF). I detta exempel har vi antagit ett experiment med mellangruppsdesign, med 100 deltagare i varje grupp.
+
+Statistiska resultat, eller modellering, eller Inferentiell statistik, multivariat analys.. handlar om att redovisa resultat relativt något mått på tillförlitlighet. Detta kan också kallas ``statistiskt säkerställda'' resultat. The smaller the p-value, the stronger the evidence that you should reject the null hypothesis. In null hypothesis significance testing, the p-value is the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct. - prediction vs.~fitting (meningsfulla modeller kan vara viktigare än prediktion, retro-fitting hypotheses). Här kommer nåt om causal inference. In statistical hypothesis testing a type I error is the rejection of a true null hypothesis (also known as a "false positive" finding or conclusion), while a type II error is the non-rejection of a false null hypothesis (also known as a "false negative" finding or conclusion. Eventuellt ta upp moderator (counteracts, motverkar en effekt), mediator (förstärker en effekt), visa plot på interaktion, interaction plot. Much of statistical theory revolves around the minimization of one or both of these errors, though the complete elimination of either is a statistical impossibility for non-deterministic algorithms.
 
 \hypertarget{sub08.1.3}{%
 \subsection{Rapportering av resultat}\label{sub08.1.3}}
 
-Använd gärna detta mönster ``Effects of sentiment measures on user engagement'' vid presentation av resultat från regressionsanalys, dvs. ``effekten av prediktor XYZ på utfallsvariabel ABC'' (\url{https://github.com/nils-holmberg/scom-org/blob/main/src/emo-readme.md})
-. Här kommer något om diagram och visualiseringar. Beskriv översiktligt hur variablerna ser ut. Bivariat analys (samband mellan två variabler) i form av \textbf{stapeldiagram} (gärna med grafiskt representation av standardavvikelse) funkar bra.
+Använd gärna detta mönster ``Effects of sentiment measures on user engagement'' vid presentation av resultat från regressionsanalys, dvs. ``effekten av prediktor XYZ på utfallsvariabel ABC'' (\url{https://github.com/nils-holmberg/scom-org/blob/main/src/emo-readme.md}). Här kommer något om diagram och visualiseringar. Beskriv översiktligt hur variablerna ser ut. Bivariat analys (samband mellan två variabler) i form av \textbf{stapeldiagram} (gärna med grafiskt representation av standardavvikelse) funkar bra.
 
 \hypertarget{sec08.2}{%
 \section{Diskussion}\label{sec08.2}}
@@ -1122,7 +1123,7 @@ Har vi kontrollerat för alla viktiga variabler? Hur påverkar t.ex. deltagarnas
 \hypertarget{sub08.2.3}{%
 \subsection{Framtida forskning}\label{sub08.2.3}}
 
-Hkommer lite Brödtext igen. Här kommer lite Brödtext igen. Här kommer lite Brödtext igen.
+Här kommer lite Brödtext igen. Här kommer lite Brödtext igen. Här kommer lite Brödtext igen.
 
 \hypertarget{sec08.3}{%
 \section{Publicering}\label{sec08.3}}
