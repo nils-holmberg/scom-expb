@@ -874,7 +874,7 @@ Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion.
 
 
 ## Resultat {#sec08.1}
-[08-1-wc-file]: <> (123.35 %)
+[08-1-wc-file]: <> (117.42 %)
 [08-1-comment]: <> (5 sidor)
 
 När vi inleder experimentets efterarbete räknar vi inte med att kunna gå tillbaka och ändra något i de tidigare stegen, och vi räknar egentligen inte heller med att kunna tillföra mer data till våra beräkningar. Resultatrapporteringen som nu tar vid är ett av de viktigaste momenten i efterarbetet, och kräver att varje delresultat härleds från de hypoteser som utvecklades i förarbetet. Det brukar inte betraktas som god forskningssed (på engelska "good research practice") att göra det omvända och anpassa hypoteserna till resultaten (jfr. "scientific misconduct"), även om detta ibland förekommer i praktiken (REF VR). 
@@ -926,7 +926,7 @@ position=position_dodge(.9))
 print(gp)
 ```
 
-Ur detta diagram kan vi utläsa att deltagarna i genomsnitt ägnat mindre visuell uppmärksamhet åt Facebook-posterna i kontrollvillkoret jämfört med behandlingsvillkoret, men vi har fortfarande inget mått på tillförlitligheten i denna skillnad. För att kunna rapportera dessa inferentiella resultat av vårt experiment måste vi här gå tillbaka till hypoteserna som uppställdes i förarbetet till studien. Det kan vara en stor fördel att upprepa dessa hypoteser i resultaten, när vi rapporterar vilket stöd insamlade empiriska data ger till det förväntade utfallet. I vårt fall hade vi följande två hypotser, för enkelhetens skull kommer vi i det följande bara att fokusera på den första. 
+Ur detta diagram kan vi utläsa att deltagarna i genomsnitt ägnat mindre visuell uppmärksamhet åt Facebook-posterna i kontrollvillkoret jämfört med behandlingsvillkoret, men vi har fortfarande inget mått på tillförlitligheten i denna skillnad. För att kunna rapportera dessa inferentiella resultat av vårt experiment måste vi här gå tillbaka till hypoteserna som uppställdes i förarbetet till studien. Det kan vara en stor fördel att upprepa dessa hypoteser i resultaten, när vi rapporterar vilket stöd insamlade empiriska data ger till det förväntade utfallet. I vårt fall hade vi följande två hypotser, men för enkelhetens skull kommer vi i det följande bara att fokusera på den första. 
 
 - H1: Facebook-poster med bild på en auktoritetsperson kommer att orsaka mer visuell uppmärksamhet på posten jämfört med bilder som innehåller en neutral person.
 
@@ -940,11 +940,11 @@ knitr::kable(read.table("../csv/tab-02-08-1-2.csv", header=T, sep='\t', quot='"'
 
 I detta exempel visade testet ett t-värde på ca 2.7 och p-värdet visade sig vara under gänsen 0.05 som vi tidigare antog. Det positiva t-värde indikerar att riktningen i sambandet överensstämmer med det förväntade, dvs. att auktoritetsperson kommer att orsaka _mer_ visuell uppmärksamhet. Förutom detta t-test skulle man kunna tänka sig andra statistiska test för att undersöka de inferentiella resultaten av experimentet, bl.a. variansanalys (s.k. ANOVA) eller regressionsanalys (ifall vi hade velat kontrollera för särskilda variabler såsom kön eller ålder). Gemensamt för många av dessa test är att de följer NHST-modellen, och därmed ger oss ett probabilistiskt värde för hur sannolikt det vore att slumpmässigt observera de faktiska resultaten, vilket i sin tur ger oss möjligheter att dra slutsatser om huruvida experimentets behandlingsvillkor på ett kausalt vis orsakat en viss effekt på deltagarna. Beyond p-value statistics (REF). I detta exempel har vi antagit ett experiment med mellangruppsdesign, med 100 deltagare i varje grupp.
 
-Statistiska resultat, eller modellering, eller Inferentiell statistik, multivariat analys.. handlar om att redovisa resultat relativt något mått på tillförlitlighet. Detta kan också kallas "statistiskt säkerställda" resultat. The smaller the p-value, the stronger the evidence that you should reject the null hypothesis. In null hypothesis significance testing, the p-value is the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct. - prediction vs. fitting (meningsfulla modeller kan vara viktigare än prediktion, retro-fitting hypotheses). Här kommer nåt om causal inference. In statistical hypothesis testing a type I error is the rejection of a true null hypothesis (also known as a \"false positive\" finding or conclusion), while a type II error is the non-rejection of a false null hypothesis (also known as a \"false negative\" finding or conclusion. Eventuellt ta upp moderator (counteracts, motverkar en effekt), mediator (förstärker en effekt), visa plot på interaktion, interaction plot. Much of statistical theory revolves around the minimization of one or both of these errors, though the complete elimination of either is a statistical impossibility for non-deterministic algorithms.
+Statistiska resultat, eller modellering, eller Inferentiell statistik, multivariat analys.. handlar om att redovisa resultat relativt något mått på tillförlitlighet. Detta kan också kallas "statistiskt säkerställda" resultat. The smaller the p-value, the stronger the evidence that you should reject the null hypothesis. In null hypothesis significance testing, the p-value is the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct. - prediction vs. fitting (meningsfulla modeller kan vara viktigare än prediktion, retro-fitting hypotheses). Här kommer nåt om causal inference. 
 
 ### Rapportering av resultat {#sub08.1.3}
 
-Använd gärna detta mönster "Effects of sentiment measures on user engagement" vid presentation av resultat från regressionsanalys, dvs. "effekten av prediktor XYZ på utfallsvariabel ABC" (https://github.com/nils-holmberg/scom-org/blob/main/src/emo-readme.md). Här kommer något om diagram och visualiseringar. Beskriv översiktligt hur variablerna ser ut. Bivariat analys (samband mellan två variabler) i form av **stapeldiagram** (gärna med grafiskt representation av standardavvikelse) funkar bra. 
+Använd gärna detta mönster "Effects of sentiment measures on user engagement" vid presentation av resultat från regressionsanalys, dvs. "effekten av prediktor XYZ på utfallsvariabel ABC" (https://github.com/nils-holmberg/scom-org/blob/main/src/emo-readme.md). Utveckla med enkla formuleringar vad ett statistiskt resultat innebär. Här kommer något om diagram och visualiseringar. Beskriv översiktligt hur variablerna ser ut. Bivariat analys (samband mellan två variabler) i form av **stapeldiagram** (gärna med grafiskt representation av standardavvikelse) funkar bra. 
 
 
 
@@ -957,16 +957,35 @@ Använd gärna detta mönster "Effects of sentiment measures on user engagement"
 
 
 ## Diskussion {#sec08.2}
-[08-2-wc-file]: <> (25.00 %)
-[08-2-comment]: <> (4 sidor)
+[08-2-wc-file]: <> (67.97 %)
+[08-2-comment]: <> (3 sidor)
 
-Här skulle man kunna använda sig av en domstolsmetafor. Den experimentella studien är genomförd och nu står insamlat material och experimentdesign åtalad för att visa något. Bevis, evidens, circumstantial evidence, alias. Forskaren antar både rollen som åklagare och försvarsadvokat (noll-hypotes). Kan läggas i 8.1 också.
+Experimentets efterarbete är ingalunda klart i och med resultatrapporteringen som vi presenterade i föregående avsnitt. Även om vi med statistiska metoder kan visa att våra empiriska data ger mycket starkt stöd till de hypoteser som uppställts, så måste vi också visa att vi kan förhålla oss kritiska till dessa resultat, dvs. att vi förstår och redovisar svagheter i det genomförda experimentet, att vi undersökt möjliga felkällor, samt att vi kan föreslå förbättringar till experimentets design. Ärlighet, transparens och objektivitet är trots allt några av vetenskapens viktigaste värden. Det finns ingen granskande forskare som förväntar sig att vi ska ha kunnat åstadkomma ett perfekt experiment med begränsade resurser, och därför handlar det ofta om att vi som experimentledare kan redovisa och motivera de avgränsningar och val som gjorts i studien.
+
+Diskussionen är en utvärdering av experimentets genomförande
+
+Vi kan också tänka oss att diskussionen är den del av studien där vi tittar tillbaka och sammanfattar alla delarna i experimentet, från forskningsfrågor, till hypoteser, vidare till 
+
+Här skulle man kunna använda sig av en domstolsmetafor. Den experimentella studien är genomförd och nu står insamlat material och experimentdesign åtalad för att visa något. Bevis, evidens, circumstantial evidence, alias. Forskaren antar både rollen som åklagare och försvarsadvokat (noll-hypotes). Kan läggas i 8.1 också. Diskussionen är slutpläderingen?
+
+### Förväntade och faktiska resultat {#sub08.2.1}
+
+Hypoteser och empiriska resultat. Vi säger inte att hypoteser bekräftats eller besannats, utan vi säger om resultaten ger stöd eller inte till hypoteserna. Relatera faktiska observationer till ursprungliga förväntade hypoteser. **Kan resultaten generaliseras? Validitet och reliabilitet**
+
+In statistical hypothesis testing a type I error is the rejection of a true null hypothesis (also known as a \"false positive\" finding or conclusion), while a type II error is the non-rejection of a false null hypothesis (also known as a \"false negative\" finding or conclusion. Eventuellt ta upp moderator (counteracts, motverkar en effekt), mediator (förstärker en effekt), visa plot på interaktion, interaction plot. Much of statistical theory revolves around the minimization of one or both of these errors, though the complete elimination of either is a statistical impossibility for non-deterministic algorithms.
+
+### Alternativa förklaringar till resultat {#sub08.2.2}
+
+Har vi kontrollerat för alla viktiga variabler? Hur påverkar t.ex. deltagarnas individuella läshastighet resultaten för visuell uppmärksamhet? Kan vi anta att denna egenskap är jämnt fördelad mellan de experimentella villkoren, eller kan vi misstänka någon snedfördelning (bias)? Kan det vara så att vi lyckats hantera denna individuella skillnad genom att använda oss av en inomgruppsdesign (within-subjects)? Kan vi dra slutsatser om kausala samband?
+
+### Kontextualisering och framtida forskning {#sub08.2.3}
+
+Resultatens betydelse i en större samhällsvetenskaplig kontext. Gå tillbaka från hypoteser till RQ
+
+- det engelska begreppet contribution, bidrag till befintlig forskning
 
 Vi skulle kunna tänka oss ett experiment som inte involverar mänskliga försöksdeltagare. T.ex. en webbplats genomgår (\"behandlas\") med två olika typer av sökoptimeringsstrategier. Därefter undersöker vi hur båda sidor indexeras och listas bland googles sökresultat. Den beroende responsvariabeln är rankning (page rank), lägre värden innebär mer positivt utfall. Testet kan upprepas i flera trials.
 
-### Hypoteser och empiriska resultat {#sub08.2.1}
-
-Relatera faktiska observationer till ursprungliga förväntade hypoteser. Här kommer lite Brödtext igen. Här ko
 
 Exempel på formulerade forskningsfrågor med anknytning till bokens exempel-experiment. Således, i vårt tänkta experiment skulle den första forskningsfrågan kunna formuleras:
 
@@ -974,13 +993,12 @@ Exempel på formulerade forskningsfrågor med anknytning till bokens exempel-exp
 
 Som underfrågor till denna forskningsfråga skulle man kunna tänka sig \"RQ1a: Hur påverkar bildinnehållet i Facebook-poster läsarnas blickbeteende\", och \"RQ1b: Hur påverkar bildinnehållet i Facebook-poster läsarnas attityder gällande postens trovärdighet\".
 
-### Alternativa förklaringar till resultat {#sub08.2.2}
 
-Har vi kontrollerat för alla viktiga variabler? Hur påverkar t.ex. deltagarnas individuella läshastighet resultaten för visuell uppmärksamhet? Kan vi anta att denna egenskap är jämnt fördelad mellan de experimentella villkoren, eller kan vi misstänka någon snedfördelning (bias)? Kan det vara så att vi lyckats hantera denna individuella skillnad genom att använda oss av en inomgruppsdesign (within-subjects)? Kan vi dra slutsatser om kausala samband?
 
-### Framtida forskning {#sub08.2.3}
 
-Här kommer lite Brödtext igen. Här kommer lite Brödtext igen. Här kommer lite Brödtext igen.
+
+
+
 
 
 
