@@ -1070,21 +1070,21 @@ Ur detta diagram kan vi utläsa att deltagarna i genomsnitt ägnat mindre visuel
 
 Ett enkelt men samtidigt robust sätt att testa dessa hypoteser är att göra ett s.k. t-test för varje hypotes. T-testet lämpar sig för situationer när vi har en kvantitativ beroende variabel och exakt två villkor som ska jämföras. Detta test jämför i princip medelvärdena i respektive grupp, med hänsyn tagen till bl.a. antal observationer (deltagare, försök, etc), samt observationernas fördelning och spridning (t.ex. standardavvikelse). För att kunna genomföra statistiska test behövs en noll-hypotes, där vi antar att det inte finns någon skillnad mellan villkoren. Baserat på detta formulerar vi sedan hypotesen H1 om en skillnad mellan villkoren i en förväntad riktning (auktoritetsperson kommer att orsaka \emph{mer} visuell uppmärksamhet). Det sista steget som behövs är att vi antar en sannolikhetsnivå (s.k. alpha-nivå) att vi skulle observera de faktiska resultaten om noll-hypotesen stämde bäst. En vanlig nivå är 0.05, vilket innebär att vi anser att uppmätta skillnader mellan villkoren är tillräckligt tillförlitliga om det är 5\% chans eller mindre att resultatet beror på slumpen, och 95\% chans eller mer att de beror på de experimentella villkoren. Resultatet rapporteras i så fall som ``statistiskt signifikant''.
 
-\begin{longtable}[]{@{}rrrrr@{}}
+\begin{longtable}[]{@{}rrrrrr@{}}
 \caption{\label{tab:tab-02-08-1-2}Inferentiella resultat.}\tabularnewline
 \toprule
-kontroll & behandling & t.värde & p.värde & frihetsgrader\tabularnewline
+kontroll & behandling & t.värde & p.värde & frihetsgrader & effektstorlek\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-kontroll & behandling & t.värde & p.värde & frihetsgrader\tabularnewline
+kontroll & behandling & t.värde & p.värde & frihetsgrader & effektstorlek\tabularnewline
 \midrule
 \endhead
-10 & 11 & 2.702 & 0.007 & 198\tabularnewline
+10 & 11 & 2.702 & 0.007 & 198 & 0.382\tabularnewline
 \bottomrule
 \end{longtable}
 
-I detta exempel visade testet ett t-värde på ca 2.7 och p-värdet visade sig vara under gänsen 0.05 som vi tidigare antog. Det positiva t-värde indikerar att riktningen i sambandet överensstämmer med det förväntade, dvs. att auktoritetsperson kommer att orsaka \emph{mer} visuell uppmärksamhet. Förutom detta t-test skulle man kunna tänka sig andra statistiska test för att undersöka de inferentiella resultaten av experimentet, bl.a. variansanalys (s.k. ANOVA) eller regressionsanalys (ifall vi hade velat kontrollera för särskilda variabler såsom kön eller ålder). Gemensamt för många av dessa test är att de följer NHST-modellen, och därmed ger oss ett probabilistiskt värde för hur sannolikt det vore att slumpmässigt observera de faktiska resultaten, vilket i sin tur ger oss möjligheter att dra slutsatser om huruvida experimentets behandlingsvillkor på ett kausalt vis orsakat en viss effekt på deltagarna. Beyond p-value statistics \citep{trafimow2015editorial}. I detta exempel har vi antagit ett experiment med mellangruppsdesign, med 100 deltagare i varje grupp.
+I detta exempel visade testet ett t-värde på ca 2.7 och p-värdet visade sig vara under gänsen 0.05 som vi tidigare antog. Effektstorleken kan uttryckas som skillnaden mellan medelvärdet för båda grupper, dvs 1 sekund visuell uppmärksamhet. Det positiva t-värde indikerar att riktningen i sambandet överensstämmer med det förväntade, dvs. att auktoritetsperson kommer att orsaka \emph{mer} visuell uppmärksamhet. Förutom detta t-test skulle man kunna tänka sig andra statistiska test för att undersöka de inferentiella resultaten av experimentet, bl.a. variansanalys (s.k. ANOVA) eller regressionsanalys (ifall vi hade velat kontrollera för särskilda variabler såsom kön eller ålder). Gemensamt för många av dessa test är att de följer NHST-modellen, och därmed ger oss ett probabilistiskt värde för hur sannolikt det vore att slumpmässigt observera de faktiska resultaten, vilket i sin tur ger oss möjligheter att dra slutsatser om huruvida experimentets behandlingsvillkor på ett kausalt vis orsakat en viss effekt på deltagarna. Beyond p-value statistics \citep{trafimow2015editorial}. I detta exempel har vi antagit ett experiment med mellangruppsdesign, med 100 deltagare i varje grupp.
 
 Statistiska resultat, eller modellering, eller Inferentiell statistik, multivariat analys.. handlar om att redovisa resultat relativt något mått på tillförlitlighet. Detta kan också kallas ``statistiskt säkerställda'' resultat. The smaller the p-value, the stronger the evidence that you should reject the null hypothesis. In null hypothesis significance testing, the p-value is the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct. - prediction vs.~fitting (meningsfulla modeller kan vara viktigare än prediktion, retro-fitting hypotheses). Här kommer nåt om causal inference.
 
@@ -1103,7 +1103,7 @@ Vi kan också tänka oss att diskussionen är den avslutande delen av studien d�
 \hypertarget{sub08.2.1}{%
 \subsection{Förväntade och faktiska resultat}\label{sub08.2.1}}
 
-Ett av de viktigaste momenteten i diskussionen är sammanfatta vilket stöd våra empiriska data ger till de hypoteser vi uppställt, dvs. relationen mellan förväntade och faktiska resultat. Här kan det vara viktigt att poängtera att forskningsvärlden sällan talar om att hypoteser bekräftats eller besannats, utan man talar istället om hur resultaten stödjer hypoteserna eller inte. Till syvende och sist kan inte vetenskapen ge slutgiltiga bevis om sanningen, utan den svarar på hur sannolikt ett visst sakförhållande är, t.ex. effekten av ett experimentellt villkor på någon utfallsvariabel. I resultaten från vårt exempel-experiment kom vi fram till att Facebook-poster med bild på auktoritetsperson medförde en statistiskt signifikant ökning av deltagarnas visuella uppmärksamhet på den tillhörande texten i samma post. Men samtidigt medgav vi att det finns en 5\% chans att våra data är ett slumpmässigt extemfall, och att om experimentet upprepades så skulle vi antagligen inte hitta denna effekt. Denna risk att felaktigt finna stöd för .. kallas för typ i fel.
+Ett av de viktigaste momenteten i diskussionen är sammanfatta vilket stöd våra empiriska data ger till de hypoteser vi uppställt, dvs. relationen mellan förväntade och faktiska resultat. Här kan det vara viktigt att poängtera att forskningsvärlden sällan talar om att hypoteser bekräftats eller besannats, utan man talar istället om hur resultaten stödjer hypoteserna eller inte. Till syvende och sist kan inte vetenskapen ge slutgiltiga bevis om sanningen, utan den svarar på hur sannolikt ett visst sakförhållande är, t.ex. effekten av ett experimentellt villkor på någon utfallsvariabel. I resultaten från vårt exempel-experiment kom vi fram till att Facebook-poster med bild på auktoritetsperson medförde en statistiskt signifikant ökning av deltagarnas visuella uppmärksamhet på den tillhörande texten i samma post. Men samtidigt medgav vi att det finns en 5\% chans att våra data är ett slumpmässigt extremfall, och att om experimentet upprepades så skulle denna effekt troligen inte visa sig igen. Denna risk att felaktigt finna stöd för sin hypotes kallas för Typ I fel (på engelska används ibland synonymen ``false positive'').
 
 \begin{figure}
 
@@ -1111,8 +1111,17 @@ Ett av de viktigaste momenteten i diskussionen är sammanfatta vilket stöd vår
 
 }
 
-\caption{Typ I och typ II fel.}\label{fig:fig-02-08-2-1}
+\caption{Typ I- och II-fel.}\label{fig:fig-02-08-2-1}
 \end{figure}
+
+Figuren ovan försöker illustrera hur resultaten av ett experiment kan förhålla sig till den faktiska omvärlden. Om vi i resultaten hittar den effekt vi har förväntat oss, så innebär ju detta att vi förkastar noll-hypotesen, som säger att det inte finns någon effekt. Naturligvis hoppas vi (med 95\% sannolikhet) att detta resultat speglar verkligheten (s.k. ``true positive''). Om vi vill vara ännu mer säkra på att resultatet inte är ett extremt undantagsfall skulle vi kunna sänka den så kallade signifikansnivån från 0.05 till exemplevis 0.01. Vi skulle därmed bli mer säkra på att undvika typ I fel, men samtidigt ökar då risken att vi istället hamnar i ett typ II fel, vilket innebär att vi felaktigt antar noll-hypotesen trots att det verkligen föreligger en effekt av behandlingen.
+
+\begin{itemize}
+\item
+  typ II fel kan bero på felaktig kraftanalys, och kan eventuellt åtgärdas genom att öka antalet deltagare och/eller försök (trials)
+\item
+  inom medicin kan det vara mer prioriterat att undvika .. t.ex. cancerdiagnos är det bättre med typ I (överdetektion) fel än typ II (underdetektion)
+\end{itemize}
 
 In statistical hypothesis testing a type I error is the rejection of a true null hypothesis (also known as a "false positive" finding or conclusion), while a type II error is the non-rejection of a false null hypothesis (also known as a "false negative" finding or conclusion. Much of statistical theory revolves around the minimization of one or both of these errors, though the complete elimination of either is a statistical impossibility for non-deterministic algorithms.
 
@@ -1129,9 +1138,10 @@ Har vi kontrollerat för alla viktiga variabler? Hur påverkar t.ex. deltagarnas
 Resultatens betydelse i en större samhällsvetenskaplig kontext. Gå tillbaka från hypoteser till RQ
 
 \begin{itemize}
-\tightlist
 \item
-  det engelska begreppet contribution, bidrag till befintlig forskning
+  effektstorlek!!!!
+\item
+  det engelska begreppet contribution, bidrag till befintlig forskning. För att kunna bidra till existerande forskning, måste vi kunna detta fält väldigt bra.
 \end{itemize}
 
 Vi skulle kunna tänka oss ett experiment som inte involverar mänskliga försöksdeltagare. T.ex. en webbplats genomgår ("behandlas") med två olika typer av sökoptimeringsstrategier. Därefter undersöker vi hur båda sidor indexeras och listas bland googles sökresultat. Den beroende responsvariabeln är rankning (page rank), lägre värden innebär mer positivt utfall. Testet kan upprepas i flera trials.
