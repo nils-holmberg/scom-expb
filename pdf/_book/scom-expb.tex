@@ -112,7 +112,7 @@
 
 \title{Experiment}
 \author{Nils Gustafsson \& Nils Holmberg}
-\date{2021-10-26}
+\date{2021-10-27}
 
 \begin{document}
 \maketitle
@@ -1084,7 +1084,7 @@ kontroll & behandling & t.värde & p.värde & frihetsgrader\tabularnewline
 \bottomrule
 \end{longtable}
 
-I detta exempel visade testet ett t-värde på ca 2.7 och p-värdet visade sig vara under gänsen 0.05 som vi tidigare antog. Det positiva t-värde indikerar att riktningen i sambandet överensstämmer med det förväntade, dvs. att auktoritetsperson kommer att orsaka \emph{mer} visuell uppmärksamhet. Förutom detta t-test skulle man kunna tänka sig andra statistiska test för att undersöka de inferentiella resultaten av experimentet, bl.a. variansanalys (s.k. ANOVA) eller regressionsanalys (ifall vi hade velat kontrollera för särskilda variabler såsom kön eller ålder). Gemensamt för många av dessa test är att de följer NHST-modellen, och därmed ger oss ett probabilistiskt värde för hur sannolikt det vore att slumpmässigt observera de faktiska resultaten, vilket i sin tur ger oss möjligheter att dra slutsatser om huruvida experimentets behandlingsvillkor på ett kausalt vis orsakat en viss effekt på deltagarna. Beyond p-value statistics (REF). I detta exempel har vi antagit ett experiment med mellangruppsdesign, med 100 deltagare i varje grupp.
+I detta exempel visade testet ett t-värde på ca 2.7 och p-värdet visade sig vara under gänsen 0.05 som vi tidigare antog. Det positiva t-värde indikerar att riktningen i sambandet överensstämmer med det förväntade, dvs. att auktoritetsperson kommer att orsaka \emph{mer} visuell uppmärksamhet. Förutom detta t-test skulle man kunna tänka sig andra statistiska test för att undersöka de inferentiella resultaten av experimentet, bl.a. variansanalys (s.k. ANOVA) eller regressionsanalys (ifall vi hade velat kontrollera för särskilda variabler såsom kön eller ålder). Gemensamt för många av dessa test är att de följer NHST-modellen, och därmed ger oss ett probabilistiskt värde för hur sannolikt det vore att slumpmässigt observera de faktiska resultaten, vilket i sin tur ger oss möjligheter att dra slutsatser om huruvida experimentets behandlingsvillkor på ett kausalt vis orsakat en viss effekt på deltagarna. Beyond p-value statistics \citep{trafimow2015editorial}. I detta exempel har vi antagit ett experiment med mellangruppsdesign, med 100 deltagare i varje grupp.
 
 Statistiska resultat, eller modellering, eller Inferentiell statistik, multivariat analys.. handlar om att redovisa resultat relativt något mått på tillförlitlighet. Detta kan också kallas ``statistiskt säkerställda'' resultat. The smaller the p-value, the stronger the evidence that you should reject the null hypothesis. In null hypothesis significance testing, the p-value is the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct. - prediction vs.~fitting (meningsfulla modeller kan vara viktigare än prediktion, retro-fitting hypotheses). Här kommer nåt om causal inference.
 
@@ -1096,18 +1096,14 @@ Använd gärna detta mönster ``Effects of sentiment measures on user engagement
 \hypertarget{sec08.2}{%
 \section{Diskussion}\label{sec08.2}}
 
-Experimentets efterarbete är ingalunda klart i och med resultatrapporteringen som vi presenterade i föregående avsnitt. Även om vi med statistiska metoder kan visa att våra empiriska data ger mycket starkt stöd till de hypoteser som uppställts, så måste vi också visa att vi kan förhålla oss kritiska till dessa resultat, dvs. att vi förstår och redovisar svagheter i det genomförda experimentet, att vi undersökt möjliga felkällor, samt att vi kan föreslå förbättringar till experimentets design. Ärlighet, transparens och objektivitet är trots allt några av vetenskapens viktigaste värden. Det finns ingen granskande forskare som förväntar sig att vi ska ha kunnat åstadkomma ett perfekt experiment med begränsade resurser, och därför handlar det ofta om att vi som experimentledare kan redovisa och motivera de avgränsningar och val som gjorts i studien.
+Experimentets efterarbete är ingalunda klart i och med resultatrapporteringen som vi presenterade i föregående avsnitt. Även om vi med statistiska metoder kan visa att våra empiriska data ger mycket starkt stöd till de hypoteser som uppställts, så måste vi också visa att vi kan förhålla oss kritiska till dessa resultat, dvs. att vi förstår och redovisar svagheter i det genomförda experimentet, att vi undersökt möjliga felkällor, samt att vi kan föreslå förbättringar till experimentets design. Här kommer \emph{diskussionen} in som en ärlig, transparent och objektiv utvärdering av experimentets genomförande. Det finns ingen granskande forskare som förväntar sig att vi ska kunna åstadkomma ett perfekt experiment med begränsade resurser, och därför handlar det ofta om att vi som experimentledare tydligt redovisar och motiverar de avgränsningar och val som gjorts i studien.
 
-Diskussionen är en utvärdering av experimentets genomförande
-
-Vi kan också tänka oss att diskussionen är den del av studien där vi tittar tillbaka och sammanfattar alla delarna i experimentet, från forskningsfrågor, till hypoteser, vidare till
-
-Här skulle man kunna använda sig av en domstolsmetafor. Den experimentella studien är genomförd och nu står insamlat material och experimentdesign åtalad för att visa något. Bevis, evidens, circumstantial evidence, alias. Forskaren antar både rollen som åklagare och försvarsadvokat (noll-hypotes). Kan läggas i 8.1 också. Diskussionen är slutpläderingen?
+Vi kan också tänka oss att diskussionen är den avslutande delen av studien där vi tittar tillbaka och sammanfattar alla delarna i experimentet, från forskningsfrågor, till hypoteser, vidare till \ldots{} Här skulle man kunna använda sig av en domstolsmetafor. Den experimentella studien är genomförd och nu står insamlat material och experimentdesign åtalad för att visa något. Bevis, evidens, circumstantial evidence, alias. Forskaren antar både rollen som åklagare och försvarsadvokat (noll-hypotes). Kan läggas i 8.1 också. Diskussionen är slutpläderingen?
 
 \hypertarget{sub08.2.1}{%
 \subsection{Förväntade och faktiska resultat}\label{sub08.2.1}}
 
-Hypoteser och empiriska resultat. Vi säger inte att hypoteser bekräftats eller besannats, utan vi säger om resultaten ger stöd eller inte till hypoteserna. Relatera faktiska observationer till ursprungliga förväntade hypoteser. \textbf{Kan resultaten generaliseras? Validitet och reliabilitet}
+Ett av de viktigaste momenteten i diskussionen är sammanfatta vilket stöd våra empiriska data ger till de hypoteser vi uppställt, dvs. relationen mellan förväntade och faktiska resultat. Här kan det vara viktigt att poängtera att forskningsvärlden sällan talar om att hypoteser bekräftats eller besannats, utan man talar istället om hur resultaten stödjer hypoteserna eller inte. Till syvende och sist kan inte vetenskapen ge slutgiltiga bevis om sanningen, utan den svarar på hur sannolikt ett visst sakförhållande är, t.ex. effekten av ett experimentellt villkor på någon utfallsvariabel.
 
 \begin{figure}
 
@@ -1118,7 +1114,9 @@ Hypoteser och empiriska resultat. Vi säger inte att hypoteser bekräftats eller
 \caption{Typ I och typ II fel.}\label{fig:fig-02-08-2-1}
 \end{figure}
 
-In statistical hypothesis testing a type I error is the rejection of a true null hypothesis (also known as a "false positive" finding or conclusion), while a type II error is the non-rejection of a false null hypothesis (also known as a "false negative" finding or conclusion. Eventuellt ta upp moderator (counteracts, motverkar en effekt), mediator (förstärker en effekt), visa plot på interaktion, interaction plot. Much of statistical theory revolves around the minimization of one or both of these errors, though the complete elimination of either is a statistical impossibility for non-deterministic algorithms.
+In statistical hypothesis testing a type I error is the rejection of a true null hypothesis (also known as a "false positive" finding or conclusion), while a type II error is the non-rejection of a false null hypothesis (also known as a "false negative" finding or conclusion. Much of statistical theory revolves around the minimization of one or both of these errors, though the complete elimination of either is a statistical impossibility for non-deterministic algorithms.
+
+Relatera faktiska observationer till ursprungliga förväntade hypoteser. \textbf{Kan resultaten generaliseras? Validitet och reliabilitet} Eventuellt ta upp moderator (counteracts, motverkar en effekt), mediator (förstärker en effekt), visa plot på interaktion, interaction plot.
 
 \hypertarget{sub08.2.2}{%
 \subsection{Alternativa förklaringar till resultat}\label{sub08.2.2}}
