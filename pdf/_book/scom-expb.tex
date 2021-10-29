@@ -378,17 +378,29 @@ Innan man genomför ett skarpt experiment, vilket ofta kräver mycket resurser i
 \hypertarget{sub07.1.1}{%
 \subsection{Power-analys}\label{sub07.1.1}}
 
-TODO: Innan man genomför ett skarpt experiment, gör en power-analys. Power is the probability that we will correctly reject the null hypothesis.
+Den statistiska kraften (på engelska ``statistical power'') i en experimentdesign är sannolikheten att korrekt förkasta noll-hypotesen, givet ett visst antal deltagare (urvalsstorlek) och den förväntade styrkan i sambandet mellan de variabler som är av intresse. För att ta ett konkret exempel, den statistiska styrkan i en studie med 50 deltagare och en förväntad korrelation på +0.3 (beräknat som Pearson's r) i populationen är 0.59. Detta innebär att sannolikheten att vi korrekt kan förkasta noll-hypotesen är 59\% om det aktuella sambandet i befolkningen verkligen har en styrka på +0.3. Statistisk kraft är komplementär till sannolikheten att begå ett s.k. typ II-fel (att inte detektera en skillnad som stödjer hypotesen och därmed felaktigt anta noll-hypotsen), så i föreliggande exempel är risken för ett sådant typ II-fel 1 -- 59 = 41\%.
 
-\begin{itemize}
-\tightlist
-\item
-  Cohen, J. (1992)
-\item
-  Faul, F., Erdfelder, E., Lang, A. G., \& Buchner, A. (2007)
-\item
-  Faul, F., Erdfelder, E., Buchner, A., \& Lang, A. G. (2009)
-\end{itemize}
+Innan man genomför ett skarpt experiment är det således viktigt att vi gör en power-analys, eftersom detta hjälper oss att undvika typ II-fel när vi analyserar resultaten \citep{cohen1992power}. Mer specifikt bör vi försäkra oss om att vår forskningsdesign har en tillräcklig statistisk kraft innan vi börjar med genomförandet av experiment och datainsamling. Den vanligaste riktlinjen är att en statistisk power på 0.8 är tillräcklig, vilket innebär att vi får en 80\% chans att korrekt förkasta noll-hypotesen vid den förväntade styrkan på sambandet mellan det variabler vi intresserar oss för.
+
+\begin{longtable}[]{@{}lrr@{}}
+\caption{\label{tab:tab-02-07-1-1}Antal deltagare som krävs för att uppnå statistisk kraft på 0.8 vid olika starka samband.}\tabularnewline
+\toprule
+Styrka.på.samband & Deltagare.t.test & Deltagare.Pearsons.r\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+Styrka.på.samband & Deltagare.t.test & Deltagare.Pearsons.r\tabularnewline
+\midrule
+\endhead
+Starkt (d=0.8, r=0.5) & 52 & 28\tabularnewline
+Medel (d=0.5, r=0.3) & 128 & 84\tabularnewline
+Svagt (d=0.2, r=0.1) & 788 & 782\tabularnewline
+\bottomrule
+\end{longtable}
+
+Vad ska du göra om du upptäcker att din forskningsdesign inte har tillräcklig kraft? Föreställ dig till exempel att du genomför ett experiment mellan ämnen med 20 deltagare i vart och ett av två tillstånd och att du förväntar dig en medelskillnad (d = 0,50) i populationen. Den statistiska kraften i denna design är endast 0,34. Det vill säga, även om det finns en medelskillnad i populationen, så finns det bara ungefär en av tre chans att förkasta nollhypotesen och ungefär två av tre chans att begå ett typ II-fel. Med tanke på den tid och ansträngning som är involverad i att genomföra studien verkar detta förmodligen vara en oacceptabelt låg chans att förkasta nollhypotesen och en oacceptabelt hög chans att begå ett typ II-fel.
+
+Med tanke på att statistisk power främst beror på relationsstyrka och urvalsstorlek, finns det i huvudsak två steg du kan vidta för att öka statistisk styrka: öka styrkan på sambandet eller öka urvalsstorleken. Att öka styrkan i relationen kan ibland åstadkommas genom att använda en starkare manipulation eller genom att mer noggrant kontrollera för demografiska variabler för att minska mängden brus i data (t.ex. genom att använda en inomgruppsdesign snarare än en mellangruppsdesign). Den vanliga strategin är dock att öka urvalsstorleken. För varje förväntad relationsstyrka kommer det alltid att finnas något prov som är tillräckligt stort för att uppnå tillräcklig kraft \citep{faul2007g, faul2009statistical}.
 
 \hypertarget{sub07.1.2}{%
 \subsection{Pilottest}\label{sub07.1.2}}
@@ -1118,7 +1130,7 @@ Ett av de viktigaste momenteten i diskussionen är sammanfatta vilket stöd vår
 
 Figuren ovan försöker illustrera hur resultaten av ett experiment kan förhålla sig till den faktiska omvärlden. Om vi i resultaten hittar den effekt vi har förväntat oss, så innebär ju detta att vi förkastar noll-hypotesen, som säger att det inte finns någon effekt. Naturligvis hoppas vi (med 95\% sannolikhet) att detta resultat speglar verkligheten (s.k. ``true positive''). Om vi vill vara ännu mer säkra på att resultatet inte är ett extremt undantagsfall skulle vi kunna sänka den så kallade signifikansnivån från 0.05 till exemplevis 0.01. Vi skulle därmed kunna bli mer säkra på att undvika typ I fel, men samtidigt ökar då risken att vi istället hamnar i ett typ II-fel, vilket innebär att vi felaktigt antar noll-hypotesen trots att det verkligen föreligger en effekt av behandlingen (s.k. ``false negative'').
 
-Typ II-fel kan bero på felaktig power analys, och kan i vissa fall åtgärdas genom att öka antalet deltagare och/eller försök (trials) i experimentet. Om vi har gjort en korrekt poweranalys och vi ändå inte ser en statistiskt säkerställd effekt av behandlingen kan vi vara mer säkra på att vi gör rätt när vi antar noll-hypotesen (s.k. ``true negative''). Statistisk teori inom samhällsvetenskaperna handlar i mångt och mycket om att minimera båda dessa typer av fel, dock kan det vara så att i vissa kontexter kan endera feltypen vara mer accepterad, t.ex. i samband med en medicinsk cancerdiagnos är det bättre med typ I fel (överdetektion) än typ II fel (underdetektion).
+Typ II-fel kan bero på felaktig power-analys, och kan i vissa fall åtgärdas genom att öka antalet deltagare och/eller försök (trials) i experimentet. Om vi har gjort en korrekt poweranalys och vi ändå inte ser en statistiskt säkerställd effekt av behandlingen kan vi vara mer säkra på att vi gör rätt när vi antar noll-hypotesen (s.k. ``true negative''). Statistisk teori inom samhällsvetenskaperna handlar i mångt och mycket om att minimera båda dessa typer av fel, dock kan det vara så att i vissa kontexter kan endera feltypen vara mer accepterad, t.ex. i samband med en medicinsk cancerdiagnos är det bättre med typ I fel (överdetektion) än typ II fel (underdetektion).
 
 \hypertarget{sub08.2.2}{%
 \subsection{Alternativa förklaringar till resultat}\label{sub08.2.2}}
@@ -1145,6 +1157,8 @@ Efter att ha genomfört vårt exempel-experimentet är vi nu i en situation där
 \hypertarget{sec08.3}{%
 \section{Publicering}\label{sec08.3}}
 
+I denna del av boken har vi följt utvecklingen och genomförandet av ett experiment som undersöker hur olika delar av en Facebook-post (bild, text, källa, likes, kommentarer) påverkar läsares bedömning av postens trovärdighet. Vi tänker oss att vi före experimentets genomförande har gjort en ordentlig genomgång av tidigare forskning på detta område, vilken gett vid handen att bildinnehållets effekt på upplevd trovärdighet hos Facebook-poster inte verkar ha studerats i någon högre utsträckning. Detta kommer därför att utgöra det så kallade "kunskapsgap" vårt experiment vill bidra till att fylla, och det kommer att utgöra en viktig avgränsning av vår centrala forskningsfråga. Vår forskningsgenomgång har också visat oss att det förekommer en del studier av hur bildinnehåll generellt påverkar människors blickbeteende och visuella uppmärksamhet, så detta kommer utgöra en sekundär forskningsfråga.
+
 Ibland pratar man även om konfirmatoriska eller replikerande resultat (engelska ``confirmatory'') i motsats till explorativa (engelska ``exploratory''), där den senare typen av resultat ibland anses som mer publicerbara på grund av de har ett högre nyhetsvärde. Som vi har försökt argumentera i denna bok, kan det vara bra att designa ett experiment så att det innehåller lite av varje. Fortsätt här
 
 \hypertarget{sub08.3.1}{%
@@ -1155,7 +1169,7 @@ Publicering av dataset och metoder. Självpublicering. Open Science Framework. P
 \hypertarget{sub08.3.2}{%
 \subsection{Vetenskapliga tidskrifter}\label{sub08.3.2}}
 
-Vetenskapliga journaler tillhandahåller på sina webbplatser ofta detaljerade instruktioner för vad man ska tänka på när man skickar in ett manuskript för granskning. Dessutom finns ofta typografiska mallar som forskare bör använda. APA Nämna nåt om rättigheter, licenser, open access osv?
+Vetenskapliga journaler tillhandahåller på sina webbplatser ofta detaljerade instruktioner för vad man ska tänka på när man skickar in ett manuskript för granskning. Dessutom finns ofta typografiska mallar som forskare bör använda. APA
 
 En experimentell studie består vanligtvis av två integrerade delar: 1) genomförande av ett experiment, och 2) rapportering av resultat. I denna bok fokuserar vi främst på genomförandet, men dispositionen kommer att följa den struktur som används när man rapporterar resultatet av ett experiment i form av en sakkunniggranskad journalpublikation (s.k. peer-review). Av både konvention och praktiska skäl består denna rapportering oftast av fyra delar, som inleds med \textbf{Introduktion}, och sedan följs av \textbf{Metod}, \textbf{Resultat}, och \textbf{Diskussion}. På grund av delarnas initialer kallas denna disposition ibland \textbf{IMRD} (på ett ungefär uttalat "imrad").
 
@@ -1212,18 +1226,12 @@ D\strut
 \bottomrule
 \end{longtable}
 
-Se upp för ``rovdjurstidskrifter'' (\url{https://www.lu.se/artikel/se-upp-rovdjuren}). Bealls lista. Begreppet rovdjurstidskrift, (på engelska ``predatory journal''), myntades 2010 av ­Jeffrey ­Beall, bibliotekarie vid University of Colorado i USA.
+Nämna nåt om rättigheter, licenser, open access osv? Se upp för ``rovdjurstidskrifter'' (\url{https://www.lu.se/artikel/se-upp-rovdjuren}). Bealls lista. Begreppet rovdjurstidskrift, (på engelska ``predatory journal''), myntades 2010 av ­Jeffrey ­Beall, bibliotekarie vid University of Colorado i USA.
 
 \hypertarget{sub08.3.3}{%
 \subsection{Sakkunniggranskning}\label{sub08.3.3}}
 
-I denna del av boken följer vi, i illustrativt syfte, utvecklingen och genomförandet av ett experiment som undersöker hur olika delar av en Facebook-post (bild, text, källa, likes, kommentarer) påverkar läsares bedömning av postens trovärdighet. Vi tänker oss att vi före experimentets genomförande har gjort en ordentlig genomgång av tidigare forskning på detta område, vilken gett vid handen att bildinnehållets effekt på upplevd trovärdighet hos Facebook-poster inte verkar ha studerats i någon högre utsträckning. Detta kommer därför att utgöra det så kallade "kunskapsgap" vårt experiment vill bidra till att fylla, och det kommer att utgöra en viktig avgränsning av vår centrala forskningsfråga. Vår forskningsgenomgång har också visat oss att det förekommer en del studier av hur bildinnehåll generellt påverkar människors blickbeteende och visuella uppmärksamhet, så detta kommer utgöra en sekundär forskningsfråga.
-
-För att undersöka dessa forskningsfrågor närmare behöver vi låta flera Facebook-användare läsa ett antal Facebook-poster medan vi observerar dem och samlar in empiriska data om hur de läste varje post, och därefter rapporterade hur pass trovärdiga de tyckte att dessa poster var. I detta tänkta experiment kommer vi därför att använda oss av en metod för ögonrörelsemätning för att exakt studera hur användarna bearbetar Facebook-posterna visuellt, och därefter får läsarna fylla i en webbenkät och besvara hur de upplevde trovärdigheten hos varje Facebook-post. Därmed försöker studien både mäta människors objektiva beteende (ögonrörelsemätning) och deras subjektiva attityder (survey-frågor om trovärdighet). Genom att ha detta hypotetiska experiment som underlag hoppas vi att det blir lättare för läsaren att följa en röd tråd genom planering, genomförande och rapportering av en experimentell studie.
-
-Eftersom detta tänkta experimentet innehåller olika metoder för datainsamling, och genom att texten ofta skiftar fokus mellan dessa metoder, hoppas vi att denna lärobok kan bli relevant för olika samhällsvetenskapliga discipliner, från psykologi till strategisk kommunikation. I praktiken hade kanske vårt hypotetiska experiment kunnat genomföras inom vilken samhällsvetenskaplig disciplin som helst som har tvärvetenskapliga ambitioner. Där sammanhanget kräver, kommer vi också att exemplifiera med andra typer av experimentella paradigm, bland annat så kallade "AB split test" inom digital marknadsföring webboptimering, och medicinska studier med kontrollgrupp och behandlingsgrupp. Exemplen kommer att hämtas från ett brett urval av vetenskapliga discipliner för att läsaren ska få en känsla för hur experimentella studier skulle kunna implementeras inom det egna ämnet.
-
-I denna lärobok har vi försökt täcka in dessa två olika men näraliggande betydelser av begreppet experimentell metod: dels som en uppsättning praktiska tillvägagångssätt som bör användas för att i \textbf{planera} och genomföra en experimentell studie; och dels som ett systematiskt och standardiserat sätt att i efterhand \textbf{rapportera} genomförandet av en studie på ett sätt som är begripligt för andra forskare. Således är detta kapitel av läroboken disponerat på ett sätt som ger oss möjlighet att i typisk turordning behandla de olika aspekter av experimentell metod som man som forskare förväntas kunna redovisa när man rapporterar sina resultat till en vetenskaplig tidskrift. Men inom varje metodaspekt kommer vi också att utförligt diskutera de olika experimentella tillvägagångssätt som är relevanta i samband med planering och genomförande av en forskningsstudie.
+I denna lärobok har vi försökt täcka in experimentell metod i betydelsen av ett systematiskt och standardiserat sätt att i efterhand \textbf{rapportera} genomförandet av en studie på ett sätt som är begripligt för andra forskare. Således är detta kapitel av läroboken disponerat på ett sätt som ger oss möjlighet att i typisk turordning behandla de olika aspekter av experimentell metod som man som forskare förväntas kunna redovisa när man rapporterar sina resultat till en vetenskaplig tidskrift. Men inom varje metodaspekt kommer vi också att utförligt diskutera de olika experimentella tillvägagångssätt som är relevanta i samband med planering och genomförande av en forskningsstudie.
 
 \hypertarget{sub08.3.4}{%
 \subsection{Planering av publicering}\label{sub08.3.4}}

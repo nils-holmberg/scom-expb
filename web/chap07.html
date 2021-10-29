@@ -299,12 +299,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Innan man genomför ett skarpt experiment, vilket ofta kräver mycket resurser i form av tid och arbete, är det klokt att genomföra experimentet i liten skala. På så vis kan forskarna i ett tidigt stadium fånga upp problem med experimentdesignen. Detta kallas för att vi genomför en förstudie eller ett pilottest. I sambad med planering och förberedelse av experimentet kommer vi börja med att diskutera begreppet power-analys (från engelskans power analysis).</p>
 <div id="sub07.1.1" class="section level3" number="7.1.1">
 <h3><span class="header-section-number">7.1.1</span> Power-analys</h3>
-<p>TODO: Innan man genomför ett skarpt experiment, gör en power-analys. Power is the probability that we will correctly reject the null hypothesis.</p>
-<ul>
-<li>Cohen, J. (1992)</li>
-<li>Faul, F., Erdfelder, E., Lang, A. G., &amp; Buchner, A. (2007)</li>
-<li>Faul, F., Erdfelder, E., Buchner, A., &amp; Lang, A. G. (2009)</li>
-</ul>
+<p>Den statistiska kraften (på engelska “statistical power”) i en experimentdesign är sannolikheten att korrekt förkasta noll-hypotesen, givet ett visst antal deltagare (urvalsstorlek) och den förväntade styrkan i sambandet mellan de variabler som är av intresse. För att ta ett konkret exempel, den statistiska styrkan i en studie med 50 deltagare och en förväntad korrelation på +0.3 (beräknat som Pearson’s r) i populationen är 0.59. Detta innebär att sannolikheten att vi korrekt kan förkasta noll-hypotesen är 59% om det aktuella sambandet i befolkningen verkligen har en styrka på +0.3. Statistisk kraft är komplementär till sannolikheten att begå ett s.k. typ II-fel (att inte detektera en skillnad som stödjer hypotesen och därmed felaktigt anta noll-hypotsen), så i föreliggande exempel är risken för ett sådant typ II-fel 1 – 59 = 41%.</p>
+<p>Innan man genomför ett skarpt experiment är det således viktigt att vi gör en power-analys, eftersom detta hjälper oss att undvika typ II-fel när vi analyserar resultaten <span class="citation">(Cohen <a href="#ref-cohen1992power" role="doc-biblioref">1992</a>)</span>. Mer specifikt bör vi försäkra oss om att vår forskningsdesign har en tillräcklig statistisk kraft innan vi börjar med genomförandet av experiment och datainsamling. Den vanligaste riktlinjen är att en statistisk power på 0.8 är tillräcklig, vilket innebär att vi får en 80% chans att korrekt förkasta noll-hypotesen vid den förväntade styrkan på sambandet mellan det variabler vi intresserar oss för.</p>
+<table>
+<caption><span id="tab:tab-02-07-1-1">Table 7.1: </span>Antal deltagare som krävs för att uppnå statistisk kraft på 0.8 vid olika starka samband.</caption>
+<thead>
+<tr class="header">
+<th align="left">Styrka.på.samband</th>
+<th align="right">Deltagare.t.test</th>
+<th align="right">Deltagare.Pearsons.r</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Starkt (d=0.8, r=0.5)</td>
+<td align="right">52</td>
+<td align="right">28</td>
+</tr>
+<tr class="even">
+<td align="left">Medel (d=0.5, r=0.3)</td>
+<td align="right">128</td>
+<td align="right">84</td>
+</tr>
+<tr class="odd">
+<td align="left">Svagt (d=0.2, r=0.1)</td>
+<td align="right">788</td>
+<td align="right">782</td>
+</tr>
+</tbody>
+</table>
+<p>Vad ska du göra om du upptäcker att din forskningsdesign inte har tillräcklig kraft? Föreställ dig till exempel att du genomför ett experiment mellan ämnen med 20 deltagare i vart och ett av två tillstånd och att du förväntar dig en medelskillnad (d = 0,50) i populationen. Den statistiska kraften i denna design är endast 0,34. Det vill säga, även om det finns en medelskillnad i populationen, så finns det bara ungefär en av tre chans att förkasta nollhypotesen och ungefär två av tre chans att begå ett typ II-fel. Med tanke på den tid och ansträngning som är involverad i att genomföra studien verkar detta förmodligen vara en oacceptabelt låg chans att förkasta nollhypotesen och en oacceptabelt hög chans att begå ett typ II-fel.</p>
+<p>Med tanke på att statistisk power främst beror på relationsstyrka och urvalsstorlek, finns det i huvudsak två steg du kan vidta för att öka statistisk styrka: öka styrkan på sambandet eller öka urvalsstorleken. Att öka styrkan i relationen kan ibland åstadkommas genom att använda en starkare manipulation eller genom att mer noggrant kontrollera för demografiska variabler för att minska mängden brus i data (t.ex. genom att använda en inomgruppsdesign snarare än en mellangruppsdesign). Den vanliga strategin är dock att öka urvalsstorleken. För varje förväntad relationsstyrka kommer det alltid att finnas något prov som är tillräckligt stort för att uppnå tillräcklig kraft <span class="citation">(Faul et al. <a href="#ref-faul2007g" role="doc-biblioref">2007</a>, <a href="#ref-faul2009statistical" role="doc-biblioref">2009</a>)</span>.</p>
 </div>
 <div id="sub07.1.2" class="section level3" number="7.1.2">
 <h3><span class="header-section-number">7.1.2</span> Pilottest</h3>
@@ -388,7 +413,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">7.3.3</span> Mätning av objektiva responser</h3>
 <p>Objektiva responser är inte väsenskilda från subjektiva, och därför är det mer fruktbart att placera båda dessa responser på en skala av objektivitet, där enkätfrågor kan betraktas som mindre objektiva, och exempelvis fysiologiska responser anses mer objektiva. När det gäller enkätfrågor så betraktas ibland frågor som avser att undersöka respondentens beteenden som mer objektiva än frågor som frågor handlar om attityder (ref). Om vi flyttar fokus till fysiologiska mätmetoder så kan vi på samma sätt skilja mellan responser som är mer viljestyrda hos deltagaren (t.ex. var blicken riktas på en datorskärm), respektive mätdata som är mindre viljestyrd (t.ex. hur utvidgade pupillerna är). Det förra fallet handlar om mindre objektiva responser, det senare om mer objektiva. Subjektiva och objektiva responser är alltså ingen absolut distinktion.</p>
 <table>
-<caption><span id="tab:tab02-07-3">Table 7.1: </span>Mätinstrument och objektivitet i mätdata</caption>
+<caption><span id="tab:tab02-07-3">Table 7.2: </span>Mätinstrument och objektivitet i mätdata</caption>
 <thead>
 <tr class="header">
 <th align="left">minst objektiv</th>
@@ -876,11 +901,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <h3>References</h3>
 <div id="refs" class="references hanging-indent">
+<div id="ref-cohen1992power">
+<p>Cohen, Jacob. 1992. “A Power Primer.” <em>Psychological Bulletin</em> 112 (1): 155.</p>
+</div>
 <div id="ref-cumming2013understanding">
 <p>Cumming, Geoff. 2013. <em>Understanding the New Statistics: Effect Sizes, Confidence Intervals, and Meta-Analysis</em>. Routledge.</p>
 </div>
 <div id="ref-ellis2010essential">
 <p>Ellis, Paul D. 2010. <em>The Essential Guide to Effect Sizes: Statistical Power, Meta-Analysis, and the Interpretation of Research Results</em>. Cambridge university press.</p>
+</div>
+<div id="ref-faul2009statistical">
+<p>Faul, Franz, Edgar Erdfelder, Axel Buchner, and Albert-Georg Lang. 2009. “Statistical Power Analyses Using G* Power 3.1: Tests for Correlation and Regression Analyses.” <em>Behavior Research Methods</em> 41 (4): 1149–60.</p>
+</div>
+<div id="ref-faul2007g">
+<p>Faul, Franz, Edgar Erdfelder, Albert-Georg Lang, and Axel Buchner. 2007. “G* Power 3: A Flexible Statistical Power Analysis Program for the Social, Behavioral, and Biomedical Sciences.” <em>Behavior Research Methods</em> 39 (2): 175–91.</p>
 </div>
 <div id="ref-henrich2010weirdest">
 <p>Henrich, Joseph, Steven J Heine, and Ara Norenzayan. 2010. “The Weirdest People in the World?” <em>Behavioral and Brain Sciences</em> 33 (2-3): 61–83.</p>

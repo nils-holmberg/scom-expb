@@ -17,18 +17,24 @@ I det följande kommer vi redogöra för den typiska turordningen för att både
 - kontrastera med metodologi, i del 1 ? Pedagogiskt att presentera efterföljande text som tre centrala beståndsdelar: 1) deltagare, 2) mätinstrument, och 3) experimentella villkor/manipulationer.
 
 ## Förstudier {#sec07.1}
-[07-1-wc-file]: <> (54.85 %)
+[07-1-wc-file]: <> (86.28 %)
 [07-1-comment]: <> (5 sidor)
 
 Innan man genomför ett skarpt experiment, vilket ofta kräver mycket resurser i form av tid och arbete, är det klokt att genomföra experimentet i liten skala. På så vis kan forskarna i ett tidigt stadium fånga upp problem med experimentdesignen. Detta kallas för att vi genomför en förstudie eller ett pilottest. I sambad med planering och förberedelse av experimentet kommer vi börja med att diskutera begreppet power-analys (från engelskans power analysis).
 
 ### Power-analys {#sub07.1.1}
 
-TODO: Innan man genomför ett skarpt experiment, gör en power-analys. Power is the probability that we will correctly reject the null hypothesis.
+Den statistiska kraften (på engelska "statistical power") i en experimentdesign är sannolikheten att korrekt förkasta noll-hypotesen, givet ett visst antal deltagare (urvalsstorlek) och den förväntade styrkan i sambandet mellan de variabler som är av intresse. För att ta ett konkret exempel, den statistiska styrkan i en studie med 50 deltagare och en förväntad korrelation på +0.3 (beräknat som Pearson's r) i populationen är 0.59. Detta innebär att sannolikheten att vi korrekt kan förkasta noll-hypotesen är 59% om det aktuella sambandet i befolkningen verkligen har en styrka på +0.3. Statistisk kraft är komplementär till sannolikheten att begå ett s.k. typ II-fel (att inte detektera en skillnad som stödjer hypotesen och därmed felaktigt anta noll-hypotsen), så i föreliggande exempel är risken för ett sådant typ II-fel 1 -- 59 = 41%.
 
-- Cohen, J. (1992) 
-- Faul, F., Erdfelder, E., Lang, A. G., & Buchner, A. (2007) 
-- Faul, F., Erdfelder, E., Buchner, A., & Lang, A. G. (2009)
+Innan man genomför ett skarpt experiment är det således viktigt att vi gör en power-analys, eftersom detta hjälper oss att undvika typ II-fel när vi analyserar resultaten [@cohen1992power]. Mer specifikt bör vi försäkra oss om att vår forskningsdesign har en tillräcklig statistisk kraft innan vi börjar med genomförandet av experiment och datainsamling. Den vanligaste riktlinjen är att en statistisk power på 0.8 är tillräcklig, vilket innebär att vi får en 80% chans att korrekt förkasta noll-hypotesen vid den förväntade styrkan på sambandet mellan det variabler vi intresserar oss för.
+
+```{r tab-02-07-1-1, echo=F}
+#Tabell {tab-02-07-1-1}. Sample Sizes Needed to Achieve Statistical Power of .80 for Different Expected Relationship Strengths.
+knitr::kable(read.table("../csv/tab-02-07-1-1.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Antal deltagare som krävs för att uppnå statistisk kraft på 0.8 vid olika starka samband.', booktabs=TRUE)
+```
+Vad ska du göra om du upptäcker att din forskningsdesign inte har tillräcklig kraft? Föreställ dig till exempel att du genomför ett experiment mellan ämnen med 20 deltagare i vart och ett av två tillstånd och att du förväntar dig en medelskillnad (d = 0,50) i populationen. Den statistiska kraften i denna design är endast 0,34. Det vill säga, även om det finns en medelskillnad i populationen, så finns det bara ungefär en av tre chans att förkasta nollhypotesen och ungefär två av tre chans att begå ett typ II-fel. Med tanke på den tid och ansträngning som är involverad i att genomföra studien verkar detta förmodligen vara en oacceptabelt låg chans att förkasta nollhypotesen och en oacceptabelt hög chans att begå ett typ II-fel.
+
+Med tanke på att statistisk power främst beror på relationsstyrka och urvalsstorlek, finns det i huvudsak två steg du kan vidta för att öka statistisk styrka: öka styrkan på sambandet eller öka urvalsstorleken. Att öka styrkan i relationen kan ibland åstadkommas genom att använda en starkare manipulation eller genom att mer noggrant kontrollera för demografiska variabler för att minska mängden brus i data (t.ex. genom att använda en inomgruppsdesign snarare än en mellangruppsdesign). Den vanliga strategin är dock att öka urvalsstorleken. För varje förväntad relationsstyrka kommer det alltid att finnas något prov som är tillräckligt stort för att uppnå tillräcklig kraft [@faul2007g; @faul2009statistical].
 
 ### Pilottest {#sub07.1.2}
 
@@ -45,6 +51,10 @@ Nästa steg i förstudien handlar om att testa de behandlingar eller _experiment
 När vi har mätinstrument och experimentdesign på plats, kan det vara läge att pilottesta _proceduren_ vi kommer att använda oss av i samband med att varje deltagare genomgår vårt experiment. Denna procedur kan handla om allt från hur vi hälsar och tar emot deltagaren, till hur vi applicerar eventuell mätutrustning, till vi kort intervjuar deltagaren efter att den deltagit. Det främsta syftet med detta förfarande är att vi vill försäkra oss om att proceduren blir så standardiserad som möjligt, dvs. att vi inte eliciterar missvisande data från några deltagare pga. att dessa behandlats annorlunda i något avseende. I förlängningen har detta att göra med experimentets reliabilitet.
 
 Slutligen är det väl värt att samla in lite faktisk testdata, när vi väl har alla experimentets delar på plats. Genom att göra detta kan vi pilottesta den _dataanalys_ som kommer ligga till grund för experimentets resultat. I denna fas testa vi helt enkelt att vi kan omvandla våra mätningar och villkor till variabler.  
+
+
+
+
 
 
 

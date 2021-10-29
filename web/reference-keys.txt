@@ -2,6 +2,7 @@ fig:fig01-01
 fig:fig01-02
 tab:tab-02-06-1-1
 fig:img-model
+tab:tab-02-07-1-1
 tab:tab02-07-3
 tab:tab-02-08-1-1
 fig:fig-02-08-1-1
