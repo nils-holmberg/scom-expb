@@ -112,7 +112,7 @@
 
 \title{Experiment}
 \author{Nils Gustafsson \& Nils Holmberg}
-\date{2021-10-28}
+\date{2021-10-29}
 
 \begin{document}
 \maketitle
@@ -410,7 +410,7 @@ Slutligen är det väl värt att samla in lite faktisk testdata, när vi väl ha
 \hypertarget{sec07.2}{%
 \section{Försöksdeltagare}\label{sec07.2}}
 
-De individer som deltar i en studie kallades tidigare kort och gott "subjekt" (på engelska "subjects"). På senare tid har man vänt sig emot detta något avhumaniserande språkbruk och istället antagit den generella termen "deltagare". Här använder vi ibland beteckningen ``försökspersoner'' eller "försöksdeltagare" för att ytterligare betona den experimentella forskningens användning av kontrasterande behandlingar, villkor eller "försök" för att studera dess effekter på deltagarna (på engelska kallas sådana upprepade försök oftast för "trials", vilket är ett viktigt begrepp inom området experimentdesign som diskuteras längre fram i detta kapitel).
+De individer som deltar i en studie kallades tidigare kort och gott "subjekt" (på engelska "subjects"). På senare tid har man vänt sig emot detta något avhumaniserande språkbruk och istället antagit den generella termen "deltagare". Här använder vi ibland beteckningen ``försökspersoner'' eller "försöksdeltagare" för att ytterligare betona den experimentella forskningens användning av kontrasterande behandlingar, villkor eller "försök" för att studera dess effekter på deltagarna (på engelska kallas sådana upprepade försök oftast för "trials", vilket är ett viktigt begrepp inom området experimentdesign som diskuteras längre fram i detta kapitel). Vi skulle kunna tänka oss ett experiment som inte involverar mänskliga försöksdeltagare. T.ex. en webbplats genomgår ("behandlas") med två olika typer av sökoptimeringsstrategier. Därefter undersöker vi hur båda sidor indexeras och listas bland Googles sökresultat. Den beroende responsvariabeln är rankning (page rank), lägre värden innebär mer positivt utfall. Testet kan upprepas i flera trials.
 
 \hypertarget{sub07.2.1}{%
 \subsection{Representativt urval}\label{sub07.2.1}}
@@ -1098,12 +1098,14 @@ Använd gärna detta mönster ``Effects of sentiment measures on user engagement
 
 Experimentets efterarbete är ingalunda klart i och med resultatrapporteringen som vi presenterade i föregående avsnitt. Även om vi med statistiska metoder kan visa att våra empiriska data ger mycket starkt stöd till de hypoteser som uppställts, så måste vi också visa att vi kan förhålla oss kritiska till dessa resultat, dvs. att vi förstår och redovisar svagheter i det genomförda experimentet, att vi undersökt möjliga felkällor, samt att vi kan föreslå förbättringar till experimentets design. Här kommer \emph{diskussionen} in som en ärlig, transparent och objektiv utvärdering av experimentets genomförande. Det finns ingen granskande forskare som förväntar sig att vi ska kunna åstadkomma ett perfekt experiment med begränsade resurser, och därför handlar det ofta om att vi som experimentledare tydligt redovisar och motiverar de avgränsningar och val som gjorts i studien.
 
-Vi kan också tänka oss att diskussionen är den avslutande delen av studien där vi tittar tillbaka och sammanfattar alla delarna i experimentet, från forskningsfrågor, till hypoteser, vidare till \ldots{} Här skulle man kunna använda sig av en domstolsmetafor. Den experimentella studien är genomförd och nu står insamlat material och experimentdesign åtalad för att visa något. Bevis, evidens, circumstantial evidence, alias. Forskaren antar både rollen som åklagare och försvarsadvokat (noll-hypotes). Kan läggas i 8.1 också. Diskussionen är slutpläderingen?
+Vi kan också tänka oss att diskussionen är den avslutande delen av studien där vi tittar tillbaka och sammanfattar alla delarna i experimentet, från forskningsfrågor, till hypoteser, vidare till genomförandet. Här skulle man kunna använda sig av en domstolsmetafor. Den experimentella studien är genomförd och nu står insamlat material och experimentdesign åtalad för att visa något. Bevis, evidens, circumstantial evidence, alias. Forskaren antar i så fall både rollen som åklagare (hypotes) och försvarsadvokat (noll-hypotes). Diskussionen kan därför liknas vid en slutplädering, där all bevisning i målet sammanfattas innan domare och nämndemän avkunnar dom.
 
 \hypertarget{sub08.2.1}{%
 \subsection{Förväntade och faktiska resultat}\label{sub08.2.1}}
 
-Ett av de viktigaste momenteten i diskussionen är sammanfatta vilket stöd våra empiriska data ger till de hypoteser vi uppställt, dvs. relationen mellan förväntade och faktiska resultat. Här kan det vara viktigt att poängtera att forskningsvärlden sällan talar om att hypoteser bekräftats eller besannats, utan man talar istället om hur resultaten \emph{stödjer} hypoteserna eller inte. Till syvende och sist kan inte vetenskapen ge slutgiltiga bevis om sanningen, utan den svarar på hur \emph{sannolikt} ett visst sakförhållande är, t.ex. effekten av ett experimentellt villkor på någon utfallsvariabel. I resultaten från vårt exempel-experiment kom vi fram till att Facebook-poster med bild på auktoritetsperson medförde en statistiskt signifikant ökning av deltagarnas visuella uppmärksamhet på den tillhörande texten i samma post. Men samtidigt uppgav vi att det finns en 5\% chans att våra data är ett slumpmässigt extremfall, och att om experimentet upprepades så skulle denna effekt troligen inte visa sig igen. Denna risk att felaktigt finna stöd för sin hypotes kallas för typ I-fel (på engelska används det synonyma uttrycket ``false positive'').
+Ett av de viktigaste momenteten i diskussionen är sammanfatta vilket stöd våra empiriska data ger till de hypoteser vi uppställt, dvs. relationen mellan förväntade och faktiska resultat. Här kan det vara viktigt att poängtera att forskningsvärlden sällan talar om att hypoteser bekräftats eller besannats, utan man talar istället om hur resultaten \emph{stödjer} hypoteserna eller inte. Till syvende och sist kan inte vetenskapen ge slutgiltiga bevis om sanningen, utan den svarar på hur \emph{sannolikt} ett visst sakförhållande är, t.ex. effekten av ett experimentellt villkor på någon utfallsvariabel.
+
+Även om experimentet uppvisar ett starkt signifikant resultat, kan effektstorleken vara ganska liten (avsnitt \protect\hyperlink{sub07.1.1}{7.1.1} förstudier). I resultaten från vårt exempel-experiment kom vi fram till att Facebook-poster med bild på auktoritetsperson medförde en statistiskt signifikant ökning av deltagarnas visuella uppmärksamhet på den tillhörande texten i samma post. Men samtidigt uppgav vi att det finns en 5\% chans att våra data är ett slumpmässigt extremfall, och att om experimentet upprepades så skulle denna effekt troligen inte visa sig igen. Denna risk att felaktigt finna stöd för sin hypotes kallas för typ I-fel (på engelska används det synonyma uttrycket ``false positive'').
 
 \begin{figure}
 
@@ -1114,39 +1116,23 @@ Ett av de viktigaste momenteten i diskussionen är sammanfatta vilket stöd vår
 \caption{Typ I- och II-fel.}\label{fig:fig-02-08-2-1}
 \end{figure}
 
-Figuren ovan försöker illustrera hur resultaten av ett experiment kan förhålla sig till den faktiska omvärlden. Om vi i resultaten hittar den effekt vi har förväntat oss, så innebär ju detta att vi förkastar noll-hypotesen, som säger att det inte finns någon effekt. Naturligvis hoppas vi (med 95\% sannolikhet) att detta resultat speglar verkligheten (s.k. ``true positive''). Om vi vill vara ännu mer säkra på att resultatet inte är ett extremt undantagsfall skulle vi kunna sänka den så kallade signifikansnivån från 0.05 till exemplevis 0.01. Vi skulle därmed bli mer säkra på att undvika typ I fel, men samtidigt ökar då risken att vi istället hamnar i ett typ II fel, vilket innebär att vi felaktigt antar noll-hypotesen trots att det verkligen föreligger en effekt av behandlingen.
+Figuren ovan försöker illustrera hur resultaten av ett experiment kan förhålla sig till den faktiska omvärlden. Om vi i resultaten hittar den effekt vi har förväntat oss, så innebär ju detta att vi förkastar noll-hypotesen, som säger att det inte finns någon effekt. Naturligvis hoppas vi (med 95\% sannolikhet) att detta resultat speglar verkligheten (s.k. ``true positive''). Om vi vill vara ännu mer säkra på att resultatet inte är ett extremt undantagsfall skulle vi kunna sänka den så kallade signifikansnivån från 0.05 till exemplevis 0.01. Vi skulle därmed kunna bli mer säkra på att undvika typ I fel, men samtidigt ökar då risken att vi istället hamnar i ett typ II-fel, vilket innebär att vi felaktigt antar noll-hypotesen trots att det verkligen föreligger en effekt av behandlingen (s.k. ``false negative'').
 
-\begin{itemize}
-\item
-  typ II-fel kan bero på felaktig kraftanalys, och kan eventuellt åtgärdas genom att öka antalet deltagare och/eller försök (trials)
-\item
-  inom medicin kan det vara mer prioriterat att undvika .. t.ex. cancerdiagnos är det bättre med typ I (överdetektion) fel än typ II (underdetektion)
-\end{itemize}
-
-In statistical hypothesis testing a type I error is the rejection of a true null hypothesis (also known as a "false positive" finding or conclusion), while a type II error is the non-rejection of a false null hypothesis (also known as a "false negative" finding or conclusion. Much of statistical theory revolves around the minimization of one or both of these errors, though the complete elimination of either is a statistical impossibility for non-deterministic algorithms.
-
-Relatera faktiska observationer till ursprungliga förväntade hypoteser. \textbf{Kan resultaten generaliseras? Validitet och reliabilitet} Eventuellt ta upp moderator (counteracts, motverkar en effekt), mediator (förstärker en effekt), visa plot på interaktion, interaction plot.
+Typ II-fel kan bero på felaktig power analys, och kan i vissa fall åtgärdas genom att öka antalet deltagare och/eller försök (trials) i experimentet. Om vi har gjort en korrekt poweranalys och vi ändå inte ser en statistiskt säkerställd effekt av behandlingen kan vi vara mer säkra på att vi gör rätt när vi antar noll-hypotesen (s.k. ``true negative''). Statistisk teori inom samhällsvetenskaperna handlar i mångt och mycket om att minimera båda dessa typer av fel, dock kan det vara så att i vissa kontexter kan endera feltypen vara mer accepterad, t.ex. i samband med en medicinsk cancerdiagnos är det bättre med typ I fel (överdetektion) än typ II fel (underdetektion).
 
 \hypertarget{sub08.2.2}{%
 \subsection{Alternativa förklaringar till resultat}\label{sub08.2.2}}
 
-Har vi kontrollerat för alla viktiga variabler? Hur påverkar t.ex. deltagarnas individuella läshastighet resultaten för visuell uppmärksamhet? Kan vi anta att denna egenskap är jämnt fördelad mellan de experimentella villkoren, eller kan vi misstänka någon snedfördelning (bias)? Kan det vara så att vi lyckats hantera denna individuella skillnad genom att använda oss av en inomgruppsdesign (within-subjects)? Kan vi dra slutsatser om kausala samband?
+Om experimentet indikerar en signifikant kontrast mellan villkoren så försöker vi naturligvis försäkra oss om att detta är ett korrekt och representativt resultat. Ett sätt att göra detta är att använda s.k. multivariat analys, vilket tillåter oss att undersöka hur andra variabler än de experimentella villkoren bidrar till att förklara de effekter vi ser i resultaten. I detta fall kanske det inte räcker med ett t-test som vi visade tidigare, utan vi behöver utöka testet till en regressionsanalys. Har vi kontrollerat för alla viktiga variabler? Hur påverkar t.ex. deltagarnas individuella läshastighet resultaten för visuell uppmärksamhet på Facebook-posternas text? Kan vi anta att denna egenskap är jämnt fördelad mellan de experimentella villkoren, eller kan vi misstänka någon snedfördelning (bias)? Frågan vi ställer oss här handlar om ifall det finns andra variabler än de experimentella villkoren som driver fram studiens resultat.
+
+För att kunna kontrollera alternativa förklaringar till resultaten måste vi tänka i förväg när vi designar experimentent. I detta skede är det relativt enkelt att lägga in extra frågor om deltagarnas attityder, kunskaper och beteenden, som det i efterhand är svårt eller omöjligt att ta reda på. En kompletterande metod att hantera konfunderande variabler och individuella skillnader mellan deltagare kan också vara genom att använda oss av en inomgruppsdesign (within-subjects) i experimentet. Kan vi dra slutsatser om kausala samband? Eventuellt ta upp moderator (counteracts, motverkar en effekt), mediator (förstärker en effekt), visa plot på interaktion, interaction plot.
 
 \hypertarget{sub08.2.3}{%
 \subsection{Kontextualisering och framtida forskning}\label{sub08.2.3}}
 
-Resultatens betydelse i en större samhällsvetenskaplig kontext. Gå tillbaka från hypoteser till RQ
+I de föregående avsnitten har vi försökt sammanfatta och kritisera de konkreta resultaten av experimentet. På detta sätt kan diskussionen likna slutpläderingen i en rättegång, där åklagaren försöker bevisa att en händelse har ägt rum, medan försvarsadvokaten kanske argumenterar för att det finns andra förklaringar till det som inträffat. När vi på ett övertygande sätt klarat av detta steg, brukar diskussionen avslutas med att vi försöker titta på studien i en lite större kontext. I detta sammanhang kan vi resonera kring hur pass väl resultaten kan generaliseras till en större befolkning, om de är representativa, samt hur vi bedömer studiens övergripande validitet och reliabilitet. Denna diskussion handlar delvis om kvalitet i kvantiativa studier, och det faller sig ganska naturligt att diskussionen öppnar sig för potentiella förbättringar av den genomförda studien.
 
-\begin{itemize}
-\item
-  effektstorlek!!!! Effektstorleken kan uttryckas som skillnaden mellan medelvärdet för båda grupper, dvs 1 sekund visuell uppmärksamhet. Hänvisa tillbaka till power analys (avsnitt \protect\hyperlink{sub07.1.1}{7.1.1} förstudier)
-\item
-  det engelska begreppet contribution, bidrag till befintlig forskning. För att kunna bidra till existerande forskning, måste vi kunna detta fält väldigt bra.
-\end{itemize}
-
-Vi skulle kunna tänka oss ett experiment som inte involverar mänskliga försöksdeltagare. T.ex. en webbplats genomgår ("behandlas") med två olika typer av sökoptimeringsstrategier. Därefter undersöker vi hur båda sidor indexeras och listas bland googles sökresultat. Den beroende responsvariabeln är rankning (page rank), lägre värden innebär mer positivt utfall. Testet kan upprepas i flera trials.
-
-Exempel på formulerade forskningsfrågor med anknytning till bokens exempel-experiment. Således, i vårt tänkta experiment skulle den första forskningsfrågan kunna formuleras:
+Här är det också relevant att reflektera kring resultatens betydelse i en större samhällsvetenskaplig kontext, samt det genomförda experimentets bidrag till befintlig forskning inom ett specifikt forskningsfält och angränsande fält. Som vi diskuterat redan i förarbetet, så måste vi ha studerat tidigare forskning väldigt ingående för att ha en möjlighet att bidra till detta forskningsfält. Här kan diskussionen med fördel anknytas till studiens forskningsfråga (eller ``research question''):
 
 \begin{itemize}
 \tightlist
@@ -1154,7 +1140,7 @@ Exempel på formulerade forskningsfrågor med anknytning till bokens exempel-exp
   RQ1: Hur påverkar bildinnehållet i sociala medier-poster användarnas beteenden och attityder?
 \end{itemize}
 
-Som underfrågor till denna forskningsfråga skulle man kunna tänka sig "RQ1a: Hur påverkar bildinnehållet i Facebook-poster läsarnas blickbeteende", och "RQ1b: Hur påverkar bildinnehållet i Facebook-poster läsarnas attityder gällande postens trovärdighet".
+Efter att ha genomfört vårt exempel-experimentet är vi nu i en situation där vi kan ge ett tentativt svar på denna forskningsfråga, samt eventuellt också utveckla hur dessa forskningsrön skulle kunna tillämpas praktiskt inom exempelvis kommunikationsyrken. Syftet med studien.
 
 \hypertarget{sec08.3}{%
 \section{Publicering}\label{sec08.3}}

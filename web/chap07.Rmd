@@ -54,10 +54,10 @@ Slutligen är det väl värt att samla in lite faktisk testdata, när vi väl ha
 
 
 ## Försöksdeltagare {#sec07.2}
-[07-2-wc-file]: <> (60.07 %)
+[07-2-wc-file]: <> (62.00 %)
 [07-2-comment]: <> (10 sidor)
 
-De individer som deltar i en studie kallades tidigare kort och gott \"subjekt\" (på engelska \"subjects\"). På senare tid har man vänt sig emot detta något avhumaniserande språkbruk och istället antagit den generella termen \"deltagare\". Här använder vi ibland beteckningen "försökspersoner" eller \"försöksdeltagare\" för att ytterligare betona den experimentella forskningens användning av kontrasterande behandlingar, villkor eller \"försök\" för att studera dess effekter på deltagarna (på engelska kallas sådana upprepade försök oftast för \"trials\", vilket är ett viktigt begrepp inom området experimentdesign som diskuteras längre fram i detta kapitel).
+De individer som deltar i en studie kallades tidigare kort och gott \"subjekt\" (på engelska \"subjects\"). På senare tid har man vänt sig emot detta något avhumaniserande språkbruk och istället antagit den generella termen \"deltagare\". Här använder vi ibland beteckningen "försökspersoner" eller \"försöksdeltagare\" för att ytterligare betona den experimentella forskningens användning av kontrasterande behandlingar, villkor eller \"försök\" för att studera dess effekter på deltagarna (på engelska kallas sådana upprepade försök oftast för \"trials\", vilket är ett viktigt begrepp inom området experimentdesign som diskuteras längre fram i detta kapitel). Vi skulle kunna tänka oss ett experiment som inte involverar mänskliga försöksdeltagare. T.ex. en webbplats genomgår (\"behandlas\") med två olika typer av sökoptimeringsstrategier. Därefter undersöker vi hur båda sidor indexeras och listas bland Googles sökresultat. Den beroende responsvariabeln är rankning (page rank), lägre värden innebär mer positivt utfall. Testet kan upprepas i flera trials.
 
 ### Representativt urval {#sub07.2.1}
 
