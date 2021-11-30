@@ -28,7 +28,7 @@ Denna text kommer är tänkt att ersätta sektion 08 resultat och 09 diskussion.
 
 
 ## Resultat {#sec08.1}
-[08-1-wc-file]: <> (119.92 %)
+[08-1-wc-file]: <> (120.50 %)
 [08-1-comment]: <> (5 sidor)
 
 När vi inleder experimentets efterarbete räknar vi inte med att kunna gå tillbaka och ändra något i de tidigare stegen, och vi räknar egentligen inte heller med att kunna tillföra mer data till våra beräkningar. Resultatrapporteringen som nu tar vid är ett av de viktigaste momenten i efterarbetet, och kräver att varje delresultat härleds från de hypoteser som utvecklades i förarbetet. Det brukar inte betraktas som god forskningssed (på engelska "good research practice") att göra det omvända och anpassa hypoteserna till resultaten (jfr. "scientific misconduct"), även om detta ibland förekommer i praktiken (REF VR). 
@@ -87,7 +87,7 @@ theme(text = element_text(size=20))
 print(gp)
 ```
 
-Ur detta diagram kan vi utläsa att deltagarna i genomsnitt ägnat mindre visuell uppmärksamhet åt Facebook-posterna i kontrollvillkoret jämfört med behandlingsvillkoret, men vi har fortfarande inget mått på tillförlitligheten i denna skillnad. För att kunna rapportera dessa inferentiella resultat av vårt experiment måste vi här gå tillbaka till hypoteserna som uppställdes i förarbetet till studien. Det kan vara en stor fördel att upprepa dessa hypoteser i resultaten, när vi rapporterar vilket stöd insamlade empiriska data ger till det förväntade utfallet. I vårt fall hade vi följande två hypotser, men för enkelhetens skull kommer vi i det följande bara att fokusera på den första. 
+Ur detta diagram kan vi utläsa att deltagarna i genomsnitt ägnat mindre visuell uppmärksamhet åt Facebook-posterna i kontrollvillkoret jämfört med behandlingsvillkoret, men vi har fortfarande inget mått på tillförlitligheten i denna skillnad som hjälper oss att dra slutsatser (s.k. inferens). För att kunna rapportera dessa inferentiella resultat av vårt experiment måste vi här gå tillbaka till hypoteserna som uppställdes i förarbetet till studien. Det kan vara en stor fördel att upprepa dessa hypoteser i resultaten, när vi rapporterar vilket stöd insamlade empiriska data ger till det förväntade utfallet. I vårt fall hade vi följande två hypotser, men för enkelhetens skull kommer vi i det följande bara att fokusera på den första. 
 
 - H1: Facebook-poster med bild på en auktoritetsperson kommer att orsaka mer visuell uppmärksamhet på posten jämfört med bilder som innehåller en neutral person.
 
