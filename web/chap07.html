@@ -308,7 +308,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Den statistiska kraften (på engelska “statistical power”) i en experimentdesign är sannolikheten att korrekt förkasta noll-hypotesen, givet ett visst antal deltagare (urvalsstorlek) och den förväntade styrkan i sambandet mellan de variabler som är av intresse. För att ta ett konkret exempel, den statistiska styrkan i en studie med 50 deltagare och en förväntad korrelation på +0.3 (beräknat som Pearson’s r) i populationen är 0.59. Detta innebär att sannolikheten att vi korrekt kan förkasta noll-hypotesen är 59% om det aktuella sambandet i befolkningen verkligen har en styrka på +0.3. Statistisk kraft är komplementär till sannolikheten att begå ett s.k. typ II-fel (att inte detektera en skillnad som stödjer hypotesen och därmed felaktigt anta noll-hypotsen), så i föreliggande exempel är risken för ett sådant typ II-fel 1 – 59 = 41%.</p>
 <p>Innan man genomför ett skarpt experiment är det således viktigt att vi gör en power-analys, eftersom detta hjälper oss att undvika typ II-fel när vi analyserar resultaten <span class="citation">(Cohen <a href="#ref-cohen1992power" role="doc-biblioref">1992</a>)</span>. Mer specifikt bör vi försäkra oss om att vår forskningsdesign har en tillräcklig statistisk kraft innan vi börjar med genomförandet av experiment och datainsamling. Den vanligaste riktlinjen är att en statistisk power på 0.8 är tillräcklig, vilket innebär att vi får en 80% chans att korrekt förkasta noll-hypotesen vid den förväntade styrkan på sambandet mellan det variabler vi intresserar oss för.</p>
 <table>
-<caption><span id="tab:tab-02-07-1-1">Table 7.1: </span>Antal deltagare som krävs för att uppnå statistisk kraft på 0.8 vid olika starka samband.</caption>
+<caption><span id="tab:tab-02-07-1-1-01">Table 7.1: </span>Antal deltagare som krävs för att uppnå statistisk kraft på 0.8 vid olika starka samband.</caption>
 <thead>
 <tr class="header">
 <th align="left">Styrka.på.samband</th>
@@ -568,40 +568,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <caption><span id="tab:tab-02-07-5-2-01">Table 7.3: </span>Randomisering och balansering.</caption>
 <thead>
 <tr class="header">
-<th align="left">Deltagare.</th>
-<th align="left">Stimulus.1.</th>
-<th align="left">Stimulus.2.</th>
-<th align="left">Stimulus.3</th>
+<th align="left">Deltagare</th>
+<th align="left">Försöksomgång_1</th>
+<th align="left">Försöksomgång_2</th>
+<th align="left">Försöksomgång_3</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Deltagare 1 &gt;</td>
+<td align="left">Deltagare 1 =&gt;</td>
 <td align="left">Kontroll</td>
 <td align="left">Behandling A</td>
 <td align="left">Behandling B</td>
 </tr>
 <tr class="even">
-<td align="left">Deltagare-2-&gt;</td>
-<td align="left">Behandling-A</td>
+<td align="left">Deltagare 2 =&gt;</td>
+<td align="left">Behandling A</td>
 <td align="left">Kontroll</td>
-<td align="left">Behandling-B</td>
+<td align="left">Behandling B</td>
 </tr>
 <tr class="odd">
-<td align="left">Deltagare-3-&gt;</td>
-<td align="left">Behandling-B</td>
-<td align="left">Behandling-A</td>
+<td align="left">Deltagare 3 =&gt;</td>
+<td align="left">Behandling B</td>
+<td align="left">Behandling A</td>
 <td align="left">Kontroll</td>
 </tr>
 <tr class="even">
-<td align="left">…</td>
+<td align="left">Deltagare n =&gt;</td>
 <td align="left">…</td>
 <td align="left">…</td>
 <td align="left">…</td>
 </tr>
 </tbody>
 </table>
-<p>I denna situation skulle vi som forskare kunna välja att låta varje deltagare först genomgå villkoret Kontroll, följt av Behandling A och Behandling B. Denna design vore kanske den enklaste att implementera, men den kan vara problematisk på andra sätt. För att konkretisera denna situation kan vi tänka oss ett experiment där varje deltagare får betrakta tre ansiktsbilder i följd. Den första bilden visar ett ansikte med neutral min (Kontroll), medan det andra ansiktet visar en ledsen min (Behandling A), och det tredje ansiktet visar en glad min (Behandling B). För varje ansikte försöksdeltagaren får betrakta, instrueras den att ange på en skala hur glad eller ledsen personen på bilden är. Skalan går från mycket ledsen (-10) till mycket glad (+10).</p>
+<p>I denna situation skulle vi som forskare kunna välja att låta varje deltagare först genomgå villkoret Kontroll, följt av Behandling A och Behandling B. Denna design vore kanske den enklaste att implementera, men den kan vara problematisk på andra sätt. För att konkretisera denna situation kan vi tänka oss ett experiment där varje deltagare får betrakta tre ansiktsbilder i följd. Den första bilden visar ett ansikte med neutralt ansiktsuttryck (Kontroll), medan det andra ansiktet visar ett sorgset minspel (Behandling A), och det tredje ansiktet visar en glad min (Behandling B). För varje ansikte försöksdeltagaren får betrakta, instrueras den att ange på en skala hur glad eller ledsen personen på bilden är. Skalan går från mycket ledsen (-10) till mycket glad (+10).</p>
 <p>Problemet med denna experimentdesign, där villkoren inte randomiseras, inträffar om vi tänker oss att varje villkor i någon grad influerar nästkommande villkor (jfr. begreppet "priming"). Detta skulle kunna inträffa om deltagarna, efter att ha betraktat det neutrala ansiktet, upplever att det ledsna ansiktet är något mindre ledset än om det ledsna ansiktet hade betraktats först. På samma sätt skulle deltagarna kunna uppleva att det glada ansiktet är något mindre glatt efter att de betraktat det ledsna ansiktet. Denna typ av systematiska ordningseffekter (på engelska "order effects") är svåra att undvika helt, men med hjälp av randomisering kan vi åtminstone försöka minimera dem.</p>
 <p>I ansiktsstudien ovan skulle vi kunna lösa randomiseringen på åtminstone två olika sätt. Det första sättet vore att ge varje bild 1/3 chans att presenteras som första, andra och tredje villkor. Detta kallas för randomisering utan ersättning (“randomization without replacement”). Det andra sättet vore att göra en lista med alla de sex möjliga ordningsföljder i vilka man kan presentera tre villkor, och sedan presentera villkoren enligt dessa ordningsföljder för de sex första deltagarna. Därefter upprepas ordningsföljderna för nästa sex deltagare. Denna metod kallas för “latin square”, och innebär idealiskt att vi skulle behöva ett totalt antal deltagare i studien som är en multipel av sex (dvs. 12, 18, 24, osv.) för att designen ska vara helt balanserad. Randomisering är alltså viktigt om man kan misstänka att experimentella villkor skapar ordningseffekter, vilket som regel antas vara fallet i humanvetenskapliga och samhällsvetenskapliga studier. Mest kritiskt i studier med inomgruppsdesign och upprepade villkor.</p>
 </div>
