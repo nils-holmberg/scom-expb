@@ -112,7 +112,7 @@
 
 \title{Experiment}
 \author{Nils Gustafsson \& Nils Holmberg}
-\date{2021-11-30}
+\date{2021-12-02}
 
 \begin{document}
 \maketitle
@@ -710,21 +710,22 @@ Dessutom kan randomiseringen användas för att hålla försöksdeltagaren i ovi
 
 Återgår vi till att diskutera randomisering mer specifikt, så kan vi konstatera att denna designprincip är ganska enkel och intuitiv så länge en studie bara kontrasterar två villkor, och där varje deltagare endast exponeras för ett av dessa villkor en gång. Denna så kallade mellangruppsdesign (vilken vi diskuterar mer utförligt i nästa avsnitt) fungerar ofta bra för enkla studier, men inom samhällsvetenskap och humanvetenskap kan det ibland krävas något mer avancerade experimentdesigner, vilket i sin tur kräver andra former av randomisering. Detta kan exempelvis inträffa om experimentet innefattar ett kontrollvillkor och två eller flera behandlingsvillkor, eller om varje deltagare genomgår flera villkor, eller om experimentet innehåller någon kombination av dessa situationer. Betänk experimentdesignen som visas i tabellen nedan, där varje deltagare genomgår kontrollvillkoret samt två olika behandlingsvillkor.
 
-\begin{table}
-
-\caption{(\#tab:tab07.5.2-01)Tabell tab07.5.2-01}
-\centering
-\begin{tabular}[t]{llll}
+\begin{longtable}[]{@{}llll@{}}
+\caption{\label{tab:tab-02-07-5-2-01}Randomisering och balansering.}\tabularnewline
 \toprule
-Deltagare & Stimulus 1 & Stimulus 2 & Stimulus 3\\
+Deltagare. & Stimulus.1. & Stimulus.2. & Stimulus.3\tabularnewline
 \midrule
-Deltagare 1 > & Kontroll & Behandling A & Behandling B\\
-Deltagare-2-> & Behandling-A & Kontroll & Behandling-B\\
-Deltagare-3-> & Behandling-B & Behandling-A & Kontroll\\
-... & ... & ... & ...\\
+\endfirsthead
+\toprule
+Deltagare. & Stimulus.1. & Stimulus.2. & Stimulus.3\tabularnewline
+\midrule
+\endhead
+Deltagare 1 \textgreater{} & Kontroll & Behandling A & Behandling B\tabularnewline
+Deltagare-2-\textgreater{} & Behandling-A & Kontroll & Behandling-B\tabularnewline
+Deltagare-3-\textgreater{} & Behandling-B & Behandling-A & Kontroll\tabularnewline
+\ldots{} & \ldots{} & \ldots{} & \ldots{}\tabularnewline
 \bottomrule
-\end{tabular}
-\end{table}
+\end{longtable}
 
 I denna situation skulle vi som forskare kunna välja att låta varje deltagare först genomgå villkoret Kontroll, följt av Behandling A och Behandling B. Denna design vore kanske den enklaste att implementera, men den kan vara problematisk på andra sätt. För att konkretisera denna situation kan vi tänka oss ett experiment där varje deltagare får betrakta tre ansiktsbilder i följd. Den första bilden visar ett ansikte med neutral min (Kontroll), medan det andra ansiktet visar en ledsen min (Behandling A), och det tredje ansiktet visar en glad min (Behandling B). För varje ansikte försöksdeltagaren får betrakta, instrueras den att ange på en skala hur glad eller ledsen personen på bilden är. Skalan går från mycket ledsen (-10) till mycket glad (+10).
 
@@ -1069,7 +1070,7 @@ Efter den översiktliga presentationen av generella deskriptiva resultat, kommer
 \caption{Inferentiella resultat.}\label{fig:fig-02-08-1-2}
 \end{figure}
 
-Ur detta diagram kan vi utläsa att deltagarna i genomsnitt ägnat mindre visuell uppmärksamhet åt Facebook-posterna i kontrollvillkoret jämfört med behandlingsvillkoret, men vi har fortfarande inget mått på tillförlitligheten i denna skillnad som hjälper oss att dra slutsatser (s.k. inferens). För att kunna rapportera dessa inferentiella resultat av vårt experiment måste vi här gå tillbaka till hypoteserna som uppställdes i förarbetet till studien. Det kan vara en stor fördel att upprepa dessa hypoteser i resultaten, när vi rapporterar vilket stöd insamlade empiriska data ger till det förväntade utfallet. I vårt fall hade vi följande två hypotser, men för enkelhetens skull kommer vi i det följande bara att fokusera på den första.
+Ur detta diagram kan vi utläsa att deltagarna i genomsnitt ägnat mindre visuell uppmärksamhet åt Facebook-posterna i kontrollvillkoret jämfört med behandlingsvillkoret, men vi har fortfarande inget mått på tillförlitligheten i denna skillnad. För att kunna rapportera dessa inferentiella resultat av vårt experiment måste vi här gå tillbaka till hypoteserna som uppställdes i förarbetet till studien. Det kan vara en stor fördel att upprepa dessa hypoteser i resultaten, när vi rapporterar vilket stöd insamlade empiriska data ger till det förväntade utfallet. I vårt fall hade vi följande två hypotser, men för enkelhetens skull kommer vi i det följande bara att fokusera på den första.
 
 \begin{itemize}
 \item

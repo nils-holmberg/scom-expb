@@ -310,7 +310,7 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript. U
 
 
 ## Experimentell design {#sec07.5}
-[07-5-wc-file]: <> (119.64 %)
+[07-5-wc-file]: <> (119.25 %)
 [07-5-comment]: <> (10 sidor)
 
 Design är ett ganska svårdefinierat begrepp, vars innebörd handlar om att på ett överskådligt sätt sammanfatta strukturen och planen hos en vetenskaplig undersökning (på svenska används ibland "upplägg" eller "planering" som synonymer till experimentdesign). Man kan säga att begreppet experimentell design har två centrala aspekter: den första är kopplad till att beskriva och specificera de beroende och oberoende variablerna som ingår en undersökning, medan den andra centrala aspekten är kopplad till att beskriva hur deltagarna i en undersökning exponeras för de experimentella villkor som omfattas av de oberoende variablerna, dvs hur behandlingar eller "trials" är distribuerade inom en experimentell studie. I det följande ska vi börja med att diskutera experimentell design i relation till oberoende variabler, vilka vi även refererar till som behandlingsvariabler i denna bok.
@@ -339,17 +339,8 @@ Dessutom kan randomiseringen användas för att hålla försöksdeltagaren i ovi
 
 Återgår vi till att diskutera randomisering mer specifikt, så kan vi konstatera att denna designprincip är ganska enkel och intuitiv så länge en studie bara kontrasterar två villkor, och där varje deltagare endast exponeras för ett av dessa villkor en gång. Denna så kallade mellangruppsdesign (vilken vi diskuterar mer utförligt i nästa avsnitt) fungerar ofta bra för enkla studier, men inom samhällsvetenskap och humanvetenskap kan det ibland krävas något mer avancerade experimentdesigner, vilket i sin tur kräver andra former av randomisering. Detta kan exempelvis inträffa om experimentet innefattar ett kontrollvillkor och två eller flera behandlingsvillkor, eller om varje deltagare genomgår flera villkor, eller om experimentet innehåller någon kombination av dessa situationer. Betänk experimentdesignen som visas i tabellen nedan, där varje deltagare genomgår kontrollvillkoret samt två olika behandlingsvillkor.
 
-```{r tab07.5.2-01, tidy=F, echo=FALSE}
-dt = tibble::tribble(
-~"Deltagare",~"Stimulus 1",~"Stimulus 2",~"Stimulus 3",
-"Deltagare 1 >","Kontroll","Behandling A","Behandling B",
-"Deltagare-2->","Behandling-A","Kontroll","Behandling-B",
-"Deltagare-3->","Behandling-B","Behandling-A","Kontroll",
-"...","...", "...", "..."
-)
-knitr::kable(dt,
-caption='Tabell tab07.5.2-01',
-booktabs=TRUE)
+```{r tab-02-07-5-2-01, echo=F}
+knitr::kable(read.table("../csv/tab-02-07-5-2-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Randomisering och balansering.', booktabs=TRUE)
 ```
 
 I denna situation skulle vi som forskare kunna välja att låta varje deltagare först genomgå villkoret Kontroll, följt av Behandling A och Behandling B. Denna design vore kanske den enklaste att implementera, men den kan vara problematisk på andra sätt. För att konkretisera denna situation kan vi tänka oss ett experiment där varje deltagare får betrakta tre ansiktsbilder i följd. Den första bilden visar ett ansikte med neutral min (Kontroll), medan det andra ansiktet visar en ledsen min (Behandling A), och det tredje ansiktet visar en glad min (Behandling B). För varje ansikte försöksdeltagaren får betrakta, instrueras den att ange på en skala hur glad eller ledsen personen på bilden är. Skalan går från mycket ledsen (-10) till mycket glad (+10).
