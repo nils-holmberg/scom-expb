@@ -310,8 +310,8 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript. U
 
 
 ## Experimentell design {#sec07.5}
-[07-5-wc-file]: <> (121.14 %)
-[07-5-comment]: <> (10 sidor)
+[07-5-wc-file]: <> (106.19 %)
+[07-5-comment]: <> (12 sidor)
 
 Design är ett ganska svårdefinierat begrepp, vars innebörd handlar om att på ett överskådligt sätt sammanfatta strukturen och planen hos en vetenskaplig undersökning (på svenska används ibland "upplägg" eller "planering" som synonymer till experimentdesign). Man kan säga att begreppet experimentell design har två centrala aspekter: den första är kopplad till att beskriva och specificera de beroende och oberoende variablerna som ingår en undersökning, medan den andra centrala aspekten är kopplad till att beskriva hur deltagarna i en undersökning exponeras för de experimentella villkor som omfattas av de oberoende variablerna, dvs hur behandlingar (eller "trials" eller försöksomgångar) är distribuerade inom en experimentell studie. I det följande ska vi börja med att diskutera experimentell design i relation till oberoende variabler, vilka vi även refererar till som behandlingsvariabler i denna bok.
 
@@ -351,17 +351,13 @@ I ansiktsstudien ovan skulle vi kunna lösa randomiseringen på åtminstone två
 
 ### Mellangruppsdesign {#sub07.5.3}
 
-Den enklaste formen av experimentell design (och därmed ofta den tydligaste) kan antagligen härledas från den medicinska forskningen. I denna experimentdesign ingår två stycken grupper av försöksdeltagare som i möjligaste mån är jämförbara (eller "matchade") vad gäller ett antal olika demografiska variabler, såsom ålder, kön och hälsotillstånd mm. Varje deltagargrupp blir sedan slumpmässigt tilldelad en behandling (t.ex. en ny blodtryckssänkande medicin som utvärderas) eller ingen behandling (t.ex. ett sockerpiller som antas vara fysiologiskt verkningslöst). Efter att varje försöksdeltagare genomgått en av dessa två behandlingar (eller experimentella villkor) undersöker experimentledaren effekten av respektive behandling genom att uppmäta värdet på en utfallsvariabel kopplad till deltagaren (t.ex. blodtryck). Om den medicinska behandlingen haft en effekt jämfört med sockerpiller bör man finna en tydlig kontrast mellan deltagargrupperna (t.ex. lägre genomsnittligt blodtryck).
+Den enklaste formen av experimentell design (och därmed ofta den tydligaste) kan antagligen härledas från den medicinska forskningen. I denna experimentdesign ingår två stycken grupper av försöksdeltagare som i möjligaste mån är jämförbara (eller "matchade") vad gäller ett antal olika demografiska variabler, såsom ålder, kön och hälsotillstånd mm. Varje deltagargrupp blir sedan slumpmässigt tilldelad en behandling (t.ex. en ny blodtryckssänkande medicin som utvärderas) eller ingen behandling (t.ex. ett sockerpiller som antas vara fysiologiskt verkningslöst). Efter att varje försöksdeltagare genomgått en av dessa två behandlingar (eller experimentella villkor) undersöker experimentledaren effekten av respektive behandling genom att uppmäta värdet på en utfallsvariabel kopplad till alla deltagare i båda grupper (t.ex. blodtryck). Om den medicinska behandlingen haft en effekt jämfört med sockerpiller bör man finna en tydlig kontrast mellan deltagargrupperna (t.ex. lägre genomsnittligt blodtryck).
 
-TODO: Ett typisk kommunikationsvetenskapligt tillämpning av mellangruppsdesign är ett så kallat AB-test. Expandera.
+En något mer samhällsvetenskaplig tillämpning av mellangruppsdesign skulle kunna vara ett så kallat AB-test. Denna typ av experiment används relativt ofta inom kommunikationsvetenskap och marknadsföring, och i detta sammanhang kan syftet vara att ta reda på vilken typ av annonsdesign som ger bäst effekt på konsumenter. När det talas om AB-test så brukar det vara underförstått att en annons utformas i två varianter (A och B), där kommunikatören försöker manipulera en enda aspekt mellan varianterna. Exempelvis kan vi tänka oss att annonsen innehåller bild och text, och att experimentet undersöker effekten av att ha samma bild i annonserna, men olika formulering av texten, eller vice versa. Varje annonsvariant visas sedan för en grupp av deltagare, och efter varje individuell annonsexponering undersöks effekten på t.ex. uppmärksamhet, minne eller köpintresse hos deltagare i båda grupper. Utmaningen i denna typ av experiment ligger ofta i att hitta relevant tidigare forskning och att bara variera en enda aspekt mellan båda annonsvarianter. Eftersom det kan vara svårt att avgöra vilken variant som är kontrollvillkoret talar man i dessa fall bara om två olika behandlingsvillkor som jämförs (A och B). AB-testet med mellangruppsdesign brukar betraktas som något av ett explorativt pilottest, men om det genomförs omsorgsfullt och korrekt kan det ge robusta resultat.
 
-Tabell 1.1 Det här är tabellrubriken
-
-  Tabellhuvud    Tabellhuvud   Tabellhuvud                   
-  -------------- ------------- -------------- -------------- --
-  Villkor \>     Kontroll      Behandling A   Behandling B   
-  Deltagare \>   Deltagare 1   Deltagare 2    Deltagare 3    
-  \...           Deltagare 4   Deltagare 5    Deltagare 6    
+```{r tab-02-07-5-3-01, echo=F}
+knitr::kable(read.table("../csv/tab-02-07-5-3-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Mellangruppsdesign.', booktabs=TRUE)
+```
 
 Låt oss i det följande återvända till vårt tänka exempel-experiment, där syftet är att undersöka hur medieanvändares interaktion med (ögonrörelsemätning), och attityder till (survey-skalor), Facebook-poster påverkas av om posten innehåller en bild på en auktoritetperson alternativt en bild på en neutral person. För att testa detta experimentellt behöver vi först välja ut en Facebook-post som vi kan använda som stimuli. Vi kan anta att vi väljer ut en post på temat brottlighet i Sverige. Därefter behöver vi välja två bilder som kommer utgöra experimentets behandlingar eller villkor. Vi antar att kriminologen Leif G.W. Persson kan anses vara en auktoritetsperson inom området brottslighet, och använder en bild på honom för att konstruera Facebook-postens behandlingsvillkor. Därefter väljer vi en bild på en neutral person, och använder denna bild för att konstruera vårt kontrollvillkor.
 
