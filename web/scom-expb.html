@@ -11,7 +11,7 @@
 
 <meta name="author" content="Nils Gustafsson &amp; Nils Holmberg" />
 
-<meta name="date" content="2021-12-02" />
+<meta name="date" content="2021-12-03" />
 
 <title>Experiment</title>
 
@@ -361,7 +361,7 @@ pre code {
 
 <h1 class="title toc-ignore">Experiment</h1>
 <h4 class="author">Nils Gustafsson &amp; Nils Holmberg</h4>
-<h4 class="date">2021-12-02</h4>
+<h4 class="date">2021-12-03</h4>
 
 </div>
 
@@ -900,7 +900,7 @@ en teoretisk modell
 <div id="sub07.5.5" class="section level3">
 <h3>7.5.5 Upprepade villkor</h3>
 <p>När vi i föregående avsnitt diskuterat mellangruppsdesign och inomgruppsdesign har vi avstått från att ta upp frågan om upprepade villkor. Underförstått har vi då antagit att varje deltagare exponeras för ett villkor (mellangruppsdesign) eller alla villkor (inomgruppsdesign) endast en gång. I vissa typer av experiment är detta ett rimligt antagande; i medicinska studier förväntar vi oss kanske att varje deltagare genomgår ett kontrollvillkor i form av sockerpiller, eller ett experimentellt villkor i form av ett läkemedel, endast en gång. Man skulle dock kunna tänka sig att dessa behandlingar upprepas ett antal gånger med samma försöksdeltagare och med en viss tidsperiods mellanrum. Tanken med att upprepa villkoren är att de uppmätta resultaten sammantaget ska ge en mer rättvis bild av effekten hos varje deltagare än om endast en mätning gjordes. I sådana fall skulle man kalla detta för</p>
-<p>- formuleringen &quot;within-subjects repeated measures design&quot;</p>
+<p>- formuleringen &quot;within-subjects repeated measures design&quot;. Kanske betona “försöksomgångar” som översättning av trials</p>
 <table>
 <caption>Upprepade villkor.</caption>
 <thead>
@@ -937,38 +937,28 @@ en teoretisk modell
 <div id="sub07.5.6" class="section level3">
 <h3>7.5.6 Faktoriell design</h3>
 <p>Två eller fler oberoende variabler (faktorer), med två eller fler diskreta nivåer (eng. &quot;levels&quot;) på varje faktor. 3x2 faktoriell design. Tillåter att effekten av alla nivåer på varje enskild faktor testas, liksom effekten av alla kombinationer av faktorer (interaktioner). Används ofta inom naturvetenskapliga sammanhang, t.ex. materialtestning. &quot;Fully crossed design&quot; - variables and level of variables (e.g. 2x3 between-subjects design)</p>
-<p>Tabell 7.5.5 Faktoriell experimentdesign</p>
 <table>
+<caption>Faktoriell design.</caption>
 <thead>
 <tr class="header">
-<th align="left">Tabellhuvud</th>
-<th align="left">Tabellhuvud</th>
-<th align="left">Tabellhuvud</th>
-<th></th>
-<th></th>
+<th align="left">Faktor_AB</th>
+<th align="left">Faktor_A_nivå_0</th>
+<th align="left">Faktor_A_nivå_1</th>
+<th align="left">Faktor_A_nivå_2</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"></td>
-<td align="left">Faktor A (nivå 0)</td>
-<td align="left">Faktor A (nivå 1)</td>
-<td>Faktor A (nivå 2)</td>
-<td></td>
-</tr>
-<tr class="even">
 <td align="left">Faktor B (nivå 0)</td>
 <td align="left">Kontroll A0/B0</td>
 <td align="left">Behandling A1/B0</td>
-<td>Behandling A2/B0</td>
-<td></td>
+<td align="left">Behandling A2/B0</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Faktor B (nivå 1)</td>
 <td align="left">Behandling A0/B1</td>
 <td align="left">Behandling A1/B1</td>
-<td>Behandling A2/B1</td>
-<td></td>
+<td align="left">Behandling A2/B1</td>
 </tr>
 </tbody>
 </table>
