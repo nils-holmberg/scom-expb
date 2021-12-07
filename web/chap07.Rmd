@@ -310,14 +310,14 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript. U
 
 
 ## Experimentell design {#sec07.5}
-[07-5-wc-file]: <> (106.01 %)
+[07-5-wc-file]: <> (106.60 %)
 [07-5-comment]: <> (12 sidor)
 
 Design är ett ganska svårdefinierat begrepp, vars innebörd handlar om att på ett överskådligt sätt sammanfatta strukturen och planen hos en vetenskaplig undersökning (på svenska används ibland "upplägg" eller "planering" som synonymer till experimentdesign). Man kan säga att begreppet experimentell design har två centrala aspekter: den första är kopplad till att beskriva och specificera de beroende och oberoende variablerna som ingår en undersökning, medan den andra centrala aspekten är kopplad till att beskriva hur deltagarna i en undersökning exponeras för de experimentella villkor som omfattas av de oberoende variablerna, dvs hur behandlingar (eller "trials" eller försöksomgångar) är distribuerade inom en experimentell studie. I det följande ska vi börja med att diskutera experimentell design i relation till oberoende variabler, vilka vi även refererar till som behandlingsvariabler i denna bok.
 
 För att få en bättre förståelse av begreppet experimentdesign börjar vi med ett exempel från den medicinska forskningen. En epidemiologisk forskare bestämmer sig för att testa ett nytt vaccin som den tagit fram. För att undersöka detta bestämmer sig forskaren (i vanlig ordning) för att rekrytera försöksdeltagare som sedan delas in i två grupper, varav den ena gruppen får en overksam spruta med saltvattenlösning, och deltagare i den andra gruppen får en spruta med det nya vaccinet. Vi säger därför att detta experiment har en _mellangruppsdesign_, eftersom effekten av den oberoende variabeln (vatten vs. vaccin) mäts och jämförs mellan två likvärdiga grupper av deltagare. Som tumregel kan man säga att en enklare experimentdesign är ofta att föredra framför en mer komplicerad design. Orsaken till detta är att en enkel design ofta genererar tydligare resultat som i efterhand är enklare att tolka. Enklare experimentella designer består ofta bara av en enda oberoende variabel som kan vara antingen numerisk eller kategorisk (i den engelska metodlitteraturen omnämns dessa ibland som "quantitative" respektive "qualitative variables").
 
-Även om enkla experimentdesigner är idealet så finns det flera situationer där exempelvis en mellangruppsdesign inte riktigt räcker till. En sådan situation kan inträffa om den uppmätta effekten av en behandling på en viss utfallsvariabel är relativt liten jämfört med kontrollvillkoret. I sådana situationer riskerar alltså en eventuell effekt av behandlingen att drunkna i bakgrundsbruset från andra orsaksfaktorer. Ett konkret exempel på detta är undersökningar som mäter deltagarnas hjärnaktivitet (t.ex. genom elektroencefalografi eller EEG). En annan situation där en enkel mellangruppsdesign kan vara otillräckligt är om det naturligt förekommer stora individuella skillnader mellan deltagarna inom respektive försöksgrupp med avseende på utfallsvariabeln. Gemensamt för båda dessa problematiska situationer är alltså att den förväntade effekten av behandlingen är liten i relation till andra omgivande bruskällor (i överförd bemärkelse används ibland det engelska uttrycket "low signal-to-noise ratio"), och att det därför föreligger en risk för typ I- och typ II-fel (s.k. false positives respektive false negatives).
+Även om enkla experimentdesigner är idealet så finns det flera situationer där exempelvis en mellangruppsdesign inte riktigt räcker till. En sådan situation kan inträffa om den uppmätta effekten av en behandling på en viss utfallsvariabel är relativt liten jämfört med kontrollvillkoret. I sådana situationer riskerar alltså en eventuell effekt av behandlingen att drunkna i bakgrundsbruset från andra orsaksfaktorer. Ett konkret exempel på detta är undersökningar som mäter deltagarnas hjärnaktivitet (t.ex. genom elektroencefalografi eller EEG). En annan situation där en enkel mellangruppsdesign kan vara otillräckligt är om det naturligt förekommer stora individuella skillnader mellan deltagarna inom respektive försöksgrupp med avseende på utfallsvariabeln. Gemensamt för båda dessa problematiska situationer är alltså att den förväntade effekten av behandlingen är liten i relation till andra omgivande bruskällor (i överförd bemärkelse används ibland det engelska uttrycket "low signal-to-noise ratio"), och att det därför föreligger en risk för typ I- och typ II-fel (s.k. "false positives" respektive "false negatives").
 
 Just detta är ofta fallet i samhällsvetenskapliga undersökningar, där det är vanligt att kvantitativa data samlas in genom självrapporterade enkätsvar som ytterst är beroende av varje deltagares vilja och förmåga att svara uppriktigt, vilket kan skapa stor individuell variation. Här kan det alltså vara önskvärt att använda mer robusta experimentdesigner som kan hantera brusiga datainsamlingar innehållande flera potentiella felkällor. En lösning på detta problem är så kallad _inomgruppsdesign_, vilket vi kommer diskutera längre fram i detta kapitel. Den tydligaste skillnaden gentemot mellangruppsdesign är dock att denna typ av experiment exponerar varje deltagare för både kontrollvillkor och behandlingsvillkor, samt att denna exponering kan upprepas flera gånger för varje deltagare. Av naturliga skäl är detta experimentella upplägg många gånger svårt eller omöjligt att genomföra inom den medicinska forskningen, eftersom försöksdeltagare inte både kan ges en placebotablett _och_ en verksam medicin vid samma tillfälle.
 
@@ -397,17 +397,21 @@ Två eller fler oberoende variabler (faktorer), med två eller fler diskreta niv
 knitr::kable(read.table("../csv/tab-02-07-5-6-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Faktoriell design.', booktabs=TRUE)
 ```
 
-### Naturliga experiment {#sub07.5.7}
+### Fallstudie-experiment {#sub07.5.7}
+
+SCED vs RCT
+
+### Naturliga experiment {#sub07.5.8}
 
 T.ex. undersökning av effekterna av medborgarlön? Kontrastera med naturliga experiment? Ett sätt att tänka kring oberoende variabler är att de representerar experimentets utfallsvariabler. En annan faktor som har stor betydelse i samband med urvalet av.. lacks random assignment, naturliga exp del 1. Kan komma att bli en vanligare design pga etiska utmaningar med att framkalla långsiktig påverkan på försöksdeltagare. Non-repeated single trial between-subjects without control. Här kan vi prata om nobelpriset 2021 i ekonomi, där man jämförde effekten av att hölja minimilönen i en amerikansk delstat, jämfört en annan delstat där detta inte genomfördes, och som därmed kom att utgöra kontrollvillkor (https://www.reuters.com/world/card-angrist-imbens-win-2021-nobel-economics-prize-2021-10-11/).
 
-### Kvasi-experiment {#sub07.5.8}
+### Kvasi-experiment {#sub07.5.9}
 
-T.ex. undersökning av effekterna av medborgarlön? Kontrastera med naturliga experiment? Ett sätt att tänka kring oberoende variabler är att de representerar experimentets utfallsvariabler. En annan faktor som har stor betydelse i samband med urvalet av.. lacks random assignment, naturliga exp del 1. Kan komma att bli en vanligare design pga etiska utmaningar med att framkalla långsiktig påverkan på försöksdeltagare. Panel research.
+T.ex. undersökning av effekterna av medborgarlön? Kontrastera med naturliga experiment? Ett sätt att tänka kring oberoende variabler är att de representerar experimentets utfallsvariabler. En annan faktor som har stor betydelse i samband med urvalet av.. lacks random assignment, naturliga exp del 1. Kan komma att bli en vanligare design pga etiska utmaningar med att framkalla långsiktig påverkan på försöksdeltagare. Panel research. Single-case design, traditionell RCT (randomized controlled trial ) vs SCED (single-case experimental designs), https://www.nof1sced.org/
 
 ![expdesign](../fig/design.png)
 
-### Planering av experimentdesign {#sub07.5.9}
+### Planering av experimentdesign {#sub07.5.10}
 
 Håll designen så enkel som möjligt för att underlätta tolkningen av resultat. Helst inte mer än 2x2 design. - diskutera utifrån exempel-experiment med bildinnehåll hos Facebook-poster. Bild kommer ovan
 
@@ -422,7 +426,7 @@ Håll designen så enkel som möjligt för att underlätta tolkningen av resulta
 - Naturliga experiment [7.5.7](#sub07.5.7)
 - Kvasi-experiment [7.5.8](#sub07.5.8)
 
-### Rapportering av experimentdesign {#sub07.5.10}
+### Rapportering av experimentdesign {#sub07.5.110}
 
 Håll designen så enkel som möjligt för att underlätta tolkningen av resultat. Helst inte mer än 2x2 design.
 
