@@ -310,7 +310,7 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript. U
 
 
 ## Experimentell design {#sec07.5}
-[07-5-wc-file]: <> (118.00 %)
+[07-5-wc-file]: <> (121.48 %)
 [07-5-comment]: <> (12 sidor)
 
 Design är ett ganska svårdefinierat begrepp, vars innebörd handlar om att på ett överskådligt sätt sammanfatta strukturen och planen hos en vetenskaplig undersökning (på svenska används ibland "upplägg" eller "planering" som synonymer till experimentdesign). Man kan säga att begreppet experimentell design har två centrala aspekter: den första är kopplad till att beskriva och specificera de beroende och oberoende variablerna som ingår en undersökning, medan den andra centrala aspekten är kopplad till att beskriva hur deltagarna i en undersökning exponeras för de experimentella villkor som omfattas av de oberoende variablerna, dvs hur behandlingar (eller "trials" eller försöksomgångar) är distribuerade inom en experimentell studie. I det följande ska vi börja med att diskutera experimentell design i relation till oberoende variabler, vilka vi även refererar till som behandlingsvariabler i denna bok.
@@ -381,15 +381,15 @@ Om vi än en gång återvänter till vårt exempel-experiment, och nu istället 
 knitr::kable(read.table("../csv/tab-02-07-5-4-02.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Inomgruppsdesign.', booktabs=TRUE)
 ```
 
-För att hantera denna problematik förutsätter alltså mellangruppsdesignen att vi har lika många Facebook-poster (visuella stimuli) som kan instantiera villkoren, som vi har faktiska villkor i studien (två, i vårt exempel-experiment). Den första deltagaren får alltså läsa den första Facebook-posten i kontrollvillkoret, och sedan fortsätta till att läsa den andra posten i behandlingsvillkoret. Medan den andra deltagaren får läsa den första posten i behandlingsvillkoret, och den andra posten i kontrollvillkoret. Därefter upprepas denna parvisa sekvens för varje två nya deltagare som ingår i studien. På så vis kommer alla deltagare att exponeras för studiens båda villkor utan att risken är alltför stor att de genomskådar manipulationen. - exempel på crossed design?
-
-Diskutera expempel experiment med Facebook-poster enligt ett upplägg med inomgruppsdesign. - effekten kontrasteras inom varje deltagare, dvs inga deltagargrupper - Alla deltagare genomgår alla villkor (within-subjects design) \"beroende grupper\", inompersonsdesign - lämpligare vid beteendevetenskapliga studier - variables and level of variables (e.g. 2x3 between-subjects design) - Något om Blandad design (mixed design). Kan fortfarande vara en bruskälla att varje villkor bara presenteras en enda gång.. övergång till upprepade villkor.
+För att hantera denna problematik förutsätter alltså inomgruppsdesignen att vi har lika många Facebook-poster (visuella stimuli) som kan instantiera villkoren, som vi har faktiska villkor i studien (två, i vårt exempel-experiment). Den första deltagaren får alltså läsa den första Facebook-posten i kontrollvillkoret, och sedan fortsätta till att läsa den andra posten i behandlingsvillkoret. Medan den andra deltagaren får läsa den första posten i behandlingsvillkoret, och den andra posten i kontrollvillkoret. Därefter upprepas denna sekvens för varje par nya deltagare som ingår i studien. På så vis kommer alla deltagare att exponeras för studiens båda villkor utan att risken blir alltför stor att de genomskådar manipulationen och därigenom ger upphov till icke-representativa och irrelevanta mätdata. Detta designmönster kan anses som mycket användbart inom beteendevetenskapliga experiment, eftersom bruset som orsakas av ordningseffekter och individuella skillnader hos deltagarna minskar något. Dock kan man kanske fortfarande argumentera att en kvarvarande bruskälla är att varje villkor bara presenteras en enda gång, vilket leder oss vidare till experimentdesigner med upprepade villkor.
 
 ### Upprepade villkor {#sub07.5.5}
 
-När vi i föregående avsnitt diskuterat mellangruppsdesign och inomgruppsdesign har vi avstått från att ta upp frågan om upprepade villkor. Underförstått har vi då antagit att varje deltagare exponeras för ett villkor (mellangruppsdesign) eller alla villkor (inomgruppsdesign) endast en gång. I vissa typer av experiment är detta ett rimligt antagande; i medicinska studier förväntar vi oss kanske att varje deltagare genomgår ett kontrollvillkor i form av sockerpiller, eller ett experimentellt villkor i form av ett läkemedel, endast en gång. Man skulle dock kunna tänka sig att dessa behandlingar upprepas ett antal gånger med samma försöksdeltagare och med en viss tidsperiods mellanrum. Tanken med att upprepa villkoren är att de uppmätta resultaten sammantaget ska ge en mer rättvis bild av effekten hos varje deltagare än om endast en mätning gjordes. I sådana fall skulle man kalla detta för 
+När vi i föregående avsnitt diskuterat mellangruppsdesign och inomgruppsdesign har vi avstått från att ta upp frågan om upprepade villkor. Underförstått har vi då antagit att varje deltagare exponeras för ett villkor (mellangruppsdesign) eller alla villkor (inomgruppsdesign) endast en gång. I vissa typer av experiment är detta ett rimligt antagande; i medicinska studier förväntar vi oss kanske att varje deltagare genomgår ett kontrollvillkor i form av sockerpiller, eller ett experimentellt villkor i form av ett läkemedel, endast en gång. Man skulle dock kunna tänka sig att dessa (medicinska) behandlingar upprepas ett antal gånger med samma försöksdeltagare och med en viss tidsperiods mellanrum. Tanken med att upprepa villkoren är att flera mätpunkter för varje deltagare sammantaget bör ge en mer rättvis bild av effekten av en behandling, än om endast en mätning görs per deltagare. Denna design kan kallas för upprepade villkor eller upprepade mätningar, där den senare beteckningen hamnar hyfsat nära den engelska motsvarigheten "repeated measures".
 
-\- formuleringen \"within-subjects repeated measures design\". Kanske betona "försöksomgångar" som översättning av trials
+Faktum är att ett inomgruppsexperiment med två villkor redan kan anses vara ett minimalt exempel på upprepade mätningar, eftersom varje deltagare då mäts två gånger 
+
+\- formuleringen \"within-subjects repeated measures design\". Kanske betona "försöksomgångar" som översättning av trials ..Ett annat sätt att mitigera risken att deltagare inser manipulationen i ett experiment kan vara att använda s.k. "fillers", stimuli som liknar de andra som används (t.ex. FB-poster med text och bild) men som inte har något att göra med de experimentella villkoren
 
 ```{r tab-02-07-5-5-01, echo=F}
 knitr::kable(read.table("../csv/tab-02-07-5-5-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Upprepade villkor.', booktabs=TRUE)
@@ -409,6 +409,8 @@ Två eller fler oberoende variabler (faktorer), med två eller fler diskreta niv
 ```{r tab-02-07-5-6-01, echo=F}
 knitr::kable(read.table("../csv/tab-02-07-5-6-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Faktoriell design.', booktabs=TRUE)
 ```
+
+Diskutera expempel experiment med Facebook-poster enligt ett upplägg med faktoriell design. Detta designmönster med två experimentella villkor som "korsas" med två experimentella stimuli för varje par av deltagare kallas ibland på engelska för "crossed experimental design", och kan anses som mycket användbar inom beteendevetenskapliga studier 
 
 ### Fallstudie-experiment {#sub07.5.7}
 
