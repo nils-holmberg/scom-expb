@@ -812,9 +812,7 @@ För att hantera denna problematik förutsätter alltså inomgruppsdesignen att 
 
 När vi i föregående avsnitt diskuterat mellangruppsdesign och inomgruppsdesign har vi avstått från att ta upp frågan om upprepade villkor. Underförstått har vi då antagit att varje deltagare exponeras för ett villkor (mellangruppsdesign) eller alla villkor (inomgruppsdesign) endast en gång. I vissa typer av experiment är detta ett rimligt antagande; i medicinska studier förväntar vi oss kanske att varje deltagare genomgår ett kontrollvillkor i form av sockerpiller, eller ett experimentellt villkor i form av ett läkemedel, endast \emph{en} gång. Man skulle dock kunna tänka sig att dessa (medicinska) behandlingar upprepas ett antal gånger med samma försöksdeltagare och med en viss tidsperiods mellanrum. Tanken med att upprepa villkoren är att flera mätpunkter för varje deltagare sammantaget bör ge en mer rättvis bild av effekten av en behandling, än om endast en mätning görs per deltagare. Denna design kan kallas för upprepade villkor eller upprepade mätningar, där den senare beteckningen hamnar hyfsat nära den engelska motsvarigheten ``repeated measures''.
 
-Faktum är att ett inomgruppsexperiment med två villkor redan kan anses vara ett minimalt exempel på designen upprepade villkor eller mätningar, eftersom varje deltagare med detta upplägg mäts två gånger. I detta avsnitt kommer vi dock lägga mer betoning på experiment där varje villkor upprepas, vilket innebär att varje deltagare kommer att generera flera mätpunkter för samtliga villkor (eller behandlingar) som ingår i studien. Här kan det vara relevant att återkoppla till det centrala begreppet ``försök'' eller på engelska ``trial'', eftersom vi nu kan drista oss till att jämställa ett experimentellt villkor med ett försök, samt upprepade villkor med flera försöksomgångar. kontroll, behandling, kontroll, behandling
-
-- formuleringen "within-subjects repeated measures design". Kanske betona ``försöksomgångar'' som översättning av trials ..Ett annat sätt att mitigera risken att deltagare inser manipulationen i ett experiment kan vara att använda s.k. ``fillers'', stimuli som liknar de andra som används (t.ex. FB-poster med text och bild) men som inte har något att göra med de experimentella villkoren
+Faktum är att ett inomgruppsexperiment med två villkor redan kan anses vara ett minimalt exempel på designen upprepade villkor (eller upprepade mätningar), eftersom varje deltagare med detta upplägg mäts två gånger. I detta avsnitt kommer vi dock lägga mer betoning på experiment där varje \emph{villkor} upprepas, vilket innebär att varje deltagare kommer att generera flera mätpunkter för samtliga villkor (eller behandlingar) som ingår i studien. Här kan det vara relevant att återkoppla till det centrala begreppet ``försök'' eller på engelska ``trial'', eftersom vi nu kan drista oss till att jämställa ett experimentellt villkor med ett försök, samt upprepade villkor med flera försöksomgångar. Detta försöker vi illustrera i tabellen nedan, där deltagarna i de första försöksomgångarna genomgår kontrollvillkor och en behandling, för att därefter upprepa samma två villkor ytterligare en gång. En uppmärksam läsare skulle här dock kanske invända mot att den illustrerade designen inte uppvisar mycket till randomisering, vilket naturligtvis är korrekt, och således kan behöva åtgärdas. Ur randomiseringssynpunkt vore det antagligen bättre att hälften av deltagarna började med behandlingsvillkoret.
 
 \begin{longtable}[]{@{}lllll@{}}
 \caption{\label{tab:tab-02-07-5-5-01}Upprepade villkor.}\tabularnewline
@@ -832,25 +830,29 @@ Deltagare 3 =\textgreater{} & Kontroll & Behandling & Kontroll & Behandling\tabu
 \bottomrule
 \end{longtable}
 
+Kombinationen av inomgruppsdesign och upprepade villkor (på engelska ``within-subjects repeated measures design'') kan betraktas som en mycket robust experimentell design, som lämpar sig väl för samhällsvetenskapliga forskningsfrågor, där vi som sagt kan anta att flera samverkande bruskällor (deltagarnas individuella skillnader, självrapporterade mätdata, små effektstorlekar, etc) försvårar möjligheterna att hitta tillförlitliga mönster i våra observationer. Om vi dessutom lyckas hantera aspekterna av randomisering och balansering på ett bra sätt, så har vi en
+
 Diskutera expempel experiment med Facebook-poster enligt ett upplägg med mellangruppsdesign och upprepade villkor. Om vi kombinerar allt vi lärt oss hittills, inklusive randomisering och balansering.
 
 \begin{longtable}[]{@{}llll@{}}
 \caption{\label{tab:tab-02-07-5-5-02}Randomisering och balansering.}\tabularnewline
 \toprule
-Deltagare & Försöksomgång\_1 & Försöksomgång\_2 & Försöksomgång\_3\tabularnewline
+Försök\_Deltagare & Deltagare\_1 & Deltagare\_2 & Deltagare\_3\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-Deltagare & Försöksomgång\_1 & Försöksomgång\_2 & Försöksomgång\_3\tabularnewline
+Försök\_Deltagare & Deltagare\_1 & Deltagare\_2 & Deltagare\_3\tabularnewline
 \midrule
 \endhead
-Deltagare 1 =\textgreater{} & Kontroll & Behandling A & Behandling B\tabularnewline
-Deltagare 2 =\textgreater{} & Behandling B & Kontroll & Behandling A\tabularnewline
-Deltagare 3 =\textgreater{} & Behandling A & Behandling B & Kontroll\tabularnewline
-Deltagare 4 =\textgreater{} & Kontroll & Behandling B & Behandling A\tabularnewline
-Deltagare 5 =\textgreater{} & Behandling A & Kontroll & Behandling B\tabularnewline
-Deltagare 6 =\textgreater{} & Behandling B & Behandling A & Kontroll\tabularnewline
-Deltagare n =\textgreater{} & \ldots{} & \ldots{} & \ldots{}\tabularnewline
+Försöksomgång\_1 & Kontroll & Behandling & Dummy\tabularnewline
+Försöksomgång\_2 & Behandling & Dummy & Kontroll\tabularnewline
+Försöksomgång\_3 & Dummy & Kontroll & Behandling\tabularnewline
+Försöksomgång\_4 & Behandling & Dummy & Kontroll\tabularnewline
+Försöksomgång\_5 & Dummy & Kontroll & Behandling\tabularnewline
+Försöksomgång\_6 & Kontroll & Behandling & Dummy\tabularnewline
+Försöksomgång\_7 & Dummy & Kontroll & Behandling\tabularnewline
+Försöksomgång\_8 & Kontroll & Behandling & Dummy\tabularnewline
+Försöksomgång\_9 & Behandling & Dummy & Kontroll\tabularnewline
 \bottomrule
 \end{longtable}
 

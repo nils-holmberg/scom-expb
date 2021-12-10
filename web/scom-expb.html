@@ -923,8 +923,7 @@ en teoretisk modell
 <div id="sub07.5.5" class="section level3">
 <h3>7.5.5 Upprepade villkor</h3>
 <p>När vi i föregående avsnitt diskuterat mellangruppsdesign och inomgruppsdesign har vi avstått från att ta upp frågan om upprepade villkor. Underförstått har vi då antagit att varje deltagare exponeras för ett villkor (mellangruppsdesign) eller alla villkor (inomgruppsdesign) endast en gång. I vissa typer av experiment är detta ett rimligt antagande; i medicinska studier förväntar vi oss kanske att varje deltagare genomgår ett kontrollvillkor i form av sockerpiller, eller ett experimentellt villkor i form av ett läkemedel, endast <em>en</em> gång. Man skulle dock kunna tänka sig att dessa (medicinska) behandlingar upprepas ett antal gånger med samma försöksdeltagare och med en viss tidsperiods mellanrum. Tanken med att upprepa villkoren är att flera mätpunkter för varje deltagare sammantaget bör ge en mer rättvis bild av effekten av en behandling, än om endast en mätning görs per deltagare. Denna design kan kallas för upprepade villkor eller upprepade mätningar, där den senare beteckningen hamnar hyfsat nära den engelska motsvarigheten “repeated measures”.</p>
-<p>Faktum är att ett inomgruppsexperiment med två villkor redan kan anses vara ett minimalt exempel på designen upprepade villkor eller mätningar, eftersom varje deltagare med detta upplägg mäts två gånger. I detta avsnitt kommer vi dock lägga mer betoning på experiment där varje villkor upprepas, vilket innebär att varje deltagare kommer att generera flera mätpunkter för samtliga villkor (eller behandlingar) som ingår i studien. Här kan det vara relevant att återkoppla till det centrala begreppet “försök” eller på engelska “trial”, eftersom vi nu kan drista oss till att jämställa ett experimentellt villkor med ett försök, samt upprepade villkor med flera försöksomgångar. kontroll, behandling, kontroll, behandling</p>
-<p>- formuleringen &quot;within-subjects repeated measures design&quot;. Kanske betona “försöksomgångar” som översättning av trials ..Ett annat sätt att mitigera risken att deltagare inser manipulationen i ett experiment kan vara att använda s.k. “fillers”, stimuli som liknar de andra som används (t.ex. FB-poster med text och bild) men som inte har något att göra med de experimentella villkoren</p>
+<p>Faktum är att ett inomgruppsexperiment med två villkor redan kan anses vara ett minimalt exempel på designen upprepade villkor (eller upprepade mätningar), eftersom varje deltagare med detta upplägg mäts två gånger. I detta avsnitt kommer vi dock lägga mer betoning på experiment där varje <em>villkor</em> upprepas, vilket innebär att varje deltagare kommer att generera flera mätpunkter för samtliga villkor (eller behandlingar) som ingår i studien. Här kan det vara relevant att återkoppla till det centrala begreppet “försök” eller på engelska “trial”, eftersom vi nu kan drista oss till att jämställa ett experimentellt villkor med ett försök, samt upprepade villkor med flera försöksomgångar. Detta försöker vi illustrera i tabellen nedan, där deltagarna i de första försöksomgångarna genomgår kontrollvillkor och en behandling, för att därefter upprepa samma två villkor ytterligare en gång. En uppmärksam läsare skulle här dock kanske invända mot att den illustrerade designen inte uppvisar mycket till randomisering, vilket naturligtvis är korrekt, och således kan behöva åtgärdas. Ur randomiseringssynpunkt vore det antagligen bättre att hälften av deltagarna började med behandlingsvillkoret.</p>
 <table>
 <caption>Upprepade villkor.</caption>
 <thead>
@@ -960,59 +959,72 @@ en teoretisk modell
 </tr>
 </tbody>
 </table>
+<p>Kombinationen av inomgruppsdesign och upprepade villkor (på engelska “within-subjects repeated measures design”) kan betraktas som en mycket robust experimentell design, som lämpar sig väl för samhällsvetenskapliga forskningsfrågor, där vi som sagt kan anta att flera samverkande bruskällor (deltagarnas individuella skillnader, självrapporterade mätdata, små effektstorlekar, etc) försvårar möjligheterna att hitta tillförlitliga mönster i våra observationer. Om vi dessutom lyckas hantera aspekterna av randomisering och balansering på ett bra sätt, så har vi en</p>
 <p>Diskutera expempel experiment med Facebook-poster enligt ett upplägg med mellangruppsdesign och upprepade villkor. Om vi kombinerar allt vi lärt oss hittills, inklusive randomisering och balansering.</p>
 <table>
 <caption>Randomisering och balansering.</caption>
 <thead>
 <tr class="header">
-<th align="left">Deltagare</th>
-<th align="left">Försöksomgång_1</th>
-<th align="left">Försöksomgång_2</th>
-<th align="left">Försöksomgång_3</th>
+<th align="left">Försök_Deltagare</th>
+<th align="left">Deltagare_1</th>
+<th align="left">Deltagare_2</th>
+<th align="left">Deltagare_3</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Deltagare 1 =&gt;</td>
+<td align="left">Försöksomgång_1</td>
 <td align="left">Kontroll</td>
-<td align="left">Behandling A</td>
-<td align="left">Behandling B</td>
+<td align="left">Behandling</td>
+<td align="left">Dummy</td>
 </tr>
 <tr class="even">
-<td align="left">Deltagare 2 =&gt;</td>
-<td align="left">Behandling B</td>
-<td align="left">Kontroll</td>
-<td align="left">Behandling A</td>
-</tr>
-<tr class="odd">
-<td align="left">Deltagare 3 =&gt;</td>
-<td align="left">Behandling A</td>
-<td align="left">Behandling B</td>
-<td align="left">Kontroll</td>
-</tr>
-<tr class="even">
-<td align="left">Deltagare 4 =&gt;</td>
-<td align="left">Kontroll</td>
-<td align="left">Behandling B</td>
-<td align="left">Behandling A</td>
-</tr>
-<tr class="odd">
-<td align="left">Deltagare 5 =&gt;</td>
-<td align="left">Behandling A</td>
-<td align="left">Kontroll</td>
-<td align="left">Behandling B</td>
-</tr>
-<tr class="even">
-<td align="left">Deltagare 6 =&gt;</td>
-<td align="left">Behandling B</td>
-<td align="left">Behandling A</td>
+<td align="left">Försöksomgång_2</td>
+<td align="left">Behandling</td>
+<td align="left">Dummy</td>
 <td align="left">Kontroll</td>
 </tr>
 <tr class="odd">
-<td align="left">Deltagare n =&gt;</td>
-<td align="left">…</td>
-<td align="left">…</td>
-<td align="left">…</td>
+<td align="left">Försöksomgång_3</td>
+<td align="left">Dummy</td>
+<td align="left">Kontroll</td>
+<td align="left">Behandling</td>
+</tr>
+<tr class="even">
+<td align="left">Försöksomgång_4</td>
+<td align="left">Behandling</td>
+<td align="left">Dummy</td>
+<td align="left">Kontroll</td>
+</tr>
+<tr class="odd">
+<td align="left">Försöksomgång_5</td>
+<td align="left">Dummy</td>
+<td align="left">Kontroll</td>
+<td align="left">Behandling</td>
+</tr>
+<tr class="even">
+<td align="left">Försöksomgång_6</td>
+<td align="left">Kontroll</td>
+<td align="left">Behandling</td>
+<td align="left">Dummy</td>
+</tr>
+<tr class="odd">
+<td align="left">Försöksomgång_7</td>
+<td align="left">Dummy</td>
+<td align="left">Kontroll</td>
+<td align="left">Behandling</td>
+</tr>
+<tr class="even">
+<td align="left">Försöksomgång_8</td>
+<td align="left">Kontroll</td>
+<td align="left">Behandling</td>
+<td align="left">Dummy</td>
+</tr>
+<tr class="odd">
+<td align="left">Försöksomgång_9</td>
+<td align="left">Behandling</td>
+<td align="left">Dummy</td>
+<td align="left">Kontroll</td>
 </tr>
 </tbody>
 </table>

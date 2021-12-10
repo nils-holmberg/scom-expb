@@ -582,7 +582,7 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript. U
 
 
 ## Experimentell design {#sec07.5}
-[07-5-wc-file]: <> (123.86 %)
+[07-5-wc-file]: <> (126.27 %)
 [07-5-comment]: <> (12 sidor)
 
 Design är ett ganska svårdefinierat begrepp, vars innebörd handlar om att på ett överskådligt sätt sammanfatta strukturen och planen hos en vetenskaplig undersökning (på svenska används ibland "upplägg" eller "planering" som synonymer till experimentdesign). Man kan säga att begreppet experimentell design har två centrala aspekter: den första är kopplad till att beskriva och specificera de beroende och oberoende variablerna som ingår en undersökning, medan den andra centrala aspekten är kopplad till att beskriva hur deltagarna i en undersökning exponeras för de experimentella villkor som omfattas av de oberoende variablerna, dvs hur behandlingar (eller "trials" eller försöksomgångar) är distribuerade inom en experimentell studie. I det följande ska vi börja med att diskutera experimentell design i relation till oberoende variabler, vilka vi även refererar till som behandlingsvariabler i denna bok.
@@ -659,19 +659,19 @@ För att hantera denna problematik förutsätter alltså inomgruppsdesignen att 
 
 När vi i föregående avsnitt diskuterat mellangruppsdesign och inomgruppsdesign har vi avstått från att ta upp frågan om upprepade villkor. Underförstått har vi då antagit att varje deltagare exponeras för ett villkor (mellangruppsdesign) eller alla villkor (inomgruppsdesign) endast en gång. I vissa typer av experiment är detta ett rimligt antagande; i medicinska studier förväntar vi oss kanske att varje deltagare genomgår ett kontrollvillkor i form av sockerpiller, eller ett experimentellt villkor i form av ett läkemedel, endast _en_ gång. Man skulle dock kunna tänka sig att dessa (medicinska) behandlingar upprepas ett antal gånger med samma försöksdeltagare och med en viss tidsperiods mellanrum. Tanken med att upprepa villkoren är att flera mätpunkter för varje deltagare sammantaget bör ge en mer rättvis bild av effekten av en behandling, än om endast en mätning görs per deltagare. Denna design kan kallas för upprepade villkor eller upprepade mätningar, där den senare beteckningen hamnar hyfsat nära den engelska motsvarigheten "repeated measures".
 
-Faktum är att ett inomgruppsexperiment med två villkor redan kan anses vara ett minimalt exempel på designen upprepade villkor eller mätningar, eftersom varje deltagare med detta upplägg mäts två gånger. I detta avsnitt kommer vi dock lägga mer betoning på experiment där varje villkor upprepas, vilket innebär att varje deltagare kommer att generera flera mätpunkter för samtliga villkor (eller behandlingar) som ingår i studien. Här kan det vara relevant att återkoppla till det centrala begreppet "försök" eller på engelska "trial", eftersom vi nu kan drista oss till att jämställa ett experimentellt villkor med ett försök, samt upprepade villkor med flera försöksomgångar. kontroll, behandling, kontroll, behandling
-
-\- formuleringen \"within-subjects repeated measures design\". Kanske betona "försöksomgångar" som översättning av trials ..Ett annat sätt att mitigera risken att deltagare inser manipulationen i ett experiment kan vara att använda s.k. "fillers", stimuli som liknar de andra som används (t.ex. FB-poster med text och bild) men som inte har något att göra med de experimentella villkoren
+Faktum är att ett inomgruppsexperiment med två villkor redan kan anses vara ett minimalt exempel på designen upprepade villkor (eller upprepade mätningar), eftersom varje deltagare med detta upplägg mäts två gånger. I detta avsnitt kommer vi dock lägga mer betoning på experiment där varje _villkor_ upprepas, vilket innebär att varje deltagare kommer att generera flera mätpunkter för samtliga villkor (eller behandlingar) som ingår i studien. Här kan det vara relevant att återkoppla till det centrala begreppet "försök" eller på engelska "trial", eftersom vi nu kan drista oss till att jämställa ett experimentellt villkor med ett försök, samt upprepade villkor med flera försöksomgångar. Detta försöker vi illustrera i tabellen nedan, där deltagarna i de första försöksomgångarna genomgår kontrollvillkor och en behandling, för att därefter upprepa samma två villkor ytterligare en gång. En uppmärksam läsare skulle här dock kanske invända mot att den illustrerade designen inte uppvisar mycket till randomisering, vilket naturligtvis är korrekt, och således kan behöva åtgärdas. Ur randomiseringssynpunkt vore det antagligen bättre att hälften av deltagarna började med behandlingsvillkoret.
 
 ```{r tab-02-07-5-5-01, echo=F}
 knitr::kable(read.table("../csv/tab-02-07-5-5-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Upprepade villkor.', booktabs=TRUE)
 ```
 
+Kombinationen av inomgruppsdesign och upprepade villkor (på engelska "within-subjects repeated measures design") kan betraktas som en mycket robust experimentell design, som lämpar sig väl för samhällsvetenskapliga forskningsfrågor, där vi som sagt kan anta att flera samverkande bruskällor (deltagarnas individuella skillnader, självrapporterade mätdata, små effektstorlekar, etc) försvårar möjligheterna att hitta tillförlitliga mönster i våra observationer. Om vi dessutom lyckas hantera aspekterna av randomisering och balansering på ett bra sätt, så har vi en
+
 Diskutera expempel experiment med Facebook-poster enligt ett upplägg med mellangruppsdesign och upprepade villkor. Om vi kombinerar allt vi lärt oss hittills, inklusive randomisering och balansering.
 
 ```{r tab-02-07-5-5-02, echo=F}
 #tab label and csv file not matching in this case..
-knitr::kable(read.table("../csv/tab-02-07-5-2-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Randomisering och balansering.', booktabs=TRUE)
+knitr::kable(read.table("../csv/tab-02-07-5-5-02.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Randomisering och balansering.', booktabs=TRUE)
 ```
 
 ### Faktoriell design {#sub07.5.6}
