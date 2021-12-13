@@ -821,8 +821,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="sub07.5.6" class="section level3" number="7.5.6">
 <h3><span class="header-section-number">7.5.6</span> Faktoriell design</h3>
-<p>Låt oss fortsätta resonera kring exempel-experimentet, och hur vi hade kunnat bygga in flera behandlingar än den nuvarande “bild med auktoritetsperson”. Mer generellt skulle vi kunna säga att detta befintliga villkor undersöker effekterna av <em>bildinnehåll</em> hos en grupp med försöksdeltagare. Men vad hade hänt om vi också ville undersöka exempelvis <em>bildstorlek</em>, och därvidlag testat en mindre, en mellan, och en större bildstorlek? Med hjälp av en faktoriell experimentdesign kan vi undersöka, inte bara hur dessa två bildegenskaper (innehåll och storlek) var för sig påverkar Facebook-användare, utan också hur dessa så kallade <em>faktorer</em> samverkar vad gäller effekter på läsintresse för texten i Facebook-posterna (ögonrörelsemätning), samt upplevelsen av postens trovärdighet (enkätskala).</p>
-<p>Två eller fler oberoende variabler (faktorer), med två eller fler diskreta nivåer (eng. "levels") på varje faktor. 3x2 faktoriell design. Tillåter att effekten av alla nivåer på varje enskild faktor testas, liksom effekten av alla kombinationer av faktorer (interaktioner). Används ofta inom naturvetenskapliga sammanhang, t.ex. materialtestning. "Fully crossed design" - variables and level of variables (e.g. 2x3 between-subjects design) - kan göras som mellan grupp eller inom grupp ?</p>
+<p>Låt oss fortsätta resonera kring exempel-experimentet, och hur vi hade kunnat bygga in flera behandlingar än den nuvarande “bild med auktoritetsperson”. Mer generellt skulle vi kunna säga att detta befintliga villkor undersöker effekterna av <em>bildinnehåll</em> hos en grupp med försöksdeltagare. Men vad hade hänt om vi också ville undersöka exempelvis <em>bildstorlek</em>, och därvidlag testat en mindre, en mellan, och en större bildstorlek? Med hjälp av en faktoriell experimentdesign kan vi undersöka, inte bara hur dessa två bildegenskaper (innehåll och storlek) var för sig påverkar Facebook-användare, utan också hur dessa så kallade <em>faktorer</em> samverkar vad gäller effekter på läsintresse för texten i Facebook-posterna (ögonrörelsemätning), samt upplevelse av postens trovärdighet (enkätskala). Vi har alltså fortfarande samma två utfallsvariabler (eller beroende variabler), men vi har nu lagt till den nya oberoende variabeln bildstorlek. Viktigt att betänka nu är att de oberoende varibler som ingår i en faktoriell design måste vara av typen binär (två kategorier) eller ordinal (rangordnade alternativ). Det innebär att varje variabel har två eller fler diskreta steg eller nivåer (på engelska kallas detta “factor levels”). I tabellen nedan visas vår ursprungliga oberoende variabel bildinnehåll som faktor A med två nivåer, och den nya variabeln bildstorlek som faktor B med tre nivåer.</p>
 <table>
 <caption><span id="tab:tab-02-07-5-6-01">Table 7.10: </span>Faktoriell design.</caption>
 <thead>
@@ -830,7 +829,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <th align="left">Faktor_AB</th>
 <th align="left">Faktor_A_nivå_0</th>
 <th align="left">Faktor_A_nivå_1</th>
-<th align="left">Faktor_A_nivå_2</th>
 </tr>
 </thead>
 <tbody>
@@ -838,17 +836,71 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">Faktor_B_nivå_0</td>
 <td align="left">Kontroll A0/B0</td>
 <td align="left">Behandling A1/B0</td>
-<td align="left">Behandling A2/B0</td>
 </tr>
 <tr class="even">
 <td align="left">Faktor_B_nivå_1</td>
 <td align="left">Behandling A0/B1</td>
 <td align="left">Behandling A1/B1</td>
-<td align="left">Behandling A2/B1</td>
+</tr>
+<tr class="odd">
+<td align="left">Faktor_B_nivå_2</td>
+<td align="left">Behandling A0/B2</td>
+<td align="left">Behandling A1/B2</td>
+</tr>
+</tbody>
+</table>
+<p>Teoretiskt sett skulle vi kunna inkludera ännu fler oberoende variabler av denna typ i desginen, till exempel bild med färg vs. gråskala (binär variabel). I detta fall skulle vi få en faktoriell design som kunde beskrivas som 2 bildinnehåll (neutral person, auktoritetsperson) x 3 bildstorlek (liten, mellan, stor) x 2 bildfärg (färg, gråskala). Detta kan förkortas som en 2x3x2-design, vilket skulle skapa ett experiment med totalt 12 olika villkor. Även om detta alltså vore fullt möjligt, skulle det vara en opraktisk design att genomföra inom humanvetenskaplig forskning. Faktoriella designer med många oberoende variabler och många nivåer på varje variabel återfinns oftare inom naturvetenskapliga ämnen, exempelvis när det är intressant att testa hållbarheten hos olika materialblandningar. Här är det dessutom vanligare att man använder sig av mellangruppsdesign, vilket innebär att varje materialblandning bara genomgår en behandling. Inom forskning på mänskliga deltagare är det vanligaste att man använder sig av ett 2x2-faktor experiment med inomgruppsdesign, vilket innebär att varje deltagare genomgår alla villkor, helst i randomiserad ordningsföljd.</p>
+<table>
+<caption><span id="tab:tab-02-07-5-6-02">Table 7.11: </span>Faktoriell design.</caption>
+<thead>
+<tr class="header">
+<th align="left">Försök_Deltagare.</th>
+<th align="left">Deltagare_1.</th>
+<th align="left">Deltagare_2.</th>
+<th align="left">Deltagare_3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Försöksomgång_1</td>
+<td align="left">Kontroll A0/B0</td>
+<td align="left">Behandling A1/B2</td>
+<td align="left">Behandling A0/B2</td>
+</tr>
+<tr class="even">
+<td align="left">Försöksomgång_2</td>
+<td align="left">Behandling A1/B0</td>
+<td align="left">Kontroll A0/B0</td>
+<td align="left">Behandling A1/B2</td>
+</tr>
+<tr class="odd">
+<td align="left">Försöksomgång_3</td>
+<td align="left">Behandling A0/B1</td>
+<td align="left">Behandling A1/B0</td>
+<td align="left">Kontroll A0/B0</td>
+</tr>
+<tr class="even">
+<td align="left">Försöksomgång_4</td>
+<td align="left">Behandling A1/B1</td>
+<td align="left">Behandling A0/B1</td>
+<td align="left">Behandling A1/B0</td>
+</tr>
+<tr class="odd">
+<td align="left">Försöksomgång_5</td>
+<td align="left">Behandling A0/B2</td>
+<td align="left">Behandling A1/B1</td>
+<td align="left">Behandling A0/B1</td>
+</tr>
+<tr class="even">
+<td align="left">Försöksomgång_6</td>
+<td align="left">Behandling A1/B2</td>
+<td align="left">Behandling A0/B2</td>
+<td align="left">Behandling A1/B1</td>
 </tr>
 </tbody>
 </table>
 <p>Diskutera expempel experiment med Facebook-poster enligt ett upplägg med faktoriell design. Detta designmönster med två experimentella villkor som “korsas” med två experimentella stimuli för varje par av deltagare kallas ibland på engelska för “crossed experimental design”, och kan anses som mycket användbar inom beteendevetenskapliga studier</p>
+<p>3x2 faktoriell design. Tillåter att effekten av alla nivåer på varje enskild faktor testas, liksom effekten av alla kombinationer av faktorer (interaktioner). Används ofta inom naturvetenskapliga sammanhang, t.ex. materialtestning. "Fully crossed design" - variables and level of variables (e.g. 2x3 between-subjects design) - kan göras som mellan grupp eller inom grupp ?</p>
 </div>
 <div id="sub07.5.7" class="section level3" number="7.5.7">
 <h3><span class="header-section-number">7.5.7</span> Fallstudie-experiment</h3>
