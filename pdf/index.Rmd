@@ -576,12 +576,12 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript. U
 
 
 ## Experimentell design {#sec07.5}
-[07-5-wc-file]: <> (131.57 %)
-[07-5-comment]: <> (12 sidor)
+[07-5-wc-file]: <> (114.79 %)
+[07-5-comment]: <> (14 sidor)
 
-Design är ett ganska svårdefinierat begrepp, vars innebörd handlar om att på ett överskådligt sätt sammanfatta strukturen och planen hos en vetenskaplig undersökning (på svenska används ibland "upplägg" eller "planering" som synonymer till experimentdesign). Man kan säga att begreppet experimentell design har två centrala aspekter: den första är kopplad till att beskriva och specificera de beroende och oberoende variablerna som ingår en undersökning, medan den andra centrala aspekten är kopplad till att beskriva hur deltagarna i en undersökning exponeras för de experimentella villkor som omfattas av de oberoende variablerna, dvs hur behandlingar (eller "trials" eller försöksomgångar) är distribuerade inom en experimentell studie. I det följande ska vi börja med att diskutera experimentell design i relation till oberoende variabler, vilka vi även refererar till som behandlingsvariabler i denna bok.
+Design är ett svårdefinierat begrepp, vars innebörd handlar om att på ett överskådligt sätt sammanfatta strukturen och planen hos en vetenskaplig undersökning (på svenska används ibland "upplägg" eller "planering" som synonymer till experimentdesign). Begreppet experimentell design har två centrala aspekter: den första är kopplad till att beskriva och specificera de beroende och oberoende variablerna som ingår en undersökning, medan den andra centrala aspekten är kopplad till att beskriva hur deltagarna i en undersökning exponeras för de experimentella villkor som omfattas av de oberoende variablerna, dvs hur behandlingar (eller "trials" eller försöksomgångar) är distribuerade inom en experimentell studie. I det följande ska vi börja med att diskutera experimentell design i relation till oberoende variabler, vilka vi även refererar till som behandlingsvariabler i denna bok.
 
-För att få en bättre förståelse av begreppet experimentdesign börjar vi med ett exempel från den medicinska forskningen. En epidemiologisk forskare bestämmer sig för att testa ett nytt vaccin som den tagit fram. För att undersöka detta bestämmer sig forskaren (i vanlig ordning) för att rekrytera försöksdeltagare som sedan delas in i två grupper, varav den ena gruppen får en overksam spruta med saltvattenlösning, och deltagare i den andra gruppen får en spruta med det nya vaccinet. Vi säger därför att detta experiment har en _mellangruppsdesign_, eftersom effekten av den oberoende variabeln (vatten vs. vaccin) mäts och jämförs mellan två likvärdiga grupper av deltagare. Som tumregel kan man säga att en enklare experimentdesign är ofta att föredra framför en mer komplicerad design. Orsaken till detta är att en enkel design ofta genererar tydligare resultat som i efterhand är enklare att tolka. Enklare experimentella designer består ofta bara av en enda oberoende variabel som kan vara antingen numerisk eller kategorisk (i den engelska metodlitteraturen omnämns dessa ibland som "quantitative" respektive "qualitative variables").
+För att få en bättre förståelse av begreppet experimentdesign börjar vi med ett exempel från den medicinska forskningen. En epidemiologisk forskare bestämmer sig för att testa ett nytt vaccin som den tagit fram. För att undersöka detta bestämmer sig forskaren för att rekrytera försöksdeltagare som sedan delas in i två grupper, varav den ena gruppen får en overksam spruta med saltvattenlösning, och den andra gruppen får en spruta med det nya vaccinet. Vi säger därför att detta experiment har en _mellangruppsdesign_, eftersom effekten av den oberoende variabeln (vatten vs. vaccin) mäts och jämförs mellan två likvärdiga grupper av deltagare. Som tumregel kan man säga att en enklare experimentdesign är ofta att föredra framför en mer komplicerad design. Orsaken till detta är att en enkel design ofta genererar tydligare resultat som i efterhand är enklare att tolka. Enklare experimentella designer består ofta bara av en enda oberoende variabel som kan vara antingen numerisk eller kategorisk (i den engelska metodlitteraturen omnämns dessa ibland som "quantitative" respektive "qualitative variables").
 
 Även om enkla experimentdesigner är idealet så finns det flera situationer där exempelvis en mellangruppsdesign inte riktigt räcker till. En sådan situation kan inträffa om den uppmätta effekten av en behandling på en viss utfallsvariabel är relativt liten jämfört med kontrollvillkoret. I sådana situationer riskerar alltså en eventuell effekt av behandlingen att drunkna i bakgrundsbruset från andra orsaksfaktorer. Ett konkret exempel på detta är undersökningar som mäter deltagarnas hjärnaktivitet (t.ex. genom elektroencefalografi eller EEG). En annan situation där en enkel mellangruppsdesign kan vara otillräckligt är om det naturligt förekommer stora individuella skillnader mellan deltagarna inom respektive försöksgrupp med avseende på utfallsvariabeln. Gemensamt för båda dessa problematiska situationer är alltså att den förväntade effekten av behandlingen är liten i relation till andra omgivande bruskällor (i överförd bemärkelse används ibland det engelska uttrycket "low signal-to-noise ratio"), och att det därför föreligger en risk för typ I- och typ II-fel (s.k. "false positives" respektive "false negatives").
 
@@ -669,9 +669,9 @@ Låt oss utveckla detta lite och sedan överföra designen till vårt exempel-ex
 
 ### Faktoriell design {#sub07.5.6}
 
-Låt oss fortsätta resonera kring exempel-experimentet, och hur vi hade kunnat bygga in flera behandlingar än den nuvarande "bild med auktoritetsperson". Mer generellt skulle vi kunna säga att detta befintliga villkor undersöker bildinnehåll. Men vad hade hänt om vi också ville undersöka exempelvis bildstorlek, och testat en mindre, en mellan, och en större bildstorlek?
+Låt oss fortsätta resonera kring exempel-experimentet, och hur vi hade kunnat bygga in flera behandlingar än den nuvarande "bild med auktoritetsperson". Mer generellt skulle vi kunna säga att detta befintliga villkor undersöker effekterna av _bildinnehåll_ hos en grupp med försöksdeltagare. Men vad hade hänt om vi också ville undersöka exempelvis _bildstorlek_, och därvidlag testat en mindre, en mellan, och en större bildstorlek? Med hjälp av en faktoriell experimentdesign kan vi undersöka, inte bara hur dessa två bildegenskaper (innehåll och storlek) var för sig påverkar Facebook-användare, utan också hur dessa så kallade _faktorer_ samverkar vad gäller effekter på läsintresse för texten i Facebook-posterna (ögonrörelsemätning), samt upplevelsen av postens trovärdighet (enkätskala).
 
-Två eller fler oberoende variabler (faktorer), med två eller fler diskreta nivåer (eng. \"levels\") på varje faktor. 3x2 faktoriell design. Tillåter att effekten av alla nivåer på varje enskild faktor testas, liksom effekten av alla kombinationer av faktorer (interaktioner). Används ofta inom naturvetenskapliga sammanhang, t.ex. materialtestning. \"Fully crossed design\" - variables and level of variables (e.g. 2x3 between-subjects design)
+Två eller fler oberoende variabler (faktorer), med två eller fler diskreta nivåer (eng. \"levels\") på varje faktor. 3x2 faktoriell design. Tillåter att effekten av alla nivåer på varje enskild faktor testas, liksom effekten av alla kombinationer av faktorer (interaktioner). Används ofta inom naturvetenskapliga sammanhang, t.ex. materialtestning. \"Fully crossed design\" - variables and level of variables (e.g. 2x3 between-subjects design) - kan göras som mellan grupp eller inom grupp ?
 
 ```{r tab-02-07-5-6-01, echo=F}
 knitr::kable(read.table("../csv/tab-02-07-5-6-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Faktoriell design.', booktabs=TRUE)
@@ -681,7 +681,7 @@ Diskutera expempel experiment med Facebook-poster enligt ett upplägg med faktor
 
 ### Fallstudie-experiment {#sub07.5.7}
 
-SCED vs RCT
+SCED vs RCT. Single-case design, traditionell RCT (randomized controlled trial ) vs SCED (single-case experimental designs), https://www.nof1sced.org/
 
 ### Naturliga experiment {#sub07.5.8}
 
@@ -689,15 +689,19 @@ T.ex. undersökning av effekterna av medborgarlön? Kontrastera med naturliga ex
 
 ### Kvasi-experiment {#sub07.5.9}
 
-T.ex. undersökning av effekterna av medborgarlön? Kontrastera med naturliga experiment? Ett sätt att tänka kring oberoende variabler är att de representerar experimentets utfallsvariabler. En annan faktor som har stor betydelse i samband med urvalet av.. lacks random assignment, naturliga exp del 1. Kan komma att bli en vanligare design pga etiska utmaningar med att framkalla långsiktig påverkan på försöksdeltagare. Panel research. Single-case design, traditionell RCT (randomized controlled trial ) vs SCED (single-case experimental designs), https://www.nof1sced.org/
+T.ex. undersökning av effekterna av medborgarlön? Kontrastera med naturliga experiment? Ett sätt att tänka kring oberoende variabler är att de representerar experimentets utfallsvariabler. En annan faktor som har stor betydelse i samband med urvalet av.. lacks random assignment, naturliga exp del 1. Kan komma att bli en vanligare design pga etiska utmaningar med att framkalla långsiktig påverkan på försöksdeltagare. Panel research. 
 
-![expdesign](../fig/design.png)
+- no random assignment of participants
+- may or may not have a control group
+- may not have control over manipulated independent variable
 
 ### Planering av experimentdesign {#sub07.5.10}
 
 Håll designen så enkel som möjligt för att underlätta tolkningen av resultat. Helst inte mer än 2x2 design. - diskutera utifrån exempel-experiment med bildinnehåll hos Facebook-poster. Bild kommer ovan
 
 - Instruktioner och uppgifter [7.5.1](#sub07.5.1). Instruktioner avser i grund och botten att göra experimentet standardiserat och likvärdigt för alla deltagare. För att detta ska uppnås krävs dock att instruktionerna är mycket lättbegripliga. Uppgifter kan erbjuda möjligheter mäta deltagarnas prestationsförmåga under olika experimentella villkor.
+
+![expdesign](../fig/design.png)
 
 - Randomisering och balansering [7.5.2](#sub07.5.2). Helt grundläggande designegenskap hos experiment som innebär att vi låter slumpen styra vilken deltagare som exponeras för ett behandlingsvillkor. 
 
