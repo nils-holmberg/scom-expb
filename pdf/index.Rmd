@@ -576,7 +576,7 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript. U
 
 
 ## Experimentell design {#sec07.5}
-[07-5-wc-file]: <> (124.54 %)
+[07-5-wc-file]: <> (124.79 %)
 [07-5-comment]: <> (14 sidor)
 
 Design är ett svårdefinierat begrepp, vars innebörd handlar om att på ett överskådligt sätt sammanfatta strukturen och planen hos en vetenskaplig undersökning (på svenska används ibland "upplägg" eller "planering" som synonymer till experimentdesign). Begreppet experimentell design har två centrala aspekter: den första är kopplad till att beskriva och specificera de beroende och oberoende variablerna som ingår en undersökning, medan den andra centrala aspekten är kopplad till att beskriva hur deltagarna i en undersökning exponeras för de experimentella villkor som omfattas av de oberoende variablerna, dvs hur behandlingar (eller "trials" eller försöksomgångar) är distribuerade inom en experimentell studie. I det följande ska vi börja med att diskutera experimentell design i relation till oberoende variabler, vilka vi även refererar till som behandlingsvariabler i denna bok.
@@ -681,7 +681,7 @@ Teoretiskt sett skulle vi kunna inkludera ännu fler oberoende variabler av denn
 knitr::kable(read.table("../csv/tab-02-07-5-6-02.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Faktoriell design och deltagare.', booktabs=TRUE)
 ```
 
-I tabellen ovan visar vi vår tänkta Facebook-studie som ett 2x3 faktoriellt experiment med mellangruppsdesign. Eftersom detta ger oss totalt 6 kombinerade villkor med två faktorer, kan vi använda en formel där _n_ står för antalet villkor i desginen (6 stycken) och _r_ står för antalet villkor vi vill visa varje deltagare (också 6). Baserat på dessa ingångsvärden kan vi sedan använda det matematiska uttrycket fakultet (på engelska "factorial") _6!_ för att räkna ut att vi kan presentera dessa 6 villkor i hela 720 olika ordningsföljder (6*5*4*3*2*1). Eftersom detta skulle kräva lika många deltagare för att instantiera varje ordningsföljd, kan vi här vara tvungna att förenkla experimentdesignen så att endast några få ordningsföljder används. Om vi istället använder en 2x2-design så får vi bara 24 olika ordningsföljder, vilket gör det betydligt lättare att föräkra oss om att några deltagare genomgår experimentets villkor i var och en av dessa ordningsföljder, vilket i sin tur balanserar designen och eliminerar eventuella ordningseffekter.
+I tabellen ovan visar vi vår tänkta Facebook-studie som ett 2x3 faktoriellt experiment med mellangruppsdesign. Eftersom detta ger oss totalt 6 kombinerade villkor med två faktorer, kan vi använda en formel där _n_ står för antalet villkor i desginen (6 stycken) och _r_ står för antalet villkor vi vill visa varje deltagare (också 6). Baserat på dessa ingångsvärden kan vi sedan använda det matematiska uttrycket fakultet (på engelska "factorial") _6!_ för att räkna ut att vi kan presentera dessa 6 villkor i hela 720 olika ordningsföljder (6 x 5 x 4 x 3 x 2 x 1). Eftersom detta skulle kräva lika många deltagare för att instantiera varje ordningsföljd, kan vi här vara tvungna att förenkla experimentdesignen så att endast några få ordningsföljder används. Om vi istället använder en 2x2-design så får vi bara 24 olika ordningsföljder, vilket gör det betydligt lättare att föräkra oss om att några deltagare genomgår experimentets villkor i var och en av dessa ordningsföljder, vilket i sin tur balanserar designen och eliminerar eventuella ordningseffekter.
 
 \begin{equation}
     \frac{n!}{(n-r)!}
