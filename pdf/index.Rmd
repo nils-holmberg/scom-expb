@@ -576,7 +576,7 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript. U
 
 
 ## Experimentell design {#sec07.5}
-[07-5-wc-file]: <> (122.47 %)
+[07-5-wc-file]: <> (124.54 %)
 [07-5-comment]: <> (14 sidor)
 
 Design är ett svårdefinierat begrepp, vars innebörd handlar om att på ett överskådligt sätt sammanfatta strukturen och planen hos en vetenskaplig undersökning (på svenska används ibland "upplägg" eller "planering" som synonymer till experimentdesign). Begreppet experimentell design har två centrala aspekter: den första är kopplad till att beskriva och specificera de beroende och oberoende variablerna som ingår en undersökning, medan den andra centrala aspekten är kopplad till att beskriva hur deltagarna i en undersökning exponeras för de experimentella villkor som omfattas av de oberoende variablerna, dvs hur behandlingar (eller "trials" eller försöksomgångar) är distribuerade inom en experimentell studie. I det följande ska vi börja med att diskutera experimentell design i relation till oberoende variabler, vilka vi även refererar till som behandlingsvariabler i denna bok.
@@ -678,21 +678,19 @@ knitr::kable(read.table("../csv/tab-02-07-5-6-01.csv", header=T, sep='\t', quot=
 Teoretiskt sett skulle vi kunna inkludera ännu fler oberoende variabler av denna typ i desginen, till exempel bild med färg vs. gråskala (binär variabel). I detta fall skulle vi få en faktoriell design som kunde beskrivas som 2 bildinnehåll (neutral person, auktoritetsperson) x 3 bildstorlek (liten, mellan, stor) x 2 bildfärg (färg, gråskala). Detta kan förkortas som en 2x3x2-design, vilket skulle skapa ett experiment med totalt 12 olika villkor. Även om detta alltså vore fullt möjligt, skulle det vara en opraktisk design att genomföra inom humanvetenskaplig forskning. Faktoriella designer med många oberoende variabler och många nivåer på varje variabel återfinns oftare inom naturvetenskapliga ämnen, exempelvis när det är intressant att testa hållbarheten hos olika materialblandningar. Här är det dessutom vanligare att man använder sig av mellangruppsdesign, vilket innebär att varje material bara genomgår en behandling. Inom forskning på mänskliga deltagare är det vanligaste att man använder sig av ett 2x2-faktor experiment med inomgruppsdesign, vilket innebär att varje deltagare genomgår alla villkor, helst i randomiserad ordningsföljd.
 
 ```{r tab-02-07-5-6-02, echo=F}
-knitr::kable(read.table("../csv/tab-02-07-5-6-02.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Faktoriell design.', booktabs=TRUE)
+knitr::kable(read.table("../csv/tab-02-07-5-6-02.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Faktoriell design och deltagare.', booktabs=TRUE)
 ```
 
-I tabellen ovan visar vi vår tänkta Facebook-studie som ett 2x3 faktoriellt experiment med mellangruppsdesign. Eftersom detta ger oss totalt 6 kombinerade villkor av två faktorer, där _n_ står för antalet alternativ och _r_ står för antalet alternativ vi vill välja från
+I tabellen ovan visar vi vår tänkta Facebook-studie som ett 2x3 faktoriellt experiment med mellangruppsdesign. Eftersom detta ger oss totalt 6 kombinerade villkor med två faktorer, kan vi använda en formel där _n_ står för antalet villkor i desginen (6 stycken) och _r_ står för antalet villkor vi vill visa varje deltagare (också 6). Baserat på dessa ingångsvärden kan vi sedan använda det matematiska uttrycket fakultet (på engelska "factorial") _6!_ för att räkna ut att vi kan presentera dessa 6 villkor i hela 720 olika ordningsföljder (6*5*4*3*2*1). Eftersom detta skulle kräva lika många deltagare för att instantiera varje ordningsföljd, kan vi här vara tvungna att förenkla experimentdesignen så att endast några få ordningsföljder används. Om vi istället använder en 2x2-design så får vi bara 24 olika ordningsföljder, vilket gör det betydligt lättare att föräkra oss om att några deltagare genomgår experimentets villkor i var och en av dessa ordningsföljder, vilket i sin tur balanserar designen och eliminerar eventuella ordningseffekter.
 
 \begin{equation}
     \frac{n!}{(n-r)!}
 (\#eq:permutationswithoutrepetition)
 \end{equation}
 
-Diskutera expempel experiment med Facebook-poster enligt ett upplägg med faktoriell design. Detta designmönster med två experimentella villkor som "korsas" med två experimentella stimuli för varje par av deltagare kallas ibland på engelska för "crossed experimental design", och kan anses som mycket användbar inom beteendevetenskapliga studier 
+Återgår vi till tabellen ovan så exemplifieras olika ordningsföljder för tre deltagare. Det viktiga är dock att detta designmönster med två oberoende variabler som "korsas" med varandra (på engelska "crossed experimental design") tillåter att oss att undersöka effekten av alla nivåer på varje enskild faktor testas, liksom effekten av alla kombinationer av faktorer (interaktioner). Kontrollvillkoret utgörs här av 
 
-3x2 faktoriell design. Tillåter att effekten av alla nivåer på varje enskild faktor testas, liksom effekten av alla kombinationer av faktorer (interaktioner). Används ofta inom naturvetenskapliga sammanhang, t.ex. materialtestning. \"Fully crossed design\" - variables and level of variables (e.g. 2x3 between-subjects design) - kan göras som mellan grupp eller inom grupp ?
-
-### Fallstudie-experiment {#sub07.5.7}
+### Individuella deltagare {#sub07.5.7}
 
 SCED vs RCT. Single-case design, traditionell RCT (randomized controlled trial ) vs SCED (single-case experimental designs), https://www.nof1sced.org/
 

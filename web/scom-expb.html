@@ -11,7 +11,7 @@
 
 <meta name="author" content="Nils Gustafsson &amp; Nils Holmberg" />
 
-<meta name="date" content="2021-12-13" />
+<meta name="date" content="2021-12-14" />
 
 <title>Experiment</title>
 
@@ -361,7 +361,7 @@ pre code {
 
 <h1 class="title toc-ignore">Experiment</h1>
 <h4 class="author">Nils Gustafsson &amp; Nils Holmberg</h4>
-<h4 class="date">2021-12-13</h4>
+<h4 class="date">2021-12-14</h4>
 
 </div>
 
@@ -1056,7 +1056,7 @@ en teoretisk modell
 </table>
 <p>Teoretiskt sett skulle vi kunna inkludera ännu fler oberoende variabler av denna typ i desginen, till exempel bild med färg vs. gråskala (binär variabel). I detta fall skulle vi få en faktoriell design som kunde beskrivas som 2 bildinnehåll (neutral person, auktoritetsperson) x 3 bildstorlek (liten, mellan, stor) x 2 bildfärg (färg, gråskala). Detta kan förkortas som en 2x3x2-design, vilket skulle skapa ett experiment med totalt 12 olika villkor. Även om detta alltså vore fullt möjligt, skulle det vara en opraktisk design att genomföra inom humanvetenskaplig forskning. Faktoriella designer med många oberoende variabler och många nivåer på varje variabel återfinns oftare inom naturvetenskapliga ämnen, exempelvis när det är intressant att testa hållbarheten hos olika materialblandningar. Här är det dessutom vanligare att man använder sig av mellangruppsdesign, vilket innebär att varje material bara genomgår en behandling. Inom forskning på mänskliga deltagare är det vanligaste att man använder sig av ett 2x2-faktor experiment med inomgruppsdesign, vilket innebär att varje deltagare genomgår alla villkor, helst i randomiserad ordningsföljd.</p>
 <table>
-<caption>Faktoriell design.</caption>
+<caption>Faktoriell design och deltagare.</caption>
 <thead>
 <tr class="header">
 <th align="left">Försök_Deltagare.</th>
@@ -1104,16 +1104,15 @@ en teoretisk modell
 </tr>
 </tbody>
 </table>
-<p>I tabellen ovan visar vi vår tänkta Facebook-studie som ett 2x3 faktoriellt experiment med mellangruppsdesign. Eftersom detta ger oss totalt 6 kombinerade villkor av två faktorer, där <em>n</em> står för antalet alternativ och <em>r</em> står för antalet alternativ vi vill välja från</p>
+<p>I tabellen ovan visar vi vår tänkta Facebook-studie som ett 2x3 faktoriellt experiment med mellangruppsdesign. Eftersom detta ger oss totalt 6 kombinerade villkor med två faktorer, kan vi använda en formel där <em>n</em> står för antalet villkor i desginen (6 stycken) och <em>r</em> står för antalet villkor vi vill visa varje deltagare (också 6). Baserat på dessa ingångsvärden kan vi sedan använda det matematiska uttrycket fakultet (på engelska “factorial”) <em>6!</em> för att räkna ut att vi kan presentera dessa 6 villkor i hela 720 olika ordningsföljder (6<em>5</em>4<em>3</em>2*1). Eftersom detta skulle kräva lika många deltagare för att instantiera varje ordningsföljd, kan vi här vara tvungna att förenkla experimentdesignen så att endast några få ordningsföljder används. Om vi istället använder en 2x2-design så får vi bara 24 olika ordningsföljder, vilket gör det betydligt lättare att föräkra oss om att några deltagare genomgår experimentets villkor i var och en av dessa ordningsföljder, vilket i sin tur balanserar designen och eliminerar eventuella ordningseffekter.</p>
 <p><span class="math display">\[\begin{equation}
     \frac{n!}{(n-r)!}
 (\#eq:permutationswithoutrepetition)
 \end{equation}\]</span></p>
-<p>Diskutera expempel experiment med Facebook-poster enligt ett upplägg med faktoriell design. Detta designmönster med två experimentella villkor som “korsas” med två experimentella stimuli för varje par av deltagare kallas ibland på engelska för “crossed experimental design”, och kan anses som mycket användbar inom beteendevetenskapliga studier</p>
-<p>3x2 faktoriell design. Tillåter att effekten av alla nivåer på varje enskild faktor testas, liksom effekten av alla kombinationer av faktorer (interaktioner). Används ofta inom naturvetenskapliga sammanhang, t.ex. materialtestning. &quot;Fully crossed design&quot; - variables and level of variables (e.g. 2x3 between-subjects design) - kan göras som mellan grupp eller inom grupp ?</p>
+<p>Återgår vi till tabellen ovan så exemplifieras olika ordningsföljder för tre deltagare. Det viktiga är dock att detta designmönster med två oberoende variabler som “korsas” med varandra (på engelska “crossed experimental design”) tillåter att oss att undersöka effekten av alla nivåer på varje enskild faktor testas, liksom effekten av alla kombinationer av faktorer (interaktioner). Kontrollvillkoret utgörs här av</p>
 </div>
 <div id="sub07.5.7" class="section level3">
-<h3>7.5.7 Fallstudie-experiment</h3>
+<h3>7.5.7 Individuella deltagare</h3>
 <p>SCED vs RCT. Single-case design, traditionell RCT (randomized controlled trial ) vs SCED (single-case experimental designs), <a href="https://www.nof1sced.org/" class="uri">https://www.nof1sced.org/</a></p>
 </div>
 <div id="sub07.5.8" class="section level3">
