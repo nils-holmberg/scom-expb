@@ -411,7 +411,7 @@ När man väl genomfört studien och är i färd med att rapportera vilka person
 
 
 ## Mätinstrument {#sec07.3}
-[07-3-wc-file]: <> (88.39 %)
+[07-3-wc-file]: <> (88.64 %)
 [07-3-comment]: <> (10 sidor)
 
 I en experimentell studie är det avgörande att införliva mätinstrument som på ett giltigt och tillförlitligt sätt kan uppmäta effekten av en behandling på en eller flera responsvariabler. En viktig anledning till att experiment och mätinstrument är nära förknippade, är att denna typ av positivistisk forskning syftar till att försöka säkerställa en faktisk skillnad mellan olika grupper av deltagare och olika typer av behandlingar, vilket till syvende och sist kräver analys med hjälp av statistiska metoder. Det räcker alltså inte med att forskaren rapporterar en subjektivt upplevd skillnad mellan försöksgrupper; denna skillnad måste bevisas!
@@ -424,7 +424,7 @@ I det hypotetiska experiment som vi resonerar om i denna bok används två olika
 
 TODO: Ta upp levels of measurement. Olika mätnivåer. Nominal, Kvot-skala. Intervall. Nominal tillåter bara analyser som handlar om att räkna antal förekomster. Ta upp psychopy3 2020 som exempel.
 
-TODO: Samlad diskussion om alla olika typer av validitet och reliabilitet hör hemma under mätinstrument, kanske även någonstans under diskussion.
+TODO: Samlad diskussion om alla olika typer av validitet och reliabilitet hör hemma lite överallt, kanske bäst under _förstudier_, eller under mätinstrument, kanske även någonstans under diskussion.
 
 ### Mätning av subjektiva responser {#sub07.3.2}
 
@@ -576,7 +576,7 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript. U
 
 
 ## Experimentell design {#sec07.5}
-[07-5-wc-file]: <> (127.65 %)
+[07-5-wc-file]: <> (132.65 %)
 [07-5-comment]: <> (16 sidor)
 
 Design är ett svårdefinierat begrepp, vars innebörd handlar om att på ett överskådligt sätt sammanfatta strukturen och planen hos en vetenskaplig undersökning (på svenska används ibland "upplägg" eller "planering" som synonymer till experimentdesign). Begreppet experimentell design har två centrala aspekter: den första är kopplad till att beskriva och specificera de beroende och oberoende variablerna som ingår en undersökning, medan den andra centrala aspekten är kopplad till att beskriva hur deltagarna i en undersökning exponeras för de experimentella villkor som omfattas av de oberoende variablerna, dvs hur behandlingar (eller "trials" eller försöksomgångar) är distribuerade inom en experimentell studie. I det följande ska vi börja med att diskutera experimentell design i relation till oberoende variabler, vilka vi även refererar till som behandlingsvariabler i denna bok.
@@ -706,28 +706,15 @@ En grundläggande tanke i naturliga experiment är att forskare kan använda sig
 
 ### Kvasi-experiment {#sub07.5.9}
 
-Gränsen mellan naturliga experiment och så kallade kvasi-experiment är delvis flytande. Båda dessa designer gör avsteg från den centrala principen om slumpmässig tilldelning av experimentella villkor till försöksdeltagarna (på engelska "random assignment"). Ett kvasi-experiment kan uppstå om forskaren är intresserad av oberoende variabler som är medfödda hos alla deltagare, t.ex. personlighetsdrag eller intelligens, och effekten av en sådan "behandling" på någon utfallsvariabel. Enligt den så kallade femfaktor-modellen kan en individs personlighet beskrivas med hjälp av hur högt den rankar på fem olika personlighetsdrag [@john2010handbook]. Om vår forskningsfråga handlar om hur personlighetsdrag påverkar någon beroende variabel, kan vi således inte slumpmässigt tilldela försöksdeltagarna denna behandling, och vi får därmed en "kvasi-oberoende variabel" som vi inte kan variera eller manipulera för att skapa olika experimentella villkor. Framför allt kan vi inte skapa ett egentligt _kontrollvillkor_, och därför kan vi säga att kvasi-experiment närmar sig fältstudier. Dessutom kan vi tänka oss situationer där det kanske vore oetiskt att slumpmässigt anvisa deltagare till en kontrollgrupp, exempelvis om deltagaren har en sjukdom och därmed behöver en behandling snarare än ett sockerpiller.
+Gränsen mellan naturliga experiment och så kallade kvasi-experiment är delvis flytande. Båda dessa designer gör avsteg från den centrala principen om slumpmässig tilldelning av experimentella villkor till försöksdeltagarna (på engelska "random assignment"). Ett kvasi-experiment kan uppstå om forskaren är intresserad av oberoende variabler som är medfödda hos alla deltagare, t.ex. personlighetsdrag eller intelligens, och effekten av en sådan "behandling" på någon utfallsvariabel. Enligt den så kallade femfaktor-modellen kan en individs personlighet beskrivas med hjälp av hur högt den rankar på fem olika personlighetsdrag [@john2010handbook]. Om vår forskningsfråga handlar om hur personlighetsdrag påverkar någon beroende variabel, kan vi således inte slumpmässigt tilldela försöksdeltagarna denna behandling, och vi får därmed en "kvasi-oberoende variabel" som vi inte kan variera eller manipulera för att skapa olika experimentella villkor. Framför allt kan vi inte skapa ett egentligt _kontrollvillkor_, och därför kan vi säga att kvasi-experiment närmar sig fältstudier. Dessutom kan vi tänka oss situationer där det kanske vore oetiskt att slumpmässigt anvisa deltagare till en kontrollgrupp, exempelvis om deltagaren har en sjukdom och därmed behöver en behandling snarare än ett overksamt sockerpiller.
 
 ### Planering av experimentdesign {#sub07.5.10}
 
-Håll designen så enkel som möjligt för att underlätta tolkningen av resultat. Helst inte mer än 2x2 design. - diskutera utifrån exempel-experiment med bildinnehåll hos Facebook-poster. Bild kommer ovan
+Hur ska vi tänka när vi planerar en experimentdesign? Det är naturligvis många faktorer som spelar in i denna beslutsprocess. En viktig aspekt är att komma ihåg att experimentdesign ofta är en "inkrementell" färdighet som utvecklas mer för varje gång vi genomför en studie, och som dessutom är beroende av både teoretiska (t.ex. lite statistik) och praktiska kunskaper (t.ex. lite programmering). Därför är det viktigt att tänka på att inte göra det för komplicerat för sig själv i början, eftersom detta lätt kan sluta med oanvändbara data. Om det är första gången du genomför ett experiment så gör du antagligen klokt i att testa en enklare design, t.ex. en mellangruppsdesign med ett kontrollvillkor, ett behandlingsvillkor, och en utfallsvariabel. Har du väl fått förståelse för denna design är det sedan enklare att ta sig an en inomgruppsdesign med upprepade försök. Fördelen med en sådan design är att du nu kan förvänta dig bättre och mer träffsäkra resultat. När du har fått lite mer erfarenhet av att planera experiment kan det vara läge att gå vidare till en faktoriell inomgruppsdesign som kanske kombinerar två olika behandlingar. Men även i detta skede är det centralt att hålla designen så enkel som möjligt för att underlätta den efterföljande tolkningen av resultat. Helst inte mer än en 2x2-design. 
 
-- Instruktioner och uppgifter [7.5.1](#sub07.5.1). Instruktioner avser i grund och botten att göra experimentet standardiserat och likvärdigt för alla deltagare. För att detta ska uppnås krävs dock att instruktionerna är mycket lättbegripliga. Uppgifter kan erbjuda möjligheter mäta deltagarnas prestationsförmåga under olika experimentella villkor.
+### Rapportering av experimentdesign {#sub07.5.11}
 
-![expdesign](../fig/design.png)
-
-- Randomisering och balansering [7.5.2](#sub07.5.2). Helt grundläggande designegenskap hos experiment som innebär att vi låter slumpen styra vilken deltagare som exponeras för ett behandlingsvillkor. 
-
-- Mellangruppsdesign [7.5.3](#sub07.5.3). 
-- Inomgruppsdesign [7.5.4](#sub07.5.4)
-- Upprepade villkor [7.5.5](#sub07.5.5)
-- Faktoriell design [7.5.6](#sub07.5.6)
-- Naturliga experiment [7.5.7](#sub07.5.7)
-- Kvasi-experiment [7.5.8](#sub07.5.8)
-
-### Rapportering av experimentdesign {#sub07.5.110}
-
-Håll designen så enkel som möjligt för att underlätta tolkningen av resultat. Helst inte mer än 2x2 design.
+När du ska rapportera din experimentdesign i en uppsats, avhandling, eller artikel, så är det viktigt att bekanta sig med tidigare forskning inom det aktuella ämnet, men också med experimentell forskningslitteratur generellt. Här kan du hitta gott om upparbetade "formler" för hur du så effektivt och koncist som möjligt kan rapportera just den experimentdesign du själv använt dig av. Tänk på att rapportera designen så att läsaren kan förstå den så pass väl att den kan upprepa ditt experiment. Här kan det också vara intressant att beskriva designaspekter som är lite mer övergripande, t.ex. om deltagarna i vårt tänkta exempel-experiment fick titta på Facebook-posterna så länge de själva ville (på engelska kallas detta ibland "self-paced trials"), eller om visningen av Facebook-posterna avslutades automatiskt efter en bestämd tidsperiod. Just denna aspekt kan också betraktas som del av rapporteringen av experimentella villkor som togs upp i föregående avsnitt. 
 
 
 
@@ -736,10 +723,12 @@ Håll designen så enkel som möjligt för att underlätta tolkningen av resulta
 
 
 ## Procedur {#sec07.6}
-[07-6-wc-file]: <> (57.57 %)
+[07-6-wc-file]: <> (69.57 %)
 [07-6-comment]: <> (10 sidor)
 
-Procedur (eller protokoll) handlar i grunden om reliabilitet, standardisering, alla deltagare genomgår samma procedur, externa faktorer hålls så konstanta som möjligt. Laboratoriemiljö ger mer standardisering. Fokus på experimentledare, vikten av pilottestning. Använd exempel-experimentet. Replikerbarhet.
+När vi är klara med experimentets design, och har testat så att denna design fungerar som det är tänkt, så är det dags att låta en grupp med människor delta i experimentet. Detta deltagande vill vi inte ska ske hur som helst, utan vi vill att det ska vara så lika som möjligt för alla deltagare. Varför är detta viktigt? Jo, för att vi hoppas att det _bara_ är experimentets villkor som ska påverka deltagarna, och inte alla mer eller mindre oväsentliga detaljer som händer runt omkring själva deltagandet. Därför upprättar vi något som kallas procedur (på engelska "procedure") för att så långt som möjligt standardisera hur deltagarna genomgår experimentet. Proceduren kan alltså liknas vid ett inrepeterat framförande av en teaterpjäs, men med skillnaden att fokus inte ligger på kreativ tolkning, utan på att så exakt som möjligt upprepa samma genomförande för alla deltagare. Här kan vi börja förstå vikten av att pilottesta experimentet innan så att vi har tränat på alla moment; vi vill ju helst inte att de första deltagarna får en annan procedur än de som kommer senare (dvs vi vill exkludera ordningseffekter). Vi kan också börja förstå varför experiment ofta förknippas med laboratorier, eftersom denna miljö kan ge bättre möjligheter att hålla alla externa faktorer så konstanta som möjligt, vilket i sin tur ökar andra forskares möjligheter att replikera våra resultat. 
+
+Ett överdrivet fokus på procedur kanske också kan förklara varför experiment ibland har en något negativ associering med kontroll. Även om en likvärdig procedur är viktigt inom experimentell metod, så finns det naturligvis alternativ, exemplevis survey-experiment, vilket kan innebära att deltagarna får en webbenkät som de fyller i där de för tillfället råkar befinna sig. Vid ett sådant genomförande kan vi dock förvänta oss att brusnivån i våra data oundvikligen blir högre och att effektstorlekar och möjligheter att hitta signifikanta resultat blir mindre. (Dessutom utgörs ju observationerna i ett survey-experiment av självrapporterad data, men det behandlar vi på andra ställen i denna bok.)
 
 Kronologisk genomgång av experimentets samtliga delar så som de möter försöksdeltagaren. Dvs hälsning, informerat samtycke, förtest, instruktioner, applicering av mätutrustning, kalibrering, 
 
@@ -747,9 +736,9 @@ Kronologisk genomgång av experimentets samtliga delar så som de möter försö
 
 Det kan tyckas trivialt att nämna detta första steg, vilket innebär att försöksdeltagaren (eller forskningspersonen) kommer till den lokal där experimentet är tänkt att genomföras, och hälsas välkommen av experimentledaren. Men det är naturligtvis viktigt att försöksdeltagaren får ett gott första intryck av en representat för forskningsprojektet som är väl införstådd med hur experimentet kommer att genomföras, och som kan kommunicera den viktigaste informationen till deltagaren. 
 
-Ibland finns det flera experimentledare som delar på dessa uppgifter, t.ex. studenter eller doktorander som hjälper till med experimentets genomförande som en del av sin utbildning. I sådana fall kan det vara så att den person som fungerar som huvudman för forskningsprojektet har delegerat det praktiska genomforandet av experimentet, samt insamling av forskningsdata, till studenter och mer juniora forskare. I andra fall kan det vara forskningsprojektets huvudman som själv också fungerar som experimentledare. 
+Ibland finns det flera experimentledare som delar på dessa uppgifter, t.ex. studenter eller doktorander som hjälper till med experimentets genomförande som en del av sin utbildning. I sådana fall kan det vara så att den person som fungerar som huvudman för forskningsprojektet har delegerat det praktiska genomförandet av experimentet, samt insamling av forskningsdata, till studenter och mer juniora forskare. I andra fall kan det vara forskningsprojektets huvudman som själv också fungerar som experimentledare. 
 
-Det kan vara viktigt att dylik information kan kommuniceras till deltagaren vid det första mötet. En annan viktig aspekt av välkomsthälsning är dock att experimentledaren inte bör säga för mycket om vad det kommande experimentet går ut, och därigenom skapa en förutfattad mening hos deltagaren. 
+Det kan vara viktigt att dylik information kan kommuniceras till deltagaren vid det första mötet. En annan viktig aspekt av välkomsthälsningen är dock att experimentledaren inte bör säga för mycket om vad det kommande experimentet går ut, och därigenom skapa en förutfattad mening hos deltagaren. 
 
 ### Informerat samtycke {#sub07.6.2}
 
@@ -800,6 +789,8 @@ Genomgång av experimentets samtliga delar som möter försöksdeltagaren. Dvs h
 Genomgång av experimentets samtliga delar som möter försöksdeltagaren. Dvs hälsning, informerat samtycke, förtest, instruktioner, applicering av mätutrustning, kalibrering, 
 
 ### Instruktioner och uppgifter {#sub07.6.5}
+
+Instruktioner och uppgifter [7.5.1](#sub07.5.1). Instruktioner avser i grund och botten att göra experimentet standardiserat och likvärdigt för alla deltagare. För att detta ska uppnås krävs dock att instruktionerna är mycket lättbegripliga. Uppgifter kan erbjuda möjligheter mäta deltagarnas prestationsförmåga under olika experimentella villkor.
 
 Läs Facebook-artiklarna och bedöm sedan trovärdighet på en ordinal skala. Alternativt kan den skarpa uppgiften döljas, och istället ger man en skenuppgift till deltagarna för att hålla dem naiva om experimentets syfte och undvika bias. Problematiskt med webbaserade survey experiment? 
 
