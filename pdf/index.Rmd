@@ -977,7 +977,7 @@ Använd gärna detta mönster "Effects of sentiment measures on user engagement"
 
 
 ## Diskussion {#sec08.2}
-[08-2-wc-file]: <> (142.50 %)
+[08-2-wc-file]: <> (144.64 %)
 [08-2-comment]: <> (3 sidor)
 
 Experimentets efterarbete är ingalunda klart i och med resultatrapporteringen som vi presenterade i föregående avsnitt. Även om vi med statistiska metoder kan visa att våra empiriska data ger mycket starkt stöd till de hypoteser som uppställts, så måste vi också visa att vi kan förhålla oss kritiska till dessa resultat, dvs. att vi förstår och redovisar svagheter i det genomförda experimentet, att vi undersökt möjliga felkällor, samt att vi kan föreslå förbättringar till experimentets design. Här kommer _diskussionen_ in som en ärlig, transparent och objektiv utvärdering av experimentets genomförande. Det finns ingen granskande forskare som förväntar sig att vi ska kunna åstadkomma ett perfekt experiment med begränsade resurser, och därför handlar det ofta om att vi som experimentledare tydligt redovisar och motiverar de avgränsningar och val som gjorts i studien.
@@ -989,6 +989,10 @@ Vi kan också tänka oss att diskussionen är den avslutande delen av studien d�
 Ett av de viktigaste momenteten i diskussionen är sammanfatta vilket stöd våra empiriska data ger till de hypoteser vi uppställt, dvs. relationen mellan förväntade och faktiska resultat. Här kan det vara viktigt att poängtera att forskningsvärlden sällan talar om att hypoteser bekräftats eller besannats, utan man talar istället om hur resultaten _stödjer_ hypoteserna eller inte. Till syvende och sist kan inte vetenskapen ge slutgiltiga bevis om sanningen, utan den svarar på hur _sannolikt_ ett visst sakförhållande är, t.ex. effekten av ett experimentellt villkor på någon utfallsvariabel. 
 
 Även om experimentet uppvisar ett starkt signifikant resultat, kan effektstorleken vara ganska liten (avsnitt [7.1.1](#sub07.1.1) förstudier). I resultaten från vårt exempel-experiment kom vi fram till att Facebook-poster med bild på auktoritetsperson medförde en statistiskt signifikant ökning av deltagarnas visuella uppmärksamhet på den tillhörande texten i samma post. Men samtidigt uppgav vi att det finns en 5% chans att våra data är ett slumpmässigt extremfall, och att om experimentet upprepades så skulle denna effekt troligen inte visa sig igen. Denna risk att felaktigt finna stöd för sin hypotes kallas för typ I-fel (på engelska används det synonyma uttrycket "false positive").
+
+```{r tab-02-08-2-1-01, echo=F}
+knitr::kable(read.table("../csv/tab-02-08-2-1-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Typ I- och Typ II-fel.', booktabs=TRUE)
+```
 
 ```{r fig-02-08-2-1, echo=F, fig.cap="Typ I- och II-fel.", out.width='80%', fig.asp=.75, fig.align='center'}
 knitr::include_graphics("../fig/type-error.png")

@@ -1,0 +1,3 @@
+"Nollhypotesen är..."	"Sann"	"Falsk"
+"Förkastas"	"Typ I-fel, Falsk positiv"	"Korrekt beslut, Sann positiv"
+"Förkastas inte"	"Korrekt slutsats, Sann negativ"	"Typ II-fel, Falsk negativ"
