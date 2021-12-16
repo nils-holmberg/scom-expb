@@ -508,10 +508,10 @@ I det hypotetiska experiment som vi resonerar om i denna bok används två olika
 \hypertarget{sub07.3.1}{%
 \subsection{Olika mätskalor}\label{sub07.3.1}}
 
-TODO: Ta upp levels of measurement. Olika datanivåer. Nominal, Kvot-skala. Intervall. Nominal tillåter bara analyser som handlar om att räkna antal förekomster. Ta upp psychopy3 2020 som exempel.
+Mätskala, eller ibland datanivå, är ett begrepp som används inom beskrivande statistik för att klassificera den variabel som mäts. Variabler som endast kan mätas enligt en nominalskala eller ordinalskala kallas med ett gemensamt namn kvalitativa variabler eller kategorivariabler och de som kan mätas enligt en intervallskala eller kvotskala kallas kvantitativa variabler. För kvantitativa variabler är det, förutom lägesmått som medelvärde och median, också möjligt att beräkna spridningsmått som standardavvikelse och varians. En viktig princip är att dessa skalor antas innehålla stegvis mer information, och man kan alltid ta bort information men den går inte att lägga till (dvs vi kan omvandla en kvantitativ variabel till en kvalitativ, men inte omvänt). Det är alltså alltid bättre att försöka använda en mätskala med så mycket information som möjligt.
 
 \begin{longtable}[]{@{}lllll@{}}
-\caption{\label{tab:tab-02-07-3-1-01}Mätnivåer och information.}\tabularnewline
+\caption{\label{tab:tab-02-07-3-1-01}Mätskalor och information.}\tabularnewline
 \toprule
 Mätskala\_Information & Nominal. & Ordinal. & Intervall & Kvot\tabularnewline
 \midrule
@@ -526,6 +526,14 @@ Mätningar med godtycklig nollpunkt & & & X & X\tabularnewline
 Kontinuerliga mätningar med absolut nollpunkt & & & & X\tabularnewline
 \bottomrule
 \end{longtable}
+
+\textbf{Nominalskala.} Det man mäter kan endast delas in i grupper utan inbördesordning. Exempel är kön, yrke och sjukdomstyp. Variabelns olika värden kan endast beskrivas med ord, exempelvis man/kvinna, läkare/sjuksköterska/städare/säljare. För variabler som mäts enligt en nominalskala är det möjligt att beräkna typvärde, men inte median eller aritmetiskt medelvärde.
+
+\textbf{Ordinalskala.} Variabelns olika värden kan rangordnas, men det går inte att på något meningsfullt sätt ange skillnader eller avstånd mellan värdena. Exempel är utbildning som kan anta värdena grundskola/gymnasium/högskola/forskarutbildning. Det går att ordna värdena efter stigande utbildningsnivå, men man kan inte tilldela en viss utbildning något numeriskt värde. För en variabel mätt enligt denna skala är det möjligt att beräkna typvärde, median och percentiler, men inte aritmetiskt medelvärde. När vi i exempel-experimentet mäter deltagares attityd till Facebook-posters trovärdighet kallar vi detta ordinalskala, men vi behandlar den som en intervallskala av praktiska skäl.
+
+\textbf{Intervallskala.} I detta fall kan det man mäter tilldelas ett numeriskt värde med ett konstant avstånd mellan de olika värdena. Ett exempel är temperatur mätt i grader Celsius. Det är här meningsfullt att ange skillnaden mellan två mätvärden. 20 grader Celsius är 10 grader varmare än 10 grader Celsius och 30 grader är ytterligare 10 grader varmare. Däremot är det inte riktigt att påstå att det en dag är dubbelt så varmt som föregående dag eftersom nollpunkten är godtycklig och det finns negativa temperaturvärden. För variabler mätta enligt denna skala är det möjligt att beräkna både typvärde, median och aritmetiskt medelvärde.
+
+\textbf{Kvotskala.} Det som mäts kan beskrivas med ett kontinuerligt varierande numeriskt värde, och det finns ett entydigt sätt att definiera ett nollvärde. Därmed kan man jämföra storleken mellan de olika värdena. Exempel är kroppslängd mätt i centimeter. En person kan vara dubbelt så lång som en annan. Märk väl att det inte är i princip omöjligt att uppmäta negativa värden på en kvotskala. Exempelvis kan en persons samlade ekonomiska tillgångar anta ett negativt värde på en kvotskala om personens skulder överstiger dennes tillgångar. Endast för variabler som mäts enligt en kvotskala är det meningsfullt att multiplicera och dividera mätvärdena. När vi i exempel-experimentet mäter deltagares läsning av texten i Facebook-poster med hjälp av en ögonrörelsemätare, kan vi anse att detta utgör mätvärden på en kvotskala.
 
 TODO: Samlad diskussion om alla olika typer av validitet och reliabilitet hör hemma lite överallt, kanske bäst under \emph{förstudier}, eller under mätinstrument, kanske även någonstans under diskussion.
 
