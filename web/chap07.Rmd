@@ -16,13 +16,17 @@ I det följande kommer vi redogöra för den typiska turordningen för att både
 
 - kontrastera med metodologi, i del 1 ? Pedagogiskt att presentera efterföljande text som tre centrala beståndsdelar: 1) deltagare, 2) mätinstrument, och 3) experimentella villkor/manipulationer.
 
-## Förstudier {#sec07.1}
-[07-1-wc-file]: <> (91.50 %)
+## Förstudier och kvalitetsarbete {#sec07.1}
+[07-1-wc-file]: <> (92.35 %)
 [07-1-comment]: <> (5 sidor)
 
-Innan man genomför ett skarpt experiment, vilket ofta kräver mycket resurser i form av tid och arbete, är det klokt att genomföra experimentet i liten skala. På så vis kan forskarna i ett tidigt stadium fånga upp problem med experimentdesignen. Detta kallas för att vi genomför en förstudie eller ett pilottest. I sambad med planering och förberedelse av experimentet kommer vi börja med att diskutera begreppet power-analys (från engelskans power analysis).
+Innan man genomför ett skarpt experiment, vilket ofta kräver mycket resurser i form av tid och arbete, är det klokt att genomföra experimentet i liten skala. På så vis kan vi som studenter eller forskarna i ett tidigt stadium fånga upp problem med experimentdesignen. Detta kallas för att vi genomför en förstudie eller ett pilottest. I sambad med planering och förberedelse av experimentet kommer vi börja med att diskutera begreppet power-analys (från engelskans power analysis).
 
-### Power-analys {#sub07.1.1}
+### Validitet och reliabilitet {#sub07.1.1}
+
+Igen.
+
+### Power-analys {#sub07.1.2}
 
 När vi börjar omsätta vårt experiment till verklighet blir det naturligvis intressant att fråga oss själva hur många deltagare och/eller försök (trials) vi behöver ha med i experimentet för att ha en rimlig chans att få ett tillförlitligt resultat. Dessa funderingar har att göra med vad som på engelska kallas "power analysis", och vad vi på svenska ibland översätter till power-analys eller statistisk kraft [@ellis2010essential; @sullivan2012using; @cumming2013understanding].
 
@@ -42,7 +46,7 @@ Vad ska du göra om du upptäcker att din forskningsdesign inte har tillräcklig
 
 Med tanke på att statistisk power främst beror på relationsstyrka och urvalsstorlek, finns det i huvudsak två steg du kan vidta för att öka statistisk styrka: öka styrkan på sambandet eller öka urvalsstorleken. Att öka styrkan i relationen kan ibland åstadkommas genom att använda en starkare manipulation eller genom att mer noggrant kontrollera för demografiska variabler för att minska mängden brus i data (t.ex. genom att använda en inomgruppsdesign snarare än en mellangruppsdesign). Den vanliga strategin är dock att öka urvalsstorleken. För varje förväntad relationsstyrka kommer det alltid att finnas något prov som är tillräckligt stort för att uppnå tillräcklig kraft [@faul2007g; @faul2009statistical].
 
-### Pilottest {#sub07.1.2}
+### Pilottest {#sub07.1.3}
 
 Det är ofta användbart att förstå utvecklingen av en experimentell studie som en iterativ process, där genomförandet successivt kan förbättras baserat på erfarnheter från tidigare genomföranden. Slutligen är det ofta en fördel att kunna rapportera ett pilottest eller en förstudie i samband med att sakkunniga forskare granskar och bedömer om det är lämpligt att publicera resultaten i en tidskrift.
 
@@ -139,7 +143,7 @@ När man väl genomfört studien och är i färd med att rapportera vilka person
 
 
 ## Mätinstrument {#sec07.3}
-[07-3-wc-file]: <> (105.82 %)
+[07-3-wc-file]: <> (105.92 %)
 [07-3-comment]: <> (10 sidor)
 
 I en experimentell studie är det avgörande att införliva mätinstrument som på ett giltigt och tillförlitligt sätt kan uppmäta effekten av en behandling på en eller flera responsvariabler. En viktig anledning till att experiment och mätinstrument är nära förknippade, är att denna typ av positivistisk forskning syftar till att försöka säkerställa en faktisk skillnad mellan olika grupper av deltagare och olika typer av behandlingar, vilket till syvende och sist kräver analys med hjälp av statistiska metoder. Det räcker alltså inte med att forskaren rapporterar en subjektivt upplevd skillnad mellan försöksgrupper; denna skillnad måste bevisas!
@@ -150,7 +154,7 @@ I det hypotetiska experiment som vi resonerar om i denna bok används två olika
 
 ### Olika mätskalor {#sub07.3.1}
 
-Mätskala, eller ibland datanivå, är ett begrepp som används inom beskrivande statistik för att klassificera den variabel som mäts. Variabler som endast kan mätas enligt en nominalskala eller ordinalskala kallas med ett gemensamt namn kvalitativa variabler eller kategorivariabler och de som kan mätas enligt en intervallskala eller kvotskala kallas kvantitativa variabler. För kvantitativa variabler är det, förutom lägesmått som medelvärde och median, också möjligt att beräkna spridningsmått som standardavvikelse och varians (https://sv.wikipedia.org/wiki/M%C3%A4tskala). En viktig princip är att dessa skalor antas innehålla stegvis mer information, och man kan alltid ta bort information men den går inte att lägga till (dvs vi kan omvandla en kvantitativ variabel till en kvalitativ, men inte omvänt). Det är alltså alltid bättre att försöka använda en mätskala med så mycket information som möjligt.
+Mätskala, eller ibland datanivå, är ett begrepp som används inom beskrivande statistik för att klassificera den variabel som mäts. Variabler som endast kan mätas enligt en nominalskala eller ordinalskala kallas med ett gemensamt namn kvalitativa variabler eller kategorivariabler och de som kan mätas enligt en intervallskala eller kvotskala kallas kvantitativa variabler. För kvantitativa variabler är det, förutom lägesmått som medelvärde och median, också möjligt att beräkna spridningsmått som standardavvikelse och varians (https://sv.wikipedia.org/wiki/M%C3%A4tskala). En viktig princip är att dessa skalor antas innehålla stegvis mer information, och man kan alltid ta bort information men den går inte att lägga till i efterhand (dvs vi kan omvandla en kvantitativ variabel till en kvalitativ, men inte omvänt). Det är alltså _alltid bättre_ att försöka använda en mätskala som innehåller så mycket information som möjligt.
 
 ```{r tab-02-07-3-1-01, echo=F}
 knitr::kable(read.table("../csv/tab-02-07-3-1-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Mätskalor och information.', booktabs=TRUE)
