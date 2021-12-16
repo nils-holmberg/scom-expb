@@ -139,7 +139,7 @@ När man väl genomfört studien och är i färd med att rapportera vilka person
 
 
 ## Mätinstrument {#sec07.3}
-[07-3-wc-file]: <> (88.64 %)
+[07-3-wc-file]: <> (89.21 %)
 [07-3-comment]: <> (10 sidor)
 
 I en experimentell studie är det avgörande att införliva mätinstrument som på ett giltigt och tillförlitligt sätt kan uppmäta effekten av en behandling på en eller flera responsvariabler. En viktig anledning till att experiment och mätinstrument är nära förknippade, är att denna typ av positivistisk forskning syftar till att försöka säkerställa en faktisk skillnad mellan olika grupper av deltagare och olika typer av behandlingar, vilket till syvende och sist kräver analys med hjälp av statistiska metoder. Det räcker alltså inte med att forskaren rapporterar en subjektivt upplevd skillnad mellan försöksgrupper; denna skillnad måste bevisas!
@@ -151,6 +151,10 @@ I det hypotetiska experiment som vi resonerar om i denna bok används två olika
 ### Olika mätnivåer {#sub07.3.1}
 
 TODO: Ta upp levels of measurement. Olika mätnivåer. Nominal, Kvot-skala. Intervall. Nominal tillåter bara analyser som handlar om att räkna antal förekomster. Ta upp psychopy3 2020 som exempel.
+
+```{r tab-02-07-3-1-01, echo=F}
+knitr::kable(read.table("../csv/tab-02-07-3-1-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Mätnivåer och information.', booktabs=TRUE)
+```
 
 TODO: Samlad diskussion om alla olika typer av validitet och reliabilitet hör hemma lite överallt, kanske bäst under _förstudier_, eller under mätinstrument, kanske även någonstans under diskussion.
 

@@ -1,0 +1,5 @@
+"SCALE "	"NOMINAL "	"ORDINAL "	"INTERVAL "	"RATIO "
+"Names or Categories"	"X "	"X "	"X "	"X "
+"Order or Rankings "		"X "	"X "	"X "
+"Measurements with arbitrary zero"			"X "	"X "
+"Proportional measurements with absolute zero"				"X "
