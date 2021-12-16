@@ -301,7 +301,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>För att få en översiktlig uppfattning om de viktigaste variablerna i ett experiment, kan resultatanalysen ibland inledas med beskrivande resultat eller deskriptiv statistik. Om vi har genomfört ett experiment där en beroende variabel är hur mycket visuell uppmärksamhet deltagare ägnat åt Facebook-poster så kan det vara intressant, både för oss själva som forskare såväl som för utomstående läsare, att få en uppfattning om vad som var den genomsnittliga tiden som försöksdeltagarna tittade på en sådan Facebook-post (s.k. centraltendens), samt hur pass mycket dessa observationer var spridda runt medelvärdet (s.k. spridningsmått).</p>
 <p>För att rapportera detta skulle vi kunna sammanställa medelvärdet av fixeringstiden (vårt mått på visuell uppmärksamhet) på alla Facebook-poster som ingått i studien (låt oss säga 10.5 sekunder), dessutom skulle vi kunna beräkna standardavvikelsen för denna variabel (t.ex. 2.3 sekunder). Därefter skulle vi kunna göra samma sak för eventuella andra beroende variabler i undersökning, i vårt fall använde vi oss också av en 7-gradig skala som mätte deltagarnas självrapporterade upplevelse av trovärdighet för varje Facebook-post. Vi skulle kunna upprepa denna procedur med alla kvantitativa variabler vi använt i studien, och därefter presentera dessa beskrivande resultat i en tabell, och kanske även med hjälp av diagram.</p>
 <table>
-<caption><span id="tab:tab-02-08-1-1">Table 8.1: </span>Beskrivande resultat eller deskriptiv statistik.</caption>
+<caption><span id="tab:tab-02-08-1-1-01">Table 8.1: </span>Beskrivande resultat eller deskriptiv statistik.</caption>
 <thead>
 <tr class="header">
 <th align="left">mätvariabel</th>
@@ -326,8 +326,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table>
 <p>Vi kan ta denna beskrivande statistik och representera resultaten grafiskt i ett stapeldiagram. På den lodräta y-axeln är det i så fall brukligt att placera den beroende variabeln (eller mätvariabeln, eller utfallsvariabeln). I diagrammet nedan tittar vi närmare på utfallsvariabeln visuell uppmärksamhet, vilket mäts som samlad fixeringstid i sekunder som deltagare ägnat åt att titta på texten inom varje Facebook-post. Stapeldiagrammet (som är baserat på fingerade data) visar att manliga deltagare i genomsnitt tenderar att ägna något mindre visuell uppmärksamhet åt texterna jämfört med kvinnliga. Å andra sidan är variationen mellan observationer något större bland män, vilket indikeras av strecken längst upp på varje stapel som i detta fall representerar standardavvikelsen (på engelska “error bars” eller “whiskers”).</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig-02-08-1-1"></span>
-<img src="scom-expb_files/figure-html/fig-02-08-1-1-1.png" alt="Beskrivande resultat eller deskriptiv statistik." width="80%" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig-02-08-1-1-01"></span>
+<img src="scom-expb_files/figure-html/fig-02-08-1-1-01-1.png" alt="Beskrivande resultat eller deskriptiv statistik." width="80%" />
 <p class="caption">
 Figure 8.1: Beskrivande resultat eller deskriptiv statistik.
 </p>
@@ -337,8 +337,8 @@ Figure 8.1: Beskrivande resultat eller deskriptiv statistik.
 <div id="sub08.1.2" class="section level3" number="8.1.2">
 <h3><span class="header-section-number">8.1.2</span> Inferentiella resultat</h3>
 <p>Efter den översiktliga presentationen av generella deskriptiva resultat, kommer vi så till själva kärnfrågan i vår tänkta studie: Vilken effekt hade det experimentella villkoret “bild på auktoritetsperson” på deltagarnas visuella uppmärksamhet på texten i Facebook posterna, jämfört med när samma text presenterades i kontrollvillkoret “bild på okänd person”? Och vad hade samma experimentella manipulation för effekt på den andra beroende variabeln upplevd trovärdighet för samma texter? Som synes bygger dessa frågor vidare på de deskriptiva resultaten, men uppvisar ett annat sätt att dela upp empiriska observationer i olika grupper; i detta fall i kontroll- och behandlingsvillkor. När vi försöker besvara den kritiska frågan om det finns några skillnader mellan dessa två grupper med avseende på utfallsvariablerna, använder vi oss av s.k. statistisk inferens för att dra slutsatser om resultaten vid en fastställd nivå av sannolikhet.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig-02-08-1-2"></span>
-<img src="scom-expb_files/figure-html/fig-02-08-1-2-1.png" alt="Inferentiella resultat." width="80%" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig-02-08-1-2-01"></span>
+<img src="scom-expb_files/figure-html/fig-02-08-1-2-01-1.png" alt="Inferentiella resultat." width="80%" />
 <p class="caption">
 Figure 8.2: Inferentiella resultat.
 </p>
@@ -350,7 +350,7 @@ Figure 8.2: Inferentiella resultat.
 </ul>
 <p>Ett enkelt men samtidigt robust sätt att testa dessa hypoteser är att göra ett s.k. t-test för varje hypotes. T-testet lämpar sig för situationer när vi har en kvantitativ beroende variabel och exakt två villkor som ska jämföras. Detta test jämför i princip medelvärdena i respektive grupp, med hänsyn tagen till bl.a. antal observationer (deltagare, försök, etc), samt observationernas fördelning och spridning (t.ex. standardavvikelse). För att kunna genomföra statistiska test behövs en noll-hypotes, där vi antar att det inte finns någon skillnad mellan villkoren. Baserat på detta formulerar vi sedan hypotesen H1 om en skillnad mellan villkoren i en förväntad riktning (auktoritetsperson kommer att orsaka <em>mer</em> visuell uppmärksamhet). Det sista steget som behövs är att vi antar en sannolikhetsnivå (s.k. alpha-nivå) att vi skulle observera de faktiska resultaten om noll-hypotesen stämde bäst. En vanlig nivå är 0.05, vilket innebär att vi anser att uppmätta skillnader mellan villkoren är tillräckligt tillförlitliga om det är 5% chans eller mindre att resultatet beror på slumpen, och 95% chans eller mer att de beror på de experimentella villkoren. Resultatet rapporteras i så fall som “statistiskt signifikant”.</p>
 <table>
-<caption><span id="tab:tab-02-08-1-2">Table 8.2: </span>Inferentiella resultat.</caption>
+<caption><span id="tab:tab-02-08-1-2-01">Table 8.2: </span>Inferentiella resultat.</caption>
 <thead>
 <tr class="header">
 <th align="right">kontroll</th>
@@ -425,7 +425,7 @@ Figure 8.3: Typ I- och II-fel.
 <p>Vetenskapliga journaler tillhandahåller på sina webbplatser ofta detaljerade instruktioner för vad man ska tänka på när man skickar in ett manuskript för granskning. Dessutom finns ofta typografiska mallar som forskare bör använda. APA</p>
 <p>En experimentell studie består vanligtvis av två integrerade delar: 1) genomförande av ett experiment, och 2) rapportering av resultat. I denna bok fokuserar vi främst på genomförandet, men dispositionen kommer att följa den struktur som används när man rapporterar resultatet av ett experiment i form av en sakkunniggranskad journalpublikation (s.k. peer-review). Av både konvention och praktiska skäl består denna rapportering oftast av fyra delar, som inleds med <strong>Introduktion</strong>, och sedan följs av <strong>Metod</strong>, <strong>Resultat</strong>, och <strong>Diskussion</strong>. På grund av delarnas initialer kallas denna disposition ibland <strong>IMRD</strong> (på ett ungefär uttalat "imrad").</p>
 <table>
-<caption><span id="tab:tab-02-08-3-1">Table 8.3: </span>Resultatrapportering av en experimentell studie.</caption>
+<caption><span id="tab:tab-02-08-3-1-01">Table 8.3: </span>Resultatrapportering av en experimentell studie.</caption>
 <colgroup>
 <col width="5%" />
 <col width="85%" />

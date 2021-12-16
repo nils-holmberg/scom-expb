@@ -508,7 +508,7 @@ I det hypotetiska experiment som vi resonerar om i denna bok används två olika
 \hypertarget{sub07.3.1}{%
 \subsection{Olika mätskalor}\label{sub07.3.1}}
 
-Mätskala, eller ibland datanivå, är ett begrepp som används inom beskrivande statistik för att klassificera den variabel som mäts. Variabler som endast kan mätas enligt en nominalskala eller ordinalskala kallas med ett gemensamt namn kvalitativa variabler eller kategorivariabler och de som kan mätas enligt en intervallskala eller kvotskala kallas kvantitativa variabler. För kvantitativa variabler är det, förutom lägesmått som medelvärde och median, också möjligt att beräkna spridningsmått som standardavvikelse och varians. En viktig princip är att dessa skalor antas innehålla stegvis mer information, och man kan alltid ta bort information men den går inte att lägga till (dvs vi kan omvandla en kvantitativ variabel till en kvalitativ, men inte omvänt). Det är alltså alltid bättre att försöka använda en mätskala med så mycket information som möjligt.
+Mätskala, eller ibland datanivå, är ett begrepp som används inom beskrivande statistik för att klassificera den variabel som mäts. Variabler som endast kan mätas enligt en nominalskala eller ordinalskala kallas med ett gemensamt namn kvalitativa variabler eller kategorivariabler och de som kan mätas enligt en intervallskala eller kvotskala kallas kvantitativa variabler. För kvantitativa variabler är det, förutom lägesmått som medelvärde och median, också möjligt att beräkna spridningsmått som standardavvikelse och varians (\url{https://sv.wikipedia.org/wiki/M\%C3\%A4tskala}). En viktig princip är att dessa skalor antas innehålla stegvis mer information, och man kan alltid ta bort information men den går inte att lägga till (dvs vi kan omvandla en kvantitativ variabel till en kvalitativ, men inte omvänt). Det är alltså alltid bättre att försöka använda en mätskala med så mycket information som möjligt.
 
 \begin{longtable}[]{@{}lllll@{}}
 \caption{\label{tab:tab-02-07-3-1-01}Mätskalor och information.}\tabularnewline
@@ -1111,7 +1111,7 @@ För att få en översiktlig uppfattning om de viktigaste variablerna i ett expe
 För att rapportera detta skulle vi kunna sammanställa medelvärdet av fixeringstiden (vårt mått på visuell uppmärksamhet) på alla Facebook-poster som ingått i studien (låt oss säga 10.5 sekunder), dessutom skulle vi kunna beräkna standardavvikelsen för denna variabel (t.ex. 2.3 sekunder). Därefter skulle vi kunna göra samma sak för eventuella andra beroende variabler i undersökning, i vårt fall använde vi oss också av en 7-gradig skala som mätte deltagarnas självrapporterade upplevelse av trovärdighet för varje Facebook-post. Vi skulle kunna upprepa denna procedur med alla kvantitativa variabler vi använt i studien, och därefter presentera dessa beskrivande resultat i en tabell, och kanske även med hjälp av diagram.
 
 \begin{longtable}[]{@{}lrrr@{}}
-\caption{\label{tab:tab-02-08-1-1}Beskrivande resultat eller deskriptiv statistik.}\tabularnewline
+\caption{\label{tab:tab-02-08-1-1-01}Beskrivande resultat eller deskriptiv statistik.}\tabularnewline
 \toprule
 mätvariabel & observationer & medelvärde & standardavvikelse\tabularnewline
 \midrule
@@ -1129,11 +1129,11 @@ Vi kan ta denna beskrivande statistik och representera resultaten grafiskt i ett
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{scom-expb_files/figure-latex/fig-02-08-1-1-1} 
+{\centering \includegraphics[width=0.8\linewidth]{scom-expb_files/figure-latex/fig-02-08-1-1-01-1} 
 
 }
 
-\caption{Beskrivande resultat eller deskriptiv statistik.}\label{fig:fig-02-08-1-1}
+\caption{Beskrivande resultat eller deskriptiv statistik.}\label{fig:fig-02-08-1-1-01}
 \end{figure}
 
 I figuren kan vi som synes aggregera våra observationer genom att dela upp dem enligt någon demografisk variabel, i detta fall försöksdeltagarnas självrapporterade könstillhörighet. Denna typ av deskriptiv inledning till resultaten kan dock vara mer förekommande inom samhällsvetenskapliga experiment; inom andra ämnen kanske detta anses som lite onödigt, eftersom redovisningen inte direkt relaterar till hypotserna.
@@ -1145,11 +1145,11 @@ Efter den översiktliga presentationen av generella deskriptiva resultat, kommer
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{scom-expb_files/figure-latex/fig-02-08-1-2-1} 
+{\centering \includegraphics[width=0.8\linewidth]{scom-expb_files/figure-latex/fig-02-08-1-2-01-1} 
 
 }
 
-\caption{Inferentiella resultat.}\label{fig:fig-02-08-1-2}
+\caption{Inferentiella resultat.}\label{fig:fig-02-08-1-2-01}
 \end{figure}
 
 Ur detta diagram kan vi utläsa att deltagarna i genomsnitt ägnat mindre visuell uppmärksamhet åt Facebook-posterna i kontrollvillkoret jämfört med behandlingsvillkoret, men vi har fortfarande inget mått på tillförlitligheten i denna skillnad. För att kunna rapportera dessa inferentiella resultat av vårt experiment måste vi här gå tillbaka till hypoteserna som uppställdes i förarbetet till studien. Det kan vara en stor fördel att upprepa dessa hypoteser i resultaten, när vi rapporterar vilket stöd insamlade empiriska data ger till det förväntade utfallet. I vårt fall hade vi följande två hypotser, men för enkelhetens skull kommer vi i det följande bara att fokusera på den första.
@@ -1164,7 +1164,7 @@ Ur detta diagram kan vi utläsa att deltagarna i genomsnitt ägnat mindre visuel
 Ett enkelt men samtidigt robust sätt att testa dessa hypoteser är att göra ett s.k. t-test för varje hypotes. T-testet lämpar sig för situationer när vi har en kvantitativ beroende variabel och exakt två villkor som ska jämföras. Detta test jämför i princip medelvärdena i respektive grupp, med hänsyn tagen till bl.a. antal observationer (deltagare, försök, etc), samt observationernas fördelning och spridning (t.ex. standardavvikelse). För att kunna genomföra statistiska test behövs en noll-hypotes, där vi antar att det inte finns någon skillnad mellan villkoren. Baserat på detta formulerar vi sedan hypotesen H1 om en skillnad mellan villkoren i en förväntad riktning (auktoritetsperson kommer att orsaka \emph{mer} visuell uppmärksamhet). Det sista steget som behövs är att vi antar en sannolikhetsnivå (s.k. alpha-nivå) att vi skulle observera de faktiska resultaten om noll-hypotesen stämde bäst. En vanlig nivå är 0.05, vilket innebär att vi anser att uppmätta skillnader mellan villkoren är tillräckligt tillförlitliga om det är 5\% chans eller mindre att resultatet beror på slumpen, och 95\% chans eller mer att de beror på de experimentella villkoren. Resultatet rapporteras i så fall som ``statistiskt signifikant''.
 
 \begin{longtable}[]{@{}rrrrrr@{}}
-\caption{\label{tab:tab-02-08-1-2}Inferentiella resultat.}\tabularnewline
+\caption{\label{tab:tab-02-08-1-2-01}Inferentiella resultat.}\tabularnewline
 \toprule
 kontroll & behandling & t.värde & p.värde & frihetsgrader & effektstorlek\tabularnewline
 \midrule
@@ -1255,7 +1255,7 @@ Vetenskapliga journaler tillhandahåller på sina webbplatser ofta detaljerade i
 En experimentell studie består vanligtvis av två integrerade delar: 1) genomförande av ett experiment, och 2) rapportering av resultat. I denna bok fokuserar vi främst på genomförandet, men dispositionen kommer att följa den struktur som används när man rapporterar resultatet av ett experiment i form av en sakkunniggranskad journalpublikation (s.k. peer-review). Av både konvention och praktiska skäl består denna rapportering oftast av fyra delar, som inleds med \textbf{Introduktion}, och sedan följs av \textbf{Metod}, \textbf{Resultat}, och \textbf{Diskussion}. På grund av delarnas initialer kallas denna disposition ibland \textbf{IMRD} (på ett ungefär uttalat "imrad").
 
 \begin{longtable}[]{@{}lll@{}}
-\caption{\label{tab:tab-02-08-3-1}Resultatrapportering av en experimentell studie.}\tabularnewline
+\caption{\label{tab:tab-02-08-3-1-01}Resultatrapportering av en experimentell studie.}\tabularnewline
 \toprule
 \begin{minipage}[b]{0.05\columnwidth}\raggedright
 Förkortning.\strut

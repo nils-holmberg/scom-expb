@@ -139,7 +139,7 @@ När man väl genomfört studien och är i färd med att rapportera vilka person
 
 
 ## Mätinstrument {#sec07.3}
-[07-3-wc-file]: <> (105.78 %)
+[07-3-wc-file]: <> (105.82 %)
 [07-3-comment]: <> (10 sidor)
 
 I en experimentell studie är det avgörande att införliva mätinstrument som på ett giltigt och tillförlitligt sätt kan uppmäta effekten av en behandling på en eller flera responsvariabler. En viktig anledning till att experiment och mätinstrument är nära förknippade, är att denna typ av positivistisk forskning syftar till att försöka säkerställa en faktisk skillnad mellan olika grupper av deltagare och olika typer av behandlingar, vilket till syvende och sist kräver analys med hjälp av statistiska metoder. Det räcker alltså inte med att forskaren rapporterar en subjektivt upplevd skillnad mellan försöksgrupper; denna skillnad måste bevisas!
@@ -150,7 +150,7 @@ I det hypotetiska experiment som vi resonerar om i denna bok används två olika
 
 ### Olika mätskalor {#sub07.3.1}
 
-Mätskala, eller ibland datanivå, är ett begrepp som används inom beskrivande statistik för att klassificera den variabel som mäts. Variabler som endast kan mätas enligt en nominalskala eller ordinalskala kallas med ett gemensamt namn kvalitativa variabler eller kategorivariabler och de som kan mätas enligt en intervallskala eller kvotskala kallas kvantitativa variabler. För kvantitativa variabler är det, förutom lägesmått som medelvärde och median, också möjligt att beräkna spridningsmått som standardavvikelse och varians. En viktig princip är att dessa skalor antas innehålla stegvis mer information, och man kan alltid ta bort information men den går inte att lägga till (dvs vi kan omvandla en kvantitativ variabel till en kvalitativ, men inte omvänt). Det är alltså alltid bättre att försöka använda en mätskala med så mycket information som möjligt.
+Mätskala, eller ibland datanivå, är ett begrepp som används inom beskrivande statistik för att klassificera den variabel som mäts. Variabler som endast kan mätas enligt en nominalskala eller ordinalskala kallas med ett gemensamt namn kvalitativa variabler eller kategorivariabler och de som kan mätas enligt en intervallskala eller kvotskala kallas kvantitativa variabler. För kvantitativa variabler är det, förutom lägesmått som medelvärde och median, också möjligt att beräkna spridningsmått som standardavvikelse och varians (https://sv.wikipedia.org/wiki/M%C3%A4tskala). En viktig princip är att dessa skalor antas innehålla stegvis mer information, och man kan alltid ta bort information men den går inte att lägga till (dvs vi kan omvandla en kvantitativ variabel till en kvalitativ, men inte omvänt). Det är alltså alltid bättre att försöka använda en mätskala med så mycket information som möjligt.
 
 ```{r tab-02-07-3-1-01, echo=F}
 knitr::kable(read.table("../csv/tab-02-07-3-1-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Mätskalor och information.', booktabs=TRUE)

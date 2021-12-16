@@ -45,15 +45,15 @@ För att få en översiktlig uppfattning om de viktigaste variablerna i ett expe
 
 För att rapportera detta skulle vi kunna sammanställa medelvärdet av fixeringstiden (vårt mått på visuell uppmärksamhet) på alla Facebook-poster som ingått i studien (låt oss säga 10.5 sekunder), dessutom skulle vi kunna beräkna standardavvikelsen för denna variabel (t.ex. 2.3 sekunder). Därefter skulle vi kunna göra samma sak för eventuella andra beroende variabler i undersökning, i vårt fall använde vi oss också av en 7-gradig skala som mätte deltagarnas självrapporterade upplevelse av trovärdighet för varje Facebook-post. Vi skulle kunna upprepa denna procedur med alla kvantitativa variabler vi använt i studien, och därefter presentera dessa beskrivande resultat i en tabell, och kanske även med hjälp av diagram. 
 
-```{r tab-02-08-1-1, echo=F}
-knitr::kable(read.table("../csv/tab-02-08-1-1.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Beskrivande resultat eller deskriptiv statistik.', booktabs=TRUE)
+```{r tab-02-08-1-1-01, echo=F}
+knitr::kable(read.table("../csv/tab-02-08-1-1-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Beskrivande resultat eller deskriptiv statistik.', booktabs=TRUE)
 ```
 
 Vi kan ta denna beskrivande statistik och representera resultaten grafiskt i ett stapeldiagram. På den lodräta y-axeln är det i så fall brukligt att placera den beroende variabeln (eller mätvariabeln, eller utfallsvariabeln). I diagrammet nedan tittar vi närmare på utfallsvariabeln visuell uppmärksamhet, vilket mäts som samlad fixeringstid i sekunder som deltagare ägnat åt att titta på texten inom varje Facebook-post. Stapeldiagrammet (som är baserat på fingerade data) visar att manliga deltagare i genomsnitt tenderar att ägna något mindre visuell uppmärksamhet åt texterna jämfört med kvinnliga. Å andra sidan är variationen mellan observationer något större bland män, vilket indikeras av strecken längst upp på varje stapel som i detta fall representerar standardavvikelsen (på engelska "error bars" eller "whiskers").
 
-```{r fig-02-08-1-1, echo=F, fig.cap='Beskrivande resultat eller deskriptiv statistik.', out.width='80%', fig.asp=.75, fig.align='center'}
+```{r fig-02-08-1-1-01, echo=F, fig.cap='Beskrivande resultat eller deskriptiv statistik.', out.width='80%', fig.asp=.75, fig.align='center'}
 library(ggplot2)
-bp2 = read.table("../csv/fig-02-08-1-1.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char="")
+bp2 = read.table("../csv/fig-02-08-1-1-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char="")
 gp <- ggplot(bp2, aes(x="deltagare", y=medelvärde, fill=kön)) + 
 geom_bar(stat="identity", color="black", position=position_dodge()) +
 geom_errorbar(aes(ymin=medelvärde-standardavvikelse, ymax=medelvärde+standardavvikelse), width=.2,
@@ -71,9 +71,9 @@ I figuren kan vi som synes aggregera våra observationer genom att dela upp dem 
 
 Efter den översiktliga presentationen av generella deskriptiva resultat, kommer vi så till själva kärnfrågan i vår tänkta studie: Vilken effekt hade det experimentella villkoret "bild på auktoritetsperson" på deltagarnas visuella uppmärksamhet på texten i Facebook posterna, jämfört med när samma text presenterades i kontrollvillkoret "bild på okänd person"? Och vad hade samma experimentella manipulation för effekt på den andra beroende variabeln upplevd trovärdighet för samma texter? Som synes bygger dessa frågor vidare på de deskriptiva resultaten, men uppvisar ett annat sätt att dela upp empiriska observationer i olika grupper; i detta fall i kontroll- och behandlingsvillkor. När vi försöker besvara den kritiska frågan om det finns några skillnader mellan dessa två grupper med avseende på utfallsvariablerna, använder vi oss av s.k. statistisk inferens för att dra slutsatser om resultaten vid en fastställd nivå av sannolikhet.
 
-```{r fig-02-08-1-2, echo=F, fig.cap='Inferentiella resultat.', out.width='80%', fig.asp=.75, fig.align='center'}
+```{r fig-02-08-1-2-01, echo=F, fig.cap='Inferentiella resultat.', out.width='80%', fig.asp=.75, fig.align='center'}
 library(ggplot2)
-bp2 = read.table("../csv/fig-02-08-1-2.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char="")
+bp2 = read.table("../csv/fig-02-08-1-2-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char="")
 bp2$villkor = forcats::fct_rev(bp2$villkor)
 #
 gp <- ggplot(bp2, aes(x="experiment", y=medelvärde, fill=villkor)) + 
@@ -95,8 +95,8 @@ Ur detta diagram kan vi utläsa att deltagarna i genomsnitt ägnat mindre visuel
 
 Ett enkelt men samtidigt robust sätt att testa dessa hypoteser är att göra ett s.k. t-test för varje hypotes. T-testet lämpar sig för situationer när vi har en kvantitativ beroende variabel och exakt två villkor som ska jämföras. Detta test jämför i princip medelvärdena i respektive grupp, med hänsyn tagen till bl.a. antal observationer (deltagare, försök, etc), samt observationernas fördelning och spridning (t.ex. standardavvikelse). För att kunna genomföra statistiska test behövs en noll-hypotes, där vi antar att det inte finns någon skillnad mellan villkoren. Baserat på detta formulerar vi sedan hypotesen H1 om en skillnad mellan villkoren i en förväntad riktning (auktoritetsperson kommer att orsaka _mer_ visuell uppmärksamhet). Det sista steget som behövs är att vi antar en sannolikhetsnivå (s.k. alpha-nivå) att vi skulle observera de faktiska resultaten om noll-hypotesen stämde bäst. En vanlig nivå är 0.05, vilket innebär att vi anser att uppmätta skillnader mellan villkoren är tillräckligt tillförlitliga om det är 5% chans eller mindre att resultatet beror på slumpen, och 95% chans eller mer att de beror på de experimentella villkoren. Resultatet rapporteras i så fall som "statistiskt signifikant". 
 
-```{r tab-02-08-1-2, echo=F}
-knitr::kable(read.table("../csv/tab-02-08-1-2.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Inferentiella resultat.', booktabs=TRUE)
+```{r tab-02-08-1-2-01, echo=F}
+knitr::kable(read.table("../csv/tab-02-08-1-2-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Inferentiella resultat.', booktabs=TRUE)
 ```
 
 I detta exempel har vi antagit ett experiment med mellangruppsdesign och 100 deltagare i varje grupp. Medelvärdena för visuell uppmärksamhet var 10 och 11 sekunder i respektive grupp, och det statistiska testet visade ett t-värde på ca 2.7, och p-värdet visade sig vara under gänsen 0.05 som vi tidigare antog. Det positiva t-värde indikerar att riktningen i sambandet överensstämmer med det förväntade, dvs. att bilder med auktoritetsperson kommer att orsaka _mer_ visuell uppmärksamhet. Förutom detta t-test skulle man kunna tänka sig andra statistiska test för att undersöka de inferentiella resultaten av experimentet, bl.a. variansanalys (s.k. ANOVA) eller regressionsanalys (ifall vi hade velat kontrollera för särskilda variabler såsom kön eller ålder). Gemensamt för många av dessa test är att de följer NHST-modellen, och därmed ger oss ett probabilistiskt värde för hur sannolikt det vore att slumpmässigt observera de faktiska resultaten, vilket i sin tur ger oss möjligheter att dra slutsatser om huruvida experimentets behandlingsvillkor på ett kausalt sätt orsakat en viss effekt på deltagarna. Beyond p-value statistics [@trafimow2015editorial]. 
@@ -182,9 +182,9 @@ Vetenskapliga journaler tillhandahåller på sina webbplatser ofta detaljerade i
 
 En experimentell studie består vanligtvis av två integrerade delar: 1) genomförande av ett experiment, och 2) rapportering av resultat. I denna bok fokuserar vi främst på genomförandet, men dispositionen kommer att följa den struktur som används när man rapporterar resultatet av ett experiment i form av en sakkunniggranskad journalpublikation (s.k. peer-review). Av både konvention och praktiska skäl består denna rapportering oftast av fyra delar, som inleds med **Introduktion**, och sedan följs av **Metod**, **Resultat**, och **Diskussion**. På grund av delarnas initialer kallas denna disposition ibland **IMRD** (på ett ungefär uttalat \"imrad\").
 
-```{r tab-02-08-3-1, echo=F}
-#Tabell {tab-02-08-3-1}. Resultatrapportering av en experimentell studie.
-knitr::kable(read.table("../csv/tab-02-08-3-1.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Resultatrapportering av en experimentell studie.', booktabs=TRUE)
+```{r tab-02-08-3-1-01, echo=F}
+#Tabell {tab-02-08-3-1-01}. Resultatrapportering av en experimentell studie.
+knitr::kable(read.table("../csv/tab-02-08-3-1-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Resultatrapportering av en experimentell studie.', booktabs=TRUE)
 ```
 
 Nämna nåt om rättigheter, licenser, open access osv? Se upp för "rovdjurstidskrifter" (https://www.lu.se/artikel/se-upp-rovdjuren). Bealls lista. Begreppet rovdjurstidskrift, (på engelska "predatory journal"), myntades 2010 av ­Jeffrey ­Beall, bibliotekarie vid University of Colorado i USA.
