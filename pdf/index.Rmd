@@ -271,7 +271,7 @@ Programvaror för att skapa ett experiment, google forms, qualtrics, psychopy, p
 
 
 # Genomförande {#chap07}
-[07-0-wc-file]: <> (84.64 %)
+[07-0-wc-file]: <> (87.50 %)
 [07-0-comment]: <> (2 sidor)
 
 En av de viktigaste aspekterna av experimentell forskning handlar om att resultaten av ett specifikt experiment måste kunna reproduceras (eller replikeras) av en eller flera oberoende forskare. Om resultaten av ett experiment inte kan reproduceras, tyder detta på en godtycklighet i genomförandet, och man kan då med rätta ifrågasätta det forskningsmässiga värdet av ett sådan experiment. Om resultaten av ett experiment inte kan upprepas så kan de heller inte jämföras med tidigare eller efterföljande studier inom samma forskningsområde. Det blir alltså omöjligt att bygga vidare på icke-reproducerbara resultat, och de resurser i form av tid och pengar man spenderat på att genomföra studien kan till största delen betraktas som bortkastade.
@@ -282,21 +282,35 @@ I denna lärobok har vi försökt täcka in dessa två olika men näraliggande b
 
 I det följande kommer vi redogöra för den typiska turordningen för att både genomföra och rapportera ett experiment. Förarbetet är i detta skede redan avklarat, och genom att undersöka tidigare forskning har vi definierat en konceptuell forskningsfråga, som genom operationalisering omsatts till falsifierbara hypoteser.
 
+- Förstudier och kvalitet
+- Försöksdeltagare
+- Mätinstrument
+- Experimentella-villkor
+- Experimentell-design
+- Procedur
+- Dataanalys
+
 - experimentell metod kan handla om att tänka baklänges, börja i hur resultaten rapporteras, och resonera sig fram till hur man ska planera studien
 
 - Ofta den första delen som skrivs när man rapporterar resultaten av en studie. Fördelaktigt att börja med en genomgång av hur studien faktiskt har genomförts.
 
 - kontrastera med metodologi, i del 1 ? Pedagogiskt att presentera efterföljande text som tre centrala beståndsdelar: 1) deltagare, 2) mätinstrument, och 3) experimentella villkor/manipulationer.
 
-## Förstudier och kvalitetsarbete {#sec07.1}
-[07-1-wc-file]: <> (92.35 %)
+
+
+
+
+
+
+## Förstudier och kvalitet {#sec07.1}
+[07-1-wc-file]: <> (94.35 %)
 [07-1-comment]: <> (5 sidor)
 
 Innan man genomför ett skarpt experiment, vilket ofta kräver mycket resurser i form av tid och arbete, är det klokt att genomföra experimentet i liten skala. På så vis kan vi som studenter eller forskarna i ett tidigt stadium fånga upp problem med experimentdesignen. Detta kallas för att vi genomför en förstudie eller ett pilottest. I sambad med planering och förberedelse av experimentet kommer vi börja med att diskutera begreppet power-analys (från engelskans power analysis).
 
 ### Validitet och reliabilitet {#sub07.1.1}
 
-Igen.
+Igen. Kvalitetsarbete. TODO: Samlad diskussion om alla olika typer av validitet och reliabilitet hör hemma lite överallt, kanske bäst under _förstudier_, eller under mätinstrument, kanske även någonstans under diskussion.
 
 ### Power-analys {#sub07.1.2}
 
@@ -415,7 +429,7 @@ När man väl genomfört studien och är i färd med att rapportera vilka person
 
 
 ## Mätinstrument {#sec07.3}
-[07-3-wc-file]: <> (105.92 %)
+[07-3-wc-file]: <> (104.96 %)
 [07-3-comment]: <> (10 sidor)
 
 I en experimentell studie är det avgörande att införliva mätinstrument som på ett giltigt och tillförlitligt sätt kan uppmäta effekten av en behandling på en eller flera responsvariabler. En viktig anledning till att experiment och mätinstrument är nära förknippade, är att denna typ av positivistisk forskning syftar till att försöka säkerställa en faktisk skillnad mellan olika grupper av deltagare och olika typer av behandlingar, vilket till syvende och sist kräver analys med hjälp av statistiska metoder. Det räcker alltså inte med att forskaren rapporterar en subjektivt upplevd skillnad mellan försöksgrupper; denna skillnad måste bevisas!
@@ -439,8 +453,6 @@ knitr::kable(read.table("../csv/tab-02-07-3-1-01.csv", header=T, sep='\t', quot=
 **Intervallskala.** I detta fall kan det man mäter tilldelas ett numeriskt värde med ett konstant avstånd mellan de olika värdena. Ett exempel är temperatur mätt i grader Celsius. Det är här meningsfullt att ange skillnaden mellan två mätvärden. 20 grader Celsius är 10 grader varmare än 10 grader Celsius och 30 grader är ytterligare 10 grader varmare. Däremot är det inte riktigt att påstå att det en dag är dubbelt så varmt som föregående dag eftersom nollpunkten är godtycklig och det finns negativa temperaturvärden. För variabler mätta enligt denna skala är det möjligt att beräkna både typvärde, median och aritmetiskt medelvärde.
 
 **Kvotskala.** Det som mäts kan beskrivas med ett kontinuerligt varierande numeriskt värde, och det finns ett entydigt sätt att definiera ett nollvärde. Därmed kan man jämföra storleken mellan de olika värdena. Exempel är kroppslängd mätt i centimeter. En person kan vara dubbelt så lång som en annan. Märk väl att det inte är i princip omöjligt att uppmäta negativa värden på en kvotskala. Exempelvis kan en persons samlade ekonomiska tillgångar anta ett negativt värde på en kvotskala om personens skulder överstiger dennes tillgångar. Endast för variabler som mäts enligt en kvotskala är det meningsfullt att multiplicera och dividera mätvärdena. När vi i exempel-experimentet mäter deltagares läsning av texten i Facebook-poster med hjälp av en ögonrörelsemätare, kan vi anse att detta utgör mätvärden på en kvotskala.
-
-TODO: Samlad diskussion om alla olika typer av validitet och reliabilitet hör hemma lite överallt, kanske bäst under _förstudier_, eller under mätinstrument, kanske även någonstans under diskussion.
 
 ### Mätning av subjektiva responser {#sub07.3.2}
 
@@ -981,7 +993,7 @@ Använd gärna detta mönster "Effects of sentiment measures on user engagement"
 
 
 ## Diskussion {#sec08.2}
-[08-2-wc-file]: <> (144.64 %)
+[08-2-wc-file]: <> (143.21 %)
 [08-2-comment]: <> (3 sidor)
 
 Experimentets efterarbete är ingalunda klart i och med resultatrapporteringen som vi presenterade i föregående avsnitt. Även om vi med statistiska metoder kan visa att våra empiriska data ger mycket starkt stöd till de hypoteser som uppställts, så måste vi också visa att vi kan förhålla oss kritiska till dessa resultat, dvs. att vi förstår och redovisar svagheter i det genomförda experimentet, att vi undersökt möjliga felkällor, samt att vi kan föreslå förbättringar till experimentets design. Här kommer _diskussionen_ in som en ärlig, transparent och objektiv utvärdering av experimentets genomförande. Det finns ingen granskande forskare som förväntar sig att vi ska kunna åstadkomma ett perfekt experiment med begränsade resurser, och därför handlar det ofta om att vi som experimentledare tydligt redovisar och motiverar de avgränsningar och val som gjorts i studien.
@@ -996,10 +1008,6 @@ Ett av de viktigaste momenteten i diskussionen är sammanfatta vilket stöd vår
 
 ```{r tab-02-08-2-1-01, echo=F}
 knitr::kable(read.table("../csv/tab-02-08-2-1-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Typ I- och Typ II-fel.', booktabs=TRUE)
-```
-
-```{r fig-02-08-2-1, echo=F, fig.cap="Typ I- och II-fel.", out.width='80%', fig.asp=.75, fig.align='center'}
-knitr::include_graphics("../fig/type-error.png")
 ```
 
 Figuren ovan försöker illustrera hur resultaten av ett experiment kan förhålla sig till den faktiska omvärlden. Om vi i resultaten hittar den effekt vi har förväntat oss, så innebär ju detta att vi förkastar nollhypotesen, som säger att det inte finns någon effekt. Naturligvis hoppas vi (med 95% sannolikhet) att detta resultat speglar verkligheten (s.k. "true positive"). Om vi vill vara ännu mer säkra på att resultatet inte är ett extremt undantagsfall skulle vi kunna sänka den så kallade signifikansnivån från 0.05 till exemplevis 0.01. Vi skulle därmed kunna bli mer säkra på att undvika typ I fel, men samtidigt ökar då risken att vi istället hamnar i ett typ II-fel, vilket innebär att vi felaktigt antar nollhypotesen trots att det verkligen föreligger en effekt av behandlingen (s.k. "false negative"). 

@@ -118,7 +118,7 @@ Använd gärna detta mönster "Effects of sentiment measures on user engagement"
 
 
 ## Diskussion {#sec08.2}
-[08-2-wc-file]: <> (144.64 %)
+[08-2-wc-file]: <> (143.21 %)
 [08-2-comment]: <> (3 sidor)
 
 Experimentets efterarbete är ingalunda klart i och med resultatrapporteringen som vi presenterade i föregående avsnitt. Även om vi med statistiska metoder kan visa att våra empiriska data ger mycket starkt stöd till de hypoteser som uppställts, så måste vi också visa att vi kan förhålla oss kritiska till dessa resultat, dvs. att vi förstår och redovisar svagheter i det genomförda experimentet, att vi undersökt möjliga felkällor, samt att vi kan föreslå förbättringar till experimentets design. Här kommer _diskussionen_ in som en ärlig, transparent och objektiv utvärdering av experimentets genomförande. Det finns ingen granskande forskare som förväntar sig att vi ska kunna åstadkomma ett perfekt experiment med begränsade resurser, och därför handlar det ofta om att vi som experimentledare tydligt redovisar och motiverar de avgränsningar och val som gjorts i studien.
@@ -133,10 +133,6 @@ Ett av de viktigaste momenteten i diskussionen är sammanfatta vilket stöd vår
 
 ```{r tab-02-08-2-1-01, echo=F}
 knitr::kable(read.table("../csv/tab-02-08-2-1-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Typ I- och Typ II-fel.', booktabs=TRUE)
-```
-
-```{r fig-02-08-2-1, echo=F, fig.cap="Typ I- och II-fel.", out.width='80%', fig.asp=.75, fig.align='center'}
-knitr::include_graphics("../fig/type-error.png")
 ```
 
 Figuren ovan försöker illustrera hur resultaten av ett experiment kan förhålla sig till den faktiska omvärlden. Om vi i resultaten hittar den effekt vi har förväntat oss, så innebär ju detta att vi förkastar nollhypotesen, som säger att det inte finns någon effekt. Naturligvis hoppas vi (med 95% sannolikhet) att detta resultat speglar verkligheten (s.k. "true positive"). Om vi vill vara ännu mer säkra på att resultatet inte är ett extremt undantagsfall skulle vi kunna sänka den så kallade signifikansnivån från 0.05 till exemplevis 0.01. Vi skulle därmed kunna bli mer säkra på att undvika typ I fel, men samtidigt ökar då risken att vi istället hamnar i ett typ II-fel, vilket innebär att vi felaktigt antar nollhypotesen trots att det verkligen föreligger en effekt av behandlingen (s.k. "false negative"). 

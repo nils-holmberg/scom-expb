@@ -20,7 +20,6 @@ fig:fig-02-08-1-1-01
 fig:fig-02-08-1-2-01
 tab:tab-02-08-1-2-01
 tab:tab-02-08-2-1-01
-fig:fig-02-08-2-1
 tab:tab-02-08-3-1-01
 chap01
 chap02
