@@ -134,7 +134,7 @@ När man väl genomfört studien och är i färd med att rapportera vilka person
 
 
 ## Mätinstrument {#sec07.3}
-[07-3-wc-file]: <> (102.35 %)
+[07-3-wc-file]: <> (101.75 %)
 [07-3-comment]: <> (10 sidor)
 
 I en experimentell studie är det avgörande att införliva mätinstrument som på ett giltigt och tillförlitligt sätt kan uppmäta effekten av en behandling på en eller flera responsvariabler. En viktig anledning till att experiment och mätinstrument är nära förknippade, är att denna typ av positivistisk forskning syftar till att försöka säkerställa en faktisk skillnad mellan olika grupper av deltagare och olika typer av behandlingar, vilket till syvende och sist kräver analys med hjälp av statistiska metoder. Det räcker alltså inte med att forskaren rapporterar en subjektivt upplevd skillnad mellan försöksgrupper; denna skillnad måste bevisas!
@@ -171,21 +171,10 @@ När det gäller svarsalternativ till dessa tänkta enkätfrågor om lycka, är 
 
 ### Mätning av objektiva responser {#sub07.3.3}
 
-Objektiva responser är inte väsenskilda från subjektiva, och därför är det mer fruktbart att placera båda dessa responser på en skala av objektivitet, där enkätfrågor kan betraktas som mindre objektiva, och exempelvis fysiologiska responser anses mer objektiva. När det gäller enkätfrågor så betraktas ibland frågor som avser att undersöka respondentens beteenden som mer objektiva än frågor som frågor handlar om attityder (ref). Om vi flyttar fokus till fysiologiska mätmetoder så kan vi på samma sätt skilja mellan responser som är mer viljestyrda hos deltagaren (t.ex. var blicken riktas på en datorskärm), respektive mätdata som är mindre viljestyrd (t.ex. hur utvidgade pupillerna är). Det förra fallet handlar om mindre objektiva responser, det senare om mer objektiva. Subjektiva och objektiva responser är alltså ingen absolut distinktion. 
+Objektiva responser är inte väsenskilda från subjektiva, och därför är det mer fruktbart att placera båda dessa responser på en skala av objektivitet, där enkätfrågor kan betraktas som mindre objektiva, och exempelvis fysiologiska responser anses mer objektiva. När det gäller enkätfrågor så betraktas ibland frågor som avser att undersöka respondentens beteenden som mer objektiva än frågor som frågor handlar om attityder (ref). Om vi flyttar fokus till fysiologiska mätmetoder så kan vi på samma sätt skilja mellan responser som är mer viljestyrda hos deltagaren (t.ex. var blicken riktas på en datorskärm), respektive mätdata som är mindre viljestyrd (t.ex. hur utvidgade pupillerna är). Det förra fallet handlar om mindre objektiva responser, det senare om mer objektiva. Subjektiva och objektiva responser är alltså ingen absolut distinktion.
 
-```{r tab02-07-3, tidy=F, echo=F, results=T, message=F}
-library(dplyr)
-dt = tibble::tribble(
-~"minst objektiv",~"mindre objektiv",~"mer objektiv",~"mest objektiv",
-"attitydfrågor","beteendefrågor","voluntär respons","involuntär respons"
-)
-#
-knitr::kable(dt,
-caption='Mätinstrument och objektivitet i mätdata',
-booktabs=TRUE
-)# %>% 
-#kableExtra::add_header_above(c("enkätdata"=2, "fysiologisk data"=2)) %>%
-#kableExtra::add_header_above(c("mätinstrument"=4))
+```{r tab-02-07-3-3-01, echo=F}
+knitr::kable(read.table("../csv/tab-02-07-3-3-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Mätinstrument och objektivitet i mätdata.', booktabs=TRUE)
 ```
 
 Låt oss utveckla resonemanget kring fysiologisk mätdata som potentiellt mer objektiva responser. Inom psykologisk, beteendevetenskaplig och medicinsk forskning skiljer man ofta på fysiska responser som är voluntära (viljestyrda) respektive involunära (icke-viljestyrda). Detta kan exemplifieras genom att betänka människans synsystem, där vi ibland viljemässigt styr vår visuella uppmärksamhet mot en specifik region i synfältet (endogenous attention), men ibland riktar blicken som en reflexmässig respons på att något oväntat plötsligt händer i vår omgivning (exogenous attention). Dessutom kan vi ibland rikta vår visuella uppmärksamhet mot något utan att direkt titta på det. 
