@@ -237,31 +237,6 @@ The hypothetico-deductive model or method (step 1-4) this method can never absol
 
 
 
-## Projektarbete {#sec06.4}
-[06-4-wc-file]: <> (71.07 %)
-[06-4-comment]: <> (1 sidor)
-
-Vi kan med fördel tänka kring ett experiment i termer av ett projekt. Behöver planeras, implementeras, utvärderas. Flera roller. Ofta bra med flera personer som är specialiserade på vissa arbetsuppgifter. Projektledning är också intressant aspekt. I praktiken får ofta samma personer inneha flera (eller alla) roller inom projektet.
-
-### Power-analys {#sub06.4.1}
-
-Länka till Åses intro till detta på experiment kursen simm49. Finns även en interaktiv webbapp för detta ändamål. Kan ge upplysningar om hur antal deltagare, trials, etc som bör krävas för att se en kontrasteffekt mellan villkor, compare means (REF). Detta avsnitt är också relevant för avsnitt 7.2 om försöksdeltagare, eftersom det handlar om att uppskatta antalet deltagare vi behöver för att ha en rimlig chans att hitta en statistisk säkerställd effekt. Kanske närmare bestämt 7.2.4 Planering av deltagare.
-
-### Pre-registrering {#sub06.4.2}
-
-TODO: Vad heter pre-registration på svenska? Kanske förregistrering. Koppling till open science framework: making research data and methods FAIR (findable, accessible, interoperable and reusable) and results reproducible. Här kommer en referens [@van2016pre] till denna relativt nya företeelse.
-
-### Implementering {#sub06.4.3}
-
-Programvaror för att skapa ett experiment, google forms, qualtrics, psychopy, pavlovia, python flask, R shiny.
-
-
-
-
-
-
-
-
 # Genomförande {#chap07}
 [07-0-wc-file]: <> (108.39 %)
 [07-0-comment]: <> (2 sidor)
@@ -819,7 +794,7 @@ När du rapporterar experimentets procedur kan det vara fördelaktigt att hålla
 
 
 ## Dataanalys {#sec07.7}
-[07-7-wc-file]: <> (71.78 %)
+[07-7-wc-file]: <> (72.32 %)
 [07-7-comment]: <> (4 sidor)
 
 Genomförandet av ett experiment involverar även handhavandet av insamlade data. Det vill säga, på samma sätt som forskare behöver ge en detaljerad och strukturerad beskrivning av hur ett experiment designats och genomförts, behöver de även ge en motsvarande redovisning av hur insamlade observationer har bearbetats för att generera de variabler som sedan används för statistisk analys. Den främsta anledningen till detta är som vanligt reproducerbarhet. Andra forskare behöver inte bara kunna upprepa experimentets design och genomförande, utan de behöver också kunna upprepa den databehandling som ligger till grund för skapandet av undersökningens beroende och oberoende variabler. 
@@ -838,7 +813,7 @@ Om vi betänker de Facebook-poster som använts som visuella stimuli i experimen
 knitr::kable(read.table("../csv/tab-02-07-7-1-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Analys av data till tabellformat.', booktabs=TRUE)
 ```
 
-Låt oss säga att vi genomförde exempel-experimentet som en inomgruppsdesign med upprepade försök. Detta skulle kunna innebära att varje deltagare fick titta på totalt fyra Facebook-poster i både kontrollvillkoret och behandlingsvillkoret. I en sådan situation är det ofta en hjälp att tänka sig att resultatet av dataanalysen bör se ut som en tabell, där varje rad utgör en unik kombination av deltagare och försöksomgång, och varje kolumn innehåller information om experimentellt villkor (kontroll, behandling), samt det uppmätta värdet på respektive beroende variabel (visuell uppmärksamhet, upplevd trovärdighet). Detta tabellformat innebär att vi får en rad per deltagare och mätpunkt i experimentet, och detta format är relativt tacksamt att arbeta vidare med i den statistiska analysen längre fram.
+Låt oss säga att vi genomförde exempel-experimentet som en inomgruppsdesign med upprepade försök. Detta skulle kunna innebära att varje deltagare fick titta på totalt fyra Facebook-poster i både kontrollvillkoret och behandlingsvillkoret. I en sådan situation är det ofta en hjälp att tänka sig att resultatet av dataanalysen bör se ut som en tabell, där varje rad utgör en unik kombination av deltagare och försöksomgång, och varje kolumn innehåller information om experimentellt villkor (kontroll, behandling), samt det uppmätta värdet på respektive beroende variabel (visuell uppmärksamhet i sekunder, upplevd trovärdighet på skala från 1-7). Detta tabellformat innebär att vi får en rad per deltagare och mätpunkt i experimentet, och detta format är relativt tacksamt att arbeta vidare med i den statistiska analysen längre fram.
 
 
 

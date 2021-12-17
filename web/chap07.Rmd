@@ -555,7 +555,7 @@ När du rapporterar experimentets procedur kan det vara fördelaktigt att hålla
 
 
 ## Dataanalys {#sec07.7}
-[07-7-wc-file]: <> (71.78 %)
+[07-7-wc-file]: <> (72.32 %)
 [07-7-comment]: <> (4 sidor)
 
 Genomförandet av ett experiment involverar även handhavandet av insamlade data. Det vill säga, på samma sätt som forskare behöver ge en detaljerad och strukturerad beskrivning av hur ett experiment designats och genomförts, behöver de även ge en motsvarande redovisning av hur insamlade observationer har bearbetats för att generera de variabler som sedan används för statistisk analys. Den främsta anledningen till detta är som vanligt reproducerbarhet. Andra forskare behöver inte bara kunna upprepa experimentets design och genomförande, utan de behöver också kunna upprepa den databehandling som ligger till grund för skapandet av undersökningens beroende och oberoende variabler. 
@@ -574,7 +574,7 @@ Om vi betänker de Facebook-poster som använts som visuella stimuli i experimen
 knitr::kable(read.table("../csv/tab-02-07-7-1-01.csv", header=T, sep='\t', quot='"', stringsAsFactors=F, comment.char=""), format="pipe", digits=3, caption='Analys av data till tabellformat.', booktabs=TRUE)
 ```
 
-Låt oss säga att vi genomförde exempel-experimentet som en inomgruppsdesign med upprepade försök. Detta skulle kunna innebära att varje deltagare fick titta på totalt fyra Facebook-poster i både kontrollvillkoret och behandlingsvillkoret. I en sådan situation är det ofta en hjälp att tänka sig att resultatet av dataanalysen bör se ut som en tabell, där varje rad utgör en unik kombination av deltagare och försöksomgång, och varje kolumn innehåller information om experimentellt villkor (kontroll, behandling), samt det uppmätta värdet på respektive beroende variabel (visuell uppmärksamhet, upplevd trovärdighet). Detta tabellformat innebär att vi får en rad per deltagare och mätpunkt i experimentet, och detta format är relativt tacksamt att arbeta vidare med i den statistiska analysen längre fram.
+Låt oss säga att vi genomförde exempel-experimentet som en inomgruppsdesign med upprepade försök. Detta skulle kunna innebära att varje deltagare fick titta på totalt fyra Facebook-poster i både kontrollvillkoret och behandlingsvillkoret. I en sådan situation är det ofta en hjälp att tänka sig att resultatet av dataanalysen bör se ut som en tabell, där varje rad utgör en unik kombination av deltagare och försöksomgång, och varje kolumn innehåller information om experimentellt villkor (kontroll, behandling), samt det uppmätta värdet på respektive beroende variabel (visuell uppmärksamhet i sekunder, upplevd trovärdighet på skala från 1-7). Detta tabellformat innebär att vi får en rad per deltagare och mätpunkt i experimentet, och detta format är relativt tacksamt att arbeta vidare med i den statistiska analysen längre fram.
 
 
 
