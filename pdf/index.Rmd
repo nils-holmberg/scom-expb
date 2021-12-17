@@ -740,7 +740,7 @@ När du ska rapportera din experimentdesign i en uppsats, avhandling, eller arti
 
 
 ## Procedur {#sec07.6}
-[07-6-wc-file]: <> (90.10 %)
+[07-6-wc-file]: <> (96.78 %)
 [07-6-comment]: <> (10 sidor)
 
 När vi är klara med experimentets design, och har testat så att denna design fungerar som det är tänkt, så är det dags att låta en grupp med människor delta i experimentet. Detta deltagande vill vi inte ska ske hur som helst, utan vi vill att det ska vara så lika som möjligt för alla deltagare. Varför är detta viktigt? Jo, för att vi hoppas att det _bara_ är experimentets villkor som ska påverka deltagarna, och inte alla mer eller mindre oväsentliga detaljer som händer runt omkring själva deltagandet. Därför upprättar vi något som kallas procedur (på engelska "procedure") för att så långt som möjligt standardisera hur deltagarna genomgår experimentet. Proceduren kan alltså liknas vid ett inrepeterat framförande av en teaterpjäs, men med skillnaden att fokus inte ligger på kreativ tolkning, utan på att så exakt som möjligt upprepa samma genomförande för alla deltagare. Här kan vi börja förstå vikten av att pilottesta experimentet innan så att vi har tränat på alla moment; vi vill ju helst inte att de första deltagarna får en annan procedur än de som kommer senare (dvs vi vill exkludera ordningseffekter). Vi kan också börja förstå varför experiment ofta förknippas med laboratorier, eftersom denna miljö kan ge bättre möjligheter att hålla alla externa faktorer så konstanta som möjligt, vilket i sin tur ökar andra forskares möjligheter att replikera våra resultat. 
@@ -805,13 +805,11 @@ Efter att experimentet är avklarat är det vanligt att experimentledaren ställ
 
 ### Planering av procedur {#sub07.6.8}
 
-Om det är första gången du genomför ett experiment så gör du antagligen klokt i att .. anonyma deltagarnummer är viktigt. förstör eller förvara kodnyckel i säkerhetsskåp.
-
-I samband med informerat samtycke är det viktigt att tänka på att informera om vilka data som samlas in (beroende variabler), men _inte_ vilka manipulationer som gjorts (oberoende variabler). Vi vill ju att deltagaren är så naiv eller omedveten som möjligt om experimentets villkor, eftersom vi annars riskerar att fånga ett onaturligt eller icke-representativt beteende. Hur lång tid kan man låta ett experiment ta.
+Planeringen av hur deltagarna kommer att genomgå experimentet börjar egentligen redan med förstudier och pilottest. Denna planering kommer hjälpa dig att förklara för deltagaren hur experimentet kommer att gå till och hur mycket tid det kommer ta att delta. Detta är viktigt för att deltagarna ska ha rätt förväntningar när de kommer till din experimentlokal. Som vi har diskuterat tidigare är det lämpligt att schemalägga deltagare så att så många som möjligt kan delta på effektivaste möjliga sätt, men tänk också på att schemalägga tillräckligt mycket tid mellan varje deltagare ifall något oförutsett skulle inträffa. Skriv gärna ut ett antal papper med informerat samtycke, och passa kanske även på att för hand skriva en unik deltagarkod på varje papper. På så vis har du anonymiserat deltagaren när den sedan skriver in sin kod när experimentet börjar. Samtidigt har du en koppling mellan anonym deltagarkod och individ på fysiskt papper där deltagaren undertecknat sitt informerade samtycke. Denna kodnyckel kan du sedan vid behov förstöra eller förvara i säkerhetsskåp. I samband med proceduren (välkomsthälsning och informerat samtycke) är det viktigt att tänka på att informera om vilka data som samlas in (beroende variabler), men _inte_ vilka manipulationer som gjorts (oberoende variabler). Vi vill ju att deltagaren är så naiv eller omedveten som möjligt om experimentets villkor, eftersom vi annars riskerar att fånga ett onaturligt eller icke-representativt beteende. 
 
 ### Rapportering av procedur {#sub07.6.9}
 
-Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript.
+När du rapporterar experimentets procedur kan det vara fördelaktigt att hålla sig till de avsnitt som behandlats i detta kapitel, dvs i tur och ording: Välkomsthälsning, Informerat samtycke, Förtest, Applicera mätutrustning, Instruktioner och uppgifter, Under experimentets gång, Debriefing och ersättning. Om du skriver ett par kortfattade meningar om dessa delar i proceduren så brukar det vara tillräckligt för att andra forskare ska kunna upprepa studien.
 
 
 
@@ -819,7 +817,7 @@ Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript.
 
 
 ## Dataanalys {#sec07.7}
-[07-7-wc-file]: <> (52.41 %)
+[07-7-wc-file]: <> (56.87 %)
 [07-7-comment]: <> (4 sidor)
 
 Genomförandet av ett experiment involverar även handhavandet av insamlade data. Det vill säga, på samma sätt som forskare behöver ge en detaljerad och strukturerad beskrivning av hur ett experiment designats och genomförts, behöver de även ge en sådan redovisning av hur insamlade observationer har bearbetats för att generera variabler som kan användas i statistisk analys. Den främsta anledningen till detta är som alltid reproducerbarhet. Andra forskare behöver inte bara kunna upprepa hur experimentets design och genomförande, utan de behöver också kunna upprepa den databehandling som ligger till grund för skapandet av undersökningens beroende och oberoende variabler. 
@@ -853,6 +851,10 @@ Gränsen mellan dataanalys (genomförande) och resultat (efterarbete) är otydli
 
 
 
+
+
+
+Genomförandet av experimentet kräver alltså mycket arbete innan vi kommit till den punkt där vi utvecklar en standardiserad procedur genom vilken försökspersonerna deltar i experimentet. Den sista fasen av genomförandet består av en dataanalys där vi bearbetar den rådata experimentet genererat och förbereder den för statistisk analys i studiens efterarbete.
 
 
 
