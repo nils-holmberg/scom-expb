@@ -290,14 +290,18 @@ I detta kapitel kommer vi arbeta efter en vanligt förekommande turordning som k
 
 
 ## Förstudier och kvalitet {#sec07.1}
-[07-1-wc-file]: <> (94.35 %)
+[07-1-wc-file]: <> (118.57 %)
 [07-1-comment]: <> (5 sidor)
 
-Innan man genomför ett skarpt experiment, vilket ofta kräver mycket resurser i form av tid och arbete, är det klokt att genomföra experimentet i liten skala. På så vis kan vi som studenter eller forskarna i ett tidigt stadium fånga upp problem med experimentdesignen. Detta kallas för att vi genomför en förstudie eller ett pilottest. I sambad med planering och förberedelse av experimentet kommer vi börja med att diskutera begreppet power-analys (från engelskans power analysis).
+Innan man genomför ett skarpt experiment, vilket ofta kräver mycket resurser i form av tid och arbete, är det klokt att genomföra experimentet i liten skala. På så vis kan vi som studenter eller forskarna i ett tidigt stadium fånga upp problem med experimentdesignen. Detta kallas för att vi genomför en förstudie eller ett pilottest. I sambad med planering och förberedelse av experimentet kommer vi också att diskutera det statistiska begreppet kraftanalys (från engelskans "power analysis"). Men vi börjar med att i korthet behandla begreppen validitet och reliabilitet som ett slags "kvalitetsmått" på en vetenskaplig studie. För att experimentet som helhet ska hålla så hög kvalitet som möjligt är det viktigt att vi börjar förhålla oss till dessa begrepp redan tidigt i genomförandet av studien.
 
 ### Validitet och reliabilitet {#sub07.1.1}
 
-Igen. Kvalitetsarbete. TODO: Samlad diskussion om alla olika typer av validitet och reliabilitet hör hemma lite överallt, kanske bäst under _förstudier_, eller under mätinstrument, kanske även någonstans under diskussion.
+Intern validitet är i vilken utsträckning insamlade empiriska data stödjer våra antaganden om orsak och verkan. Det är en av de viktigaste egenskaperna hos vetenskapliga studier och är även ett viktigt begrepp i resonemang om evidens mer generellt. Intern validitet bestäms av hur väl en studie kan utesluta alternativa förklaringar till dess resultat (t.ex. systematiska fel eller "bias"). Intern validitet handlar alltså om giltigheten av de slutsatser som dras _inom_ ramen för en viss studie. Detta står i kontrast till extern validitet, vilket handlar om giltigheten av att tillämpa slutsatserna från en vetenskaplig studie _utanför_ ramen för den studien. Extern validitet är alltså i vilken utsträckning resultaten av en studie kan generaliseras till andra situationer, människor, stimuli och tidpunkter. Eftersom generella slutsatser nästan alltid är ett primärt mål i vetenskaplig forskning, är extern validitet en viktig egenskap hos alla studier.
+
+Förutom generaliserbarheten av resultaten av ett experiment, är det också viktigt att beakta kvaliteten på experimentets manipulationer, vilket är en del av området begreppsvaliditet (på engelska "construct validity"). Ett annat exempel på begreppsvaliditet är hur väl ett test mäter ett abstrakt psykologiskt begrepp såsom aggressivitet eller viljestyrka. Låt oss ta ett lite mer utarbetat exempel: Sociologisk forskning har undersökt människans hjälpbeteende. Två forskare fokuserade mer specifikt på forskningsfrågan om hjälpbeteende blir mer utspritt ju fler personer som närvarar i en situation där hjälp behövs [@darley1968bystander]. Hypotesen var att deltagare i ett labb skulle bli mindre benägna att hjälpa till när de trodde att det fanns fler potentiella hjälpare förutom dem själva. Forskarna operationaliserade den oberoende variabeln för spridning av ansvar genom att öka antalet potentiella hjälpare. Vid en utvärdering av denna experimentdesign skulle vi säga att begreppsvaliditeten var hög eftersom experimentets manipulationer mycket tydligt motsvarar forskningsfrågan; det fanns en situation med hjälpbehov, samt ett sätt för deltagaren att hjälpa till, och genom att öka antalet andra deltagare som var närvarande skapades ett sätt att testa spridning hjälpbeteende. 
+
+Reliabilitet
 
 ### Power-analys {#sub07.1.2}
 
@@ -347,8 +351,8 @@ Slutligen är det väl värt att samla in lite faktisk testdata, när vi väl ha
 
 
 ## Försöksdeltagare {#sec07.2}
-[07-2-wc-file]: <> (60.53 %)
-[07-2-comment]: <> (10 sidor)
+[07-2-wc-file]: <> (86.47 %)
+[07-2-comment]: <> (7 sidor)
 
 De individer som deltar i en studie kallades tidigare kort och gott \"subjekt\" (på engelska \"subjects\"). På senare tid har man vänt sig emot detta något avhumaniserande språkbruk och istället antagit den generella termen \"deltagare\". Här använder vi ibland beteckningen "försökspersoner" eller \"försöksdeltagare\" för att ytterligare betona den experimentella forskningens användning av kontrasterande behandlingar, villkor eller \"försök\" för att studera dess effekter på deltagarna (på engelska kallas sådana upprepade försök oftast för \"trials\", vilket är ett viktigt begrepp inom området experimentdesign som diskuteras längre fram i detta kapitel). Vi skulle också kunna tänka oss ett experiment som inte involverar mänskliga försöksdeltagare överhuvudtaget. Tänk till exempel på en webbplats genomgår (\"behandlas\") med två olika typer av sökoptimeringsstrategier. Därefter undersöker vi hur båda sidor indexeras och listas bland Googles sökresultat. Den beroende responsvariabeln är rankning (page rank), lägre värden innebär mer positivt utfall. Testet kan upprepas i flera trials.
 
