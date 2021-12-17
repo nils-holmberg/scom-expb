@@ -1,6 +1,5 @@
 fig:fig01-01
 fig:fig01-02
-tab:tab-02-06-1-0-01
 fig:img-model
 tab:tab-02-07-1-1-01
 tab:tab-02-07-3-1-01
@@ -15,6 +14,7 @@ tab:tab-02-07-5-5-02
 tab:tab-02-07-5-6-01
 tab:tab-02-07-5-6-02
 eq:permutationswithoutrepetition
+tab:tab-02-07-7-1-01
 tab:tab-02-08-1-1-01
 fig:fig-02-08-1-1-01
 fig:fig-02-08-1-2-01
@@ -91,9 +91,6 @@ sub07.6.8
 sub07.6.9
 sec07.7
 sub07.7.1
-sub07.7.2
-sub07.7.3
-sub07.7.4
 chap08
 sec08.1
 sub08.1.1

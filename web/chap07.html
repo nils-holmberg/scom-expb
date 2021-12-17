@@ -233,10 +233,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7.7" data-path="chap07.html"><a href="chap07.html#sec07.7"><i class="fa fa-check"></i><b>7.7</b> Dataanalys</a>
 <ul>
-<li class="chapter" data-level="7.7.1" data-path="chap07.html"><a href="chap07.html#sub07.7.1"><i class="fa fa-check"></i><b>7.7.1</b> Fysiologiska mätdata</a></li>
-<li class="chapter" data-level="7.7.2" data-path="chap07.html"><a href="chap07.html#sub07.7.2"><i class="fa fa-check"></i><b>7.7.2</b> Självrapporterade mätdata</a></li>
-<li class="chapter" data-level="7.7.3" data-path="chap07.html"><a href="chap07.html#sub07.7.3"><i class="fa fa-check"></i><b>7.7.3</b> Planering av dataanalys</a></li>
-<li class="chapter" data-level="7.7.4" data-path="chap07.html"><a href="chap07.html#sub07.7.4"><i class="fa fa-check"></i><b>7.7.4</b> Rapportering av dataanalys</a></li>
+<li class="chapter" data-level="7.7.1" data-path="chap07.html"><a href="chap07.html#sub07.7.1"><i class="fa fa-check"></i><b>7.7.1</b> Rådata till tabell</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="chap08.html"><a href="chap08.html"><i class="fa fa-check"></i><b>8</b> Efterarbete</a>
@@ -1040,28 +1037,56 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="sec07.7" class="section level2" number="7.7">
 <h2><span class="header-section-number">7.7</span> Dataanalys</h2>
-<p>Genomförandet av ett experiment involverar även handhavandet av insamlade data. Det vill säga, på samma sätt som forskare behöver ge en detaljerad och strukturerad beskrivning av hur ett experiment designats och genomförts, behöver de även ge en sådan redovisning av hur insamlade observationer har bearbetats för att generera variabler som kan användas i statistisk analys. Den främsta anledningen till detta är som alltid reproducerbarhet. Andra forskare behöver inte bara kunna upprepa hur experimentets design och genomförande, utan de behöver också kunna upprepa den databehandling som ligger till grund för skapandet av undersökningens beroende och oberoende variabler.</p>
-<p>En viktig kontrast kan här hämtas från den kvalitativa forskningens användning av begreppet “analys” (REF). Inom denna typ av forskning talas det ofta om att analysen kan innehålla inslag av induktiv metod, dvs att forskaren går igenom det empiriska materialet (ofta texter) för att observera mönster och teman som på detta vis framträder ur materialet. En kvalitativ analys kan ofta även innehålla inslag av deduktiv metod, vilket innebär att forskaren använder ett teoretiskt och begreppsligt ramverk för att förstå det insamlade materialet från ett visst teoretiskt perspektiv. Kombinationen av dessa tillvägagångssätt kallas ibland abduktiv metod. Gemensamt för dessa kvalitativa metoder är att forskaren själv intar en viktig roll i analysarbetet, genom att tolka det insamlade datamaterialet enligt olika principer. I kontrast till detta försöker den kvantitativa analysen omvandla observationer till numeriska och kategoriska variabler som behandlas på ett mer objektivt och standardiserat sätt för att därigenom öka reproducerbarheten i bearbetningen av data (dvs alla forskare som tittar på datamaterialet bör komma fram till liknande slutsatser).</p>
-<p>Detta avsnitt av boken pekar i mångt och mycket tillbaka på det förarbete som gjordes i kapitel 6, när vi förklarade hur studiens forskningsfrågor operationaliserades till testbara hypoteser. Som vi förklarade där, består en forskningsfråga ofta av relativt abstrakta och odefinierade begrepp, som till exempel: Hur påverkas medieanvändares visuella uppmärksamhet av att en artikeltext presenteras tillsammans med en bild på en auktoritetsperson, jämfört med en bild på en mer anonym eller okänd person? Ytligt sett är denna forskningsfråga ganska enkel till sin natur, men en myriad frågor öppnar sig så fort vi börjar fundera på hur begreppet “visuell uppmärksamhet” definierats och registrerats. Ett sätt att operationalisera detta begrepp är, som vi argumenterar i denna bok, att använda en ögonrörelsemätare som kontinuerligt registrerar var försöksdeltagarens pupill är riktad på en datorskärm. När deltagarens ögon står relativ stilla och inhämtar visuell information kallas detta för en fixering. Den sammanlagda tiden av dessa fixeringar har i tidigare forskning använts som ett mått på visuell uppmärksamhet (REF).</p>
+<p>Genomförandet av ett experiment involverar även handhavandet av insamlade data. Det vill säga, på samma sätt som forskare behöver ge en detaljerad och strukturerad beskrivning av hur ett experiment designats och genomförts, behöver de även ge en motsvarande redovisning av hur insamlade observationer har bearbetats för att generera de variabler som sedan används för statistisk analys. Den främsta anledningen till detta är som vanligt reproducerbarhet. Andra forskare behöver inte bara kunna upprepa experimentets design och genomförande, utan de behöver också kunna upprepa den databehandling som ligger till grund för skapandet av undersökningens beroende och oberoende variabler.</p>
+<p>En viktig kontrast kan här hämtas från den kvalitativa forskningens användning av begreppet “analys” <span class="citation">(Wertz <a href="#ref-wertz2011five" role="doc-biblioref">2011</a>)</span>. Inom denna typ av forskning talas det ofta om att analysen kan innehålla inslag av induktiv metod, dvs att forskaren går igenom det empiriska materialet (ofta texter) för att observera mönster och teman som på detta vis framträder ur materialet. En kvalitativ analys kan ofta även innehålla inslag av deduktiv metod, vilket innebär att forskaren använder ett teoretiskt och begreppsligt ramverk för att förstå det insamlade materialet från ett visst teoretiskt perspektiv. Kombinationen av dessa tillvägagångssätt kallas ibland abduktiv metod. Gemensamt för dessa kvalitativa metoder är att forskaren själv intar en viktig roll i analysarbetet, genom att tolka det insamlade datamaterialet enligt olika principer. I kontrast till detta försöker den kvantitativa analysen omvandla observationer till numeriska och kategoriska variabler som behandlas på ett mer objektivt och standardiserat sätt för att därigenom öka reproducerbarheten i bearbetningen av data (dvs alla forskare som samlar in och analyserar datamaterialet bör komma fram till liknande slutsatser).</p>
+<p>Detta avsnitt av boken pekar i mångt och mycket tillbaka på det förarbete som gjordes i <a href="chap06.html#sec06.3">kapitel 6</a>, när vi förklarade hur studiens forskningsfrågor operationaliserades till testbara hypoteser. Som vi förklarade där, består en forskningsfråga ofta av relativt abstrakta och odefinierade begrepp, som till exempel: Hur påverkas medieanvändares visuella uppmärksamhet av att en artikeltext presenteras tillsammans med en bild på en auktoritetsperson, jämfört med en bild på en mer anonym eller okänd person? Ytligt sett är denna forskningsfråga ganska enkel till sin natur, men en myriad frågor öppnar sig så fort vi börjar fundera på hur begreppet “visuell uppmärksamhet” definierats och registrerats. Ett sätt att operationalisera detta begrepp är, som vi argumenterar i denna bok, att använda en ögonrörelsemätare som kontinuerligt registrerar var försöksdeltagarens pupill är riktad på en datorskärm. När deltagarens ögon står relativ stilla och inhämtar visuell information kallas detta för en fixering. Den sammanlagda tiden av dessa fixeringar har i tidigare forskning använts som ett mått på visuell uppmärksamhet <span class="citation">(Holmqvist et al. <a href="#ref-holmqvist2011eye" role="doc-biblioref">2011</a>)</span>.</p>
 <div id="sub07.7.1" class="section level3" number="7.7.1">
-<h3><span class="header-section-number">7.7.1</span> Fysiologiska mätdata</h3>
-<p>Nyss nämnda forskningsfråga är ju som bekant en viktig del av det exempelexperiment som vi diskuterar i denna bok, och i detta avsnitt om dataanalys kommer vi att fokusera på den sista delen av genomförandet av experimentet, vilket handlar om processen från abstrakt begrepp (visuell uppmärksamhet) till variabel (fixeringstid). I experimentets hypoteser används dessa variabler som närmevärden eller “proxys” till annars latenta variabler och begrepp som inte direkt kan observeras eller uppmätas.</p>
-<p>reshape, wide to long etc, sök-ersätt värden, koppling mellan dataanalys och experimentdesign</p>
-<p>Beräkning av beroende och oberoende variabler - aggregering, summativt index</p>
-</div>
-<div id="sub07.7.2" class="section level3" number="7.7.2">
-<h3><span class="header-section-number">7.7.2</span> Självrapporterade mätdata</h3>
-<p>Den andra viktiga beroende variabeln i experimentet var förtroende, tillit..</p>
-</div>
-<div id="sub07.7.3" class="section level3" number="7.7.3">
-<h3><span class="header-section-number">7.7.3</span> Planering av dataanalys</h3>
-<p>Hur lång tid kan man låta ett experiment ta.</p>
-</div>
-<div id="sub07.7.4" class="section level3" number="7.7.4">
-<h3><span class="header-section-number">7.7.4</span> Rapportering av dataanalys</h3>
-<p>Rapportering - exempel på hur detta skulle kunna formuleras i ett manuskript</p>
-<p>Gränsen mellan dataanalys (genomförande) och resultat (efterarbete) är otydlig.</p>
-<p>Genomförandet av experimentet kräver alltså mycket arbete innan vi kommit till den punkt där vi utvecklar en standardiserad procedur genom vilken försökspersonerna deltar i experimentet. Den sista fasen av genomförandet består av en dataanalys där vi bearbetar den rådata experimentet genererat och förbereder den för statistisk analys i studiens efterarbete.</p>
+<h3><span class="header-section-number">7.7.1</span> Rådata till tabell</h3>
+<p>Nyss nämnda forskningsfråga är ju som bekant en viktig del av det exempel-experiment som vi diskuterar i denna bok, och i detta avsnitt om dataanalys kommer vi att fokusera på den sista delen av genomförandet av experimentet, vilket handlar om processen från abstrakt begrepp (visuell uppmärksamhet) till variabel (fixeringstid). I experimentets hypoteser används dessa variabler som närmevärden eller “proxys” till annars latenta variabler och begrepp som inte direkt kan observeras eller uppmätas. Ett exempel på en latent variabel skulle kunna vara “läsintresse”, vilket vi inte kan mäta direkt, utan vilket vi försöker mäta som deltagarens fixeringstid på texten. Tanken är alltså att ju större läsintresse posten genererar, desto längre kommer deltagarnas fixeringstid vara på texten.</p>
+<p>Om vi betänker de Facebook-poster som använts som visuella stimuli i experimentet, kan vi börja med att dela in varje sådan post i två spatiala regioner; en bild-region och en text-region (på engelska “region of interest” eller ROI). I dataanalysen skulle vi alltså i varje försöksomgång behöva extrahera deltagarens sammanlagda fixeringstid inom den region på skärmen som sammanfaller med text-regionen i den Facebook-post som visades. Naturligvis kan vi också göra det enklare för oss och bara mäta den sammanlagda visuella uppmärksamheten för hela Facebook-posten som en indikator på intresse. Detta är vad vi gjorde i experimentets hypoteser och vi återkommer också till detta när vi i nästa kapitel diskuterar resultaten av detta experiment.</p>
+<table>
+<caption><span id="tab:tab-02-07-7-1-01">Table 7.13: </span>Analys av data till tabellformat.</caption>
+<thead>
+<tr class="header">
+<th align="right">Deltagare</th>
+<th align="right">Försöksomgång</th>
+<th align="left">Villkor</th>
+<th align="right">Visuell.uppmärksamhet</th>
+<th align="right">Upplevd.trovärdighet</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="left">Kontroll</td>
+<td align="right">8.5</td>
+<td align="right">3.4</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="left">Behandling</td>
+<td align="right">13.4</td>
+<td align="right">5.6</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="left">Kontroll</td>
+<td align="right">10.2</td>
+<td align="right">4.5</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="left">Behandling</td>
+<td align="right">12.9</td>
+<td align="right">6.7</td>
+</tr>
+</tbody>
+</table>
+<p>Låt oss säga att vi genomförde exempel-experimentet som en inomgruppsdesign med upprepade försök. Detta skulle kunna innebära att varje deltagare fick titta på totalt fyra Facebook-poster i både kontrollvillkoret och behandlingsvillkoret. I en sådan situation är det ofta en hjälp att tänka sig att resultatet av dataanalysen bör se ut som en tabell, där varje rad utgör en unik kombination av deltagare och försöksomgång, och varje kolumn innehåller information om experimentellt villkor (kontroll, behandling), samt det uppmätta värdet på respektive beroende variabel (visuell uppmärksamhet, upplevd trovärdighet). Detta tabellformat innebär att vi får en rad per deltagare och mätpunkt i experimentet, och detta format är relativt tacksamt att arbeta vidare med i den statistiska analysen längre fram.</p>
 
 </div>
 </div>
@@ -1104,6 +1129,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="ref-henrich2010weirdest">
 <p>Henrich, Joseph, Steven J Heine, and Ara Norenzayan. 2010. “The Weirdest People in the World?” <em>Behavioral and Brain Sciences</em> 33 (2-3): 61–83.</p>
 </div>
+<div id="ref-holmqvist2011eye">
+<p>Holmqvist, Kenneth, Marcus Nyström, Richard Andersson, Richard Dewhurst, Halszka Jarodzka, and Joost Van de Weijer. 2011. <em>Eye Tracking: A Comprehensive Guide to Methods and Measures</em>. OUP Oxford.</p>
+</div>
 <div id="ref-jhangiani2015research">
 <p>Jhangiani, Rajiv S, IA Chiang, and Paul C Price. 2015. <em>Research Methods in Psychology-2nd Canadian Edition</em>. BC Campus. <a href="https://opentextbc.ca/researchmethods/">https://opentextbc.ca/researchmethods/</a>.</p>
 </div>
@@ -1118,6 +1146,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="ref-sullivan2012using">
 <p>Sullivan, Gail M, and Richard Feinn. 2012. “Using Effect Size—or Why the P Value Is Not Enough.” <em>Journal of Graduate Medical Education</em> 4 (3): 279–82.</p>
+</div>
+<div id="ref-wertz2011five">
+<p>Wertz, Frederick Joseph. 2011. <em>Five Ways of Doing Qualitative Analysis: Phenomenological Psychology, Grounded Theory, Discourse Analysis, Narrative Research, and Intuitive Inquiry</em>. Guilford Press.</p>
 </div>
 </div>
             </section>
