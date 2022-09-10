@@ -10,11 +10,11 @@ format:
     number-sections: true
 ---
 
-## rubrik
+## Rubrik
 
 Se @fig-etremote för att få en uppfattning om ett experiment med ögonrörelsemätning.
 
-![en försöksdeltagare tittar på facebookinlägg på en datorskärm medan ögonrörelser spelas in med en eye-tracker monterad under skärmen](fig.png){#fig-etremote}
+![En försöksdeltagare tittar på Facebookinlägg på en datorskärm medan dess ögonrörelser mäts med en eye-tracker monterad under skärmen. Prickarna som syns på skärmen används inledningsvis för att kalibrera mätinstrumentet så att det anpassas till deltagaren.](fig.png){#fig-etremote}
 
 
 
