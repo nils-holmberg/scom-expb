@@ -1,7 +1,7 @@
 ---
 title: "scom-expb"
 description: figure and caption
-date: today # other options: now, last-modified
+date: now #today # other options: now, last-modified
 author:
   - name: nils holmberg
 format:
