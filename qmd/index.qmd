@@ -14,7 +14,7 @@ format:
 
 Se @fig-etremote för att få en uppfattning om ett experiment med ögonrörelsemätning.
 
-![försöksdeltagare tittar på facebookinlägg på en datorskärm medan ögonrörelser spelas in med en eye-tracker monterad under skärmen](fig.png){#fig-etremote}
+![en försöksdeltagare tittar på facebookinlägg på en datorskärm medan ögonrörelser spelas in med en eye-tracker monterad under skärmen](fig.png){#fig-etremote}
 
 
 
