@@ -12,7 +12,7 @@ format:
 
 ## Rubrik
 
-Se @fig-etremote för att få en uppfattning om ett experiment med ögonrörelsemätning.
+Se @fig-etremote för att få en uppfattning om hur ett experiment med ögonrörelsemätning kan gå till.
 
 ![En försöksdeltagare tittar på Facebookinlägg på en datorskärm medan dess ögonrörelser mäts med en eye-tracker monterad under skärmen. Prickarna som syns på skärmen används inledningsvis för att kalibrera mätinstrumentet så att det anpassas till deltagaren.](fig.png){#fig-etremote}
 
