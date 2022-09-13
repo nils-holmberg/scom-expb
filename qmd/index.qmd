@@ -1,7 +1,7 @@
 ---
 title: "scom-expb"
 description: figure and caption
-date: now #today # other options: now, last-modified
+date: last-modified # other options: now, today, last-modified
 author:
   - name: nils holmberg
 format:
@@ -12,9 +12,9 @@ format:
 
 ## Rubrik
 
-Se @fig-etremote för att få en uppfattning om hur ett experiment med ögonrörelsemätning kan gå till.
+Se @fig-etremote för att få en uppfattning om hur ett experiment med ögonrörelsemätning kan gå till. Länk till figur med högre upplösning [här](../fig/et-remote.eps).
 
-![En försöksdeltagare tittar på Facebookinlägg på en datorskärm medan dess ögonrörelser mäts med en eye-tracker monterad under skärmen. Prickarna som syns på skärmen används inledningsvis för att kalibrera mätinstrumentet så att det anpassas till deltagaren.](fig.png){#fig-etremote}
+![En försöksdeltagare tittar på ett Facebookinlägg i taget på en datorskärm medan dess ögonrörelser mäts med en eye-tracker monterad under skärmen (markerad med svart). Prickarna som syns på skärmen används inledningsvis för att kalibrera mätinstrumentet så att det anpassas till deltagarens ögon.](result.png){#fig-etremote}
 
 
 
