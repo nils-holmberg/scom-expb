@@ -7,6 +7,7 @@ log/*
 src/*
 tmp/*
 !tmp/scom-expb.docx
+web/*
 
 # keep empty dir
 !log/.gitkeep
