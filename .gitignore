@@ -13,5 +13,6 @@ web/*
 !log/.gitkeep
 !src/.gitkeep
 !tmp/.gitkeep
+!web/.gitkeep
 
 
